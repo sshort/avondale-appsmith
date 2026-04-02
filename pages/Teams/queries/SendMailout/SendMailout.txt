@@ -1,6 +1,6 @@
 {{JSON.stringify({
   jobs: (() => {
-    const job = GetMailoutJob.data?.[0]?.job;
+    const job = appsmith.store.selectedMailoutJob;
     return job ? [job] : [];
   })(),
   delivery_mode: SelectDeliveryMode.selectedOptionValue || 'test'
