@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT public.fn_get_team_mailout_job({{appsmith.store.selectedTeamId || TableTeams.selectedRow.team_id}}) AS job;",
+      "body": "SELECT public.fn_get_team_mailout_job({{appsmith.store.selectedTeamId || TableTeams.selectedRow.team_id}}) AS job;\n",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
