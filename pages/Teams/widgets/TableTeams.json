@@ -126,7 +126,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "onRowSelected": "{{(() => { const teamId = triggeredRow?.team_id || TableTeams.selectedRow.team_id; return storeValue('selectedTeamId', teamId).then(() => GetTeamPlayers.run()).then(() => GetMailoutJob.run()).then((data) => storeValue('selectedMailoutJob', data?.[0]?.job || null)); })()}}",
+  "onRowSelected": "{{storeValue('selectedTeamId', TableTeams.selectedRow.team_id).then(() => GetTeamPlayers.run()).then(() => GetMailoutJob.run()).then((data) => storeValue('selectedMailoutJob', data?.[0]?.job || null));}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,
