@@ -1,0 +1,1 @@
+SELECT * FROM public.vw_team_management_summary ORDER BY team_name ASC;

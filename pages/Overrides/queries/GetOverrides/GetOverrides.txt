@@ -1,0 +1,1 @@
+SELECT * FROM public.team_name_overrides ORDER BY source ASC;

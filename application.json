@@ -1,0 +1,17 @@
+{
+  "appIsExample": false,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "color": "#FFEBFB",
+  "evaluationVersion": 2,
+  "pages": [
+    {
+      "id": "Teams",
+      "isDefault": true
+    },
+    {
+      "id": "Overrides",
+      "isDefault": false
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{{GetMailoutJob.data[0].job}}
