@@ -39,7 +39,7 @@
   "mobileRightColumn": 51,
   "mobileTopRow": 62,
   "needsErrorInfo": false,
-  "onClick": "{{SendMailout.run().then(() => {\n  showAlert('Email sent', 'success');\n}).catch(() => {\n  showAlert('Failed to send email', 'error');\n});}}",
+  "onClick": "{{GetMailoutJob.run().then(() => SendMailout.run()).then(() => {\n  showAlert('Email sent', 'success');\n}).catch((error) => {\n  showAlert((error && error.message) ? error.message : 'Failed to send email', 'error');\n});}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,

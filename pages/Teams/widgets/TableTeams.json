@@ -124,7 +124,7 @@
   "mobileRightColumn": 42,
   "mobileTopRow": 19,
   "needsErrorInfo": false,
-  "onRowSelected": "{{GetTeamPlayers.run()}}",
+  "onRowSelected": "{{GetTeamPlayers.run(); GetMailoutJob.run();}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,

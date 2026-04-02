@@ -1,6 +1,7 @@
-{
-  "jobs": [
-    {{GetMailoutJob.data[0].job}}
-  ],
-  "delivery_mode": "{{SelectDeliveryMode.selectedOptionValue || 'test'}}"
-}
+{{JSON.stringify({
+  jobs: (() => {
+    const job = GetMailoutJob.data?.[0]?.job;
+    return job ? [job] : [];
+  })(),
+  delivery_mode: SelectDeliveryMode.selectedOptionValue || 'test'
+})}}
