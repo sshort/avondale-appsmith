@@ -1,1 +1,3 @@
-SELECT * FROM public.vw_appsmith_team_player_matching WHERE team_id = {{TableTeams.selectedRow.team_id || -1}} ORDER BY sort_order ASC;
+SELECT *
+FROM public.vw_appsmith_team_player_matching
+ORDER BY team_id ASC, sort_order ASC;
