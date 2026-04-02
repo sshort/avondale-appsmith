@@ -1,7 +1,7 @@
 {{JSON.stringify({
   jobs: (() => {
-    const job = this.params?.job || appsmith.store.selectedMailoutJob;
+    const job = appsmith.store.selectedMailoutJob;
     return job ? [job] : [];
   })(),
-  delivery_mode: this.params?.delivery_mode || SelectDeliveryMode.selectedOptionValue || 'test'
+  delivery_mode: SelectDeliveryMode.selectedOptionValue || 'test'
 })}}
