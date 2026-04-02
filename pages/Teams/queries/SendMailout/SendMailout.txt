@@ -1,1 +1,6 @@
-{{GetMailoutJob.data[0].job}}
+{
+  "jobs": [
+    {{GetMailoutJob.data[0].job}}
+  ],
+  "delivery_mode": "{{SelectDeliveryMode.selectedOptionValue || 'test'}}"
+}
