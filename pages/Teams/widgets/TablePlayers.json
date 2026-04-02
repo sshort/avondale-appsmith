@@ -770,7 +770,7 @@
   "rightColumn": 61,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{GetTeamPlayers.data.length > 0 ? GetTeamPlayers.data : [{\"match_ui_status\": \"MATCHED\", \"resolved_name\": \"Test Player\", \"match_rule\": \"Rule 1\", \"self_email\": \"test@example.com\", \"self_phone\": \"123456789\"}]}}",
+  "tableData": "{{Array.isArray(GetTeamPlayers.data) ? GetTeamPlayers.data : []}}",
   "textSize": "0.875rem",
   "topRow": 34,
   "totalRecordsCount": 0,
