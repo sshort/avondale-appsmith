@@ -11,7 +11,7 @@
           "value": "application/json"
         }
       ],
-      "body": "{{JSON.stringify({\n  jobs: (() => {\n    const job = appsmith.store.selectedMailoutJob;\n    return job ? [job] : [];\n  })(),\n  delivery_mode: SelectDeliveryMode.selectedOptionValue || 'test'\n})}}\n",
+      "body": "{{JSON.stringify({\n  jobs: (() => {\n    const job = this.params?.job || appsmith.store.selectedMailoutJob;\n    return job ? [job] : [];\n  })(),\n  delivery_mode: this.params?.delivery_mode || SelectDeliveryMode.selectedOptionValue || 'test'\n})}}\n",
       "bodyFormData": [],
       "encodeParamsToggle": true,
       "formData": {
