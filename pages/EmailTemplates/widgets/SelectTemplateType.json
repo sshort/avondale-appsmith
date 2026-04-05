@@ -1,0 +1,67 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 120,
+  "boxShadow": "none",
+  "defaultOptionValue": "{{TableTemplates.selectedRow?.template_type ?? 0}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultOptionValue"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isFilterable": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "selectTemplateType01",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Template Type",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "options": [
+    {
+      "label": "Email",
+      "value": 0
+    },
+    {
+      "label": "Header",
+      "value": 1
+    },
+    {
+      "label": "Signature",
+      "value": 2
+    }
+  ],
+  "parentColumnSpace": 21.875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Select template type",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "topRow": 65,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "selectTemplateType01",
+  "widgetName": "SelectTemplateType"
+}

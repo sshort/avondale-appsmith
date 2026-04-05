@@ -15,6 +15,10 @@
     {
       "id": "Overrides",
       "isDefault": false
+    },
+    {
+      "id": "EmailTemplates",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {

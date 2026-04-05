@@ -1,0 +1,42 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 145,
+  "boxShadow": "none",
+  "defaultCheckedState": "{{TableTemplates.selectedRow?.is_active ?? false}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultCheckedState"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "checkboxIsActive01",
+  "labelAlignment": "left",
+  "labelPosition": "Left",
+  "labelText": "Active",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 43,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 21.875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "topRow": 121,
+  "type": "CHECKBOX_WIDGET",
+  "version": 1,
+  "widgetId": "checkboxIsActive01",
+  "widgetName": "CheckboxIsActive"
+}

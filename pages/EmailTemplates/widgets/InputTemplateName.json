@@ -1,0 +1,56 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 120,
+  "boxShadow": "none",
+  "defaultText": "{{TableTemplates.selectedRow?.template_name || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "inputTemplateName01",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "REGULAR",
+  "labelText": "Template Name",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 22,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 21.875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "e.g., Treasury Refund Request",
+  "readOnly": false,
+  "regex": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 42,
+  "textAlign": "LEFT",
+  "topRow": 65,
+  "type": "INPUT_WIDGET_V2",
+  "validation": {},
+  "version": 2,
+  "widgetId": "inputTemplateName01",
+  "widgetName": "InputTemplateName"
+}

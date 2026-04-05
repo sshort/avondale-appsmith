@@ -1,0 +1,56 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 145,
+  "boxShadow": "none",
+  "defaultText": "{{TableTemplates.selectedRow?.subject_template || ''}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    }
+  ],
+  "dynamicHeight": "FIXED",
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
+  "isDisabled": false,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "key": "inputSubject01",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelStyle": "REGULAR",
+  "labelText": "Subject Template",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "needsErrorInfo": false,
+  "parentColumnSpace": 21.875,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "placeholderText": "Email subject (supports {{token}} substitution)",
+  "readOnly": false,
+  "regex": "",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "textAlign": "LEFT",
+  "topRow": 121,
+  "type": "INPUT_WIDGET_V2",
+  "validation": {},
+  "version": 2,
+  "widgetId": "inputSubject01",
+  "widgetName": "InputSubject"
+}
