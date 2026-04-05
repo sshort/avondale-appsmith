@@ -1,0 +1,1 @@
+SELECT * FROM public.email_templates WHERE id = {{TableTemplates.selectedRow.id}};
