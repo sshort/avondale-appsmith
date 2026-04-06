@@ -19,6 +19,18 @@
     {
       "id": "EmailTemplates",
       "isDefault": false
+    },
+    {
+      "id": "TeamManagement",
+      "isDefault": false
+    },
+    {
+      "id": "TeamPlayers",
+      "isDefault": false
+    },
+    {
+      "id": "TeamMailout",
+      "isDefault": false
     }
   ],
   "unpublishedAppLayout": {
