@@ -1,0 +1,39 @@
+{
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_btnmailout_001",
+  "id": "TeamManagement_BtnMailout",
+  "parentId": "0",
+  "type": "BUTTON_WIDGET",
+  "widgetName": "BtnMailout",
+  "widgetId": "tm_btnmailout_001",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "buttonColor": "#f39c12",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    { "key": "accentColor" },
+    { "key": "borderRadius" }
+  ],
+  "dynamicTriggerPathList": [
+    { "key": "onClick" }
+  ],
+  "iconName": "send-message",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 36,
+  "onClick": "{{navigatePage('TeamMailout')}}",
+  "parentId": "0",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "rightColumn": 50,
+  "text": "Send Mailout",
+  "textSize": "0.875rem",
+  "topRow": 3,
+  "type": "BUTTON_WIDGET",
+  "version": 1
+}

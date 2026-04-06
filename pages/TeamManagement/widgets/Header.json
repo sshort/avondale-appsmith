@@ -1,0 +1,63 @@
+{
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_header_001",
+  "id": "TeamManagement_Header",
+  "parentId": "0",
+  "type": "CONTAINER_WIDGET",
+  "widgetName": "Header",
+  "widgetId": "tm_header_001",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "backgroundColor": "#ffffff",
+  "borderRadius": "0px",
+  "boxShadow": "0 2px 4px rgba(0,0,0,0.1)",
+  "bottomRow": 8,
+  "containerStyle": "none",
+  "displayName": "Container",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9f71e650b24d7e96239a40e67c4e37ee.svg",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 0,
+  "minHeight": 80,
+  "parentColumnSpace": 76.5,
+  "parentRowSpace": 10,
+  "rightColumn": 64,
+  "searchTags": ["div", "parent", "group"],
+  "shouldScrollContents": false,
+  "topRow": 0,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "children": [
+    {
+      "widgetName": "Canvas1",
+      "widgetId": "tm_header_canvas_001",
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "parentId": "tm_header_001",
+      "bottomRow": 8,
+      "topRow": 0,
+      "leftColumn": 0,
+      "rightColumn": 64,
+      "children": [
+        {
+          "widgetName": "HeaderText",
+          "widgetId": "tm_header_text_001",
+          "type": "TEXT_WIDGET",
+          "version": 1,
+          "parentId": "tm_header_canvas_001",
+          "bottomRow": 5,
+          "topRow": 1,
+          "leftColumn": 1,
+          "rightColumn": 30,
+          "text": "Team Management",
+          "fontSize": "1.5rem",
+          "fontStyle": "BOLD",
+          "textAlign": "LEFT",
+          "textColor": "#2E3D4E",
+          "dynamicBindingPathList": []
+        }
+      ]
+    }
+  ]
+}

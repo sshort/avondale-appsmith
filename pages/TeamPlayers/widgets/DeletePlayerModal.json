@@ -1,0 +1,147 @@
+{
+  "gitSyncId": "69c8f9130b20713d33eec660_tp_modaldel_001",
+  "id": "TeamPlayers_DeletePlayerModal",
+  "parentId": "0",
+  "type": "MODAL_WIDGET",
+  "widgetName": "DeletePlayerModal",
+  "widgetId": "tp_modaldel_001",
+  "animateLoading": true,
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    { "key": "borderRadius" }
+  ],
+  "dynamicTriggerPathList": [],
+  "height": 200,
+  "isCanvas": true,
+  "isLoading": false,
+  "shouldScrollContents": true,
+  "showCloseButton": true,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "width": 456,
+  "children": [
+    {
+      "widgetName": "Canvas4",
+      "widgetId": "tp_modaldel_canvas_001",
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "parentId": "tp_modaldel_001",
+      "bottomRow": 200,
+      "topRow": 0,
+      "leftColumn": 0,
+      "rightColumn": 456,
+      "children": [
+        {
+          "widgetName": "DeleteTitle",
+          "widgetId": "tp_modaldel_title_001",
+          "type": "TEXT_WIDGET",
+          "version": 1,
+          "parentId": "tp_modaldel_canvas_001",
+          "bottomRow": 5,
+          "topRow": 1,
+          "leftColumn": 1,
+          "rightColumn": 63,
+          "text": "Delete Player",
+          "fontSize": "1.25rem",
+          "fontStyle": "BOLD",
+          "textAlign": "LEFT",
+          "textColor": "#F22B2B",
+          "dynamicBindingPathList": []
+        },
+        {
+          "widgetName": "DeleteMessage",
+          "widgetId": "tp_modaldel_msg_001",
+          "type": "TEXT_WIDGET",
+          "version": 1,
+          "parentId": "tp_modaldel_canvas_001",
+          "bottomRow": 10,
+          "topRow": 5,
+          "leftColumn": 1,
+          "rightColumn": 63,
+          "text": "Are you sure you want to remove '{{TablePlayers.selectedRow.source_name}}' from this team?",
+          "fontSize": "0.875rem",
+          "textAlign": "LEFT",
+          "textColor": "#2E3D4E",
+          "dynamicBindingPathList": [
+            { "key": "text" }
+          ],
+          "dynamicPropertyPathList": [
+            { "key": "text" }
+          ]
+        },
+        {
+          "widgetName": "BtnDeleteConfirm",
+          "widgetId": "tp_modaldel_confirm_001",
+          "type": "BUTTON_WIDGET",
+          "version": 1,
+          "parentId": "tp_modaldel_canvas_001",
+          "bottomRow": 18,
+          "topRow": 13,
+          "leftColumn": 32,
+          "rightColumn": 63,
+          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+          "animateLoading": true,
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+          "boxShadow": "none",
+          "buttonColor": "#F22B2B",
+          "buttonVariant": "PRIMARY",
+          "disabledWhenInvalid": false,
+          "dynamicBindingPathList": [
+            { "key": "accentColor" },
+            { "key": "borderRadius" }
+          ],
+          "dynamicTriggerPathList": [
+            { "key": "onClick" }
+          ],
+          "isDefaultClickDisabled": true,
+          "isDisabled": false,
+          "isLoading": false,
+          "isVisible": true,
+          "onClick": "{{DeletePlayer.run(() => { closeModal('DeletePlayerModal'); GetPlayers.run(); }, () => {})}}",
+          "parentId": "0",
+          "placement": "CENTER",
+          "recaptchaType": "V3",
+          "text": "Delete",
+          "textSize": "0.875rem",
+          "type": "BUTTON_WIDGET"
+        },
+        {
+          "widgetName": "BtnDeleteCancel",
+          "widgetId": "tp_modaldel_cancel_001",
+          "type": "BUTTON_WIDGET",
+          "version": 1,
+          "parentId": "tp_modaldel_canvas_001",
+          "bottomRow": 18,
+          "topRow": 13,
+          "leftColumn": 1,
+          "rightColumn": 32,
+          "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+          "animateLoading": true,
+          "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+          "boxShadow": "none",
+          "buttonColor": "#999",
+          "buttonVariant": "SECONDARY",
+          "disabledWhenInvalid": false,
+          "dynamicBindingPathList": [
+            { "key": "accentColor" },
+            { "key": "borderRadius" }
+          ],
+          "dynamicTriggerPathList": [
+            { "key": "onClick" }
+          ],
+          "isDefaultClickDisabled": true,
+          "isDisabled": false,
+          "isLoading": false,
+          "isVisible": true,
+          "onClick": "{{closeModal('DeletePlayerModal')}}",
+          "parentId": "0",
+          "placement": "CENTER",
+          "recaptchaType": "V3",
+          "text": "Cancel",
+          "textSize": "0.875rem",
+          "type": "BUTTON_WIDGET"
+        }
+      ]
+    }
+  ]
+}

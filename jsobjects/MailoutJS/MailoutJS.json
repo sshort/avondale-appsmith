@@ -1,0 +1,20 @@
+{
+  "gitSyncId": "69c8f9130b20713d33eec660_tmo_js_001",
+  "id": "TeamMailout_MailoutJS",
+  "unpublishedCollection": {
+    "name": "MailoutJS",
+    "pageId": "TeamMailout",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": [
+      {
+        "name": "statusMessage",
+        "value": "Ready to generate and send team contact sheets"
+      },
+      {
+        "name": "isRunning",
+        "value": "false"
+      }
+    ]
+  }
+}
