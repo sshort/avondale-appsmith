@@ -1,0 +1,4 @@
+{
+  "delivery_mode": "{{ToggleTestMode.isSelected ? 'test' : 'production'}}",
+  "base_dir": "/home/node/.n8n-files/teams-mailout/current"
+}

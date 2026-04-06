@@ -1,0 +1,48 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "backgroundColor": "#ffffff",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "borderWidth": "1",
+  "bottomRow": 40,
+  "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "children": [
+    {
+      "bottomRow": 12,
+      "leftColumn": 0,
+      "parentId": "tmo_status_001",
+      "rightColumn": 64,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "tmo_status_canvas_001",
+      "widgetName": "Canvas3"
+    }
+  ],
+  "containerStyle": "card",
+  "displayName": "Container",
+  "gitSyncId": "69c8f9130b20713d33eec660_tmo_status_001",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9f71e650b24d7e96239a40e67c4e37ee.svg",
+  "id": "TeamMailout_StatusPanel",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 0,
+  "minHeight": 120,
+  "parentColumnSpace": 76.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "rightColumn": 64,
+  "searchTags": [
+    "div",
+    "parent",
+    "group"
+  ],
+  "shouldScrollContents": false,
+  "topRow": 28,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "tmo_status_001",
+  "widgetName": "StatusPanel"
+}

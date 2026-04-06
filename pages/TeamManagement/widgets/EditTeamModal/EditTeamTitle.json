@@ -1,0 +1,17 @@
+{
+  "bottomRow": 4,
+  "dynamicBindingPathList": [],
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "tm_modaledit_canvas_001",
+  "rightColumn": 63,
+  "text": "Edit Team",
+  "textAlign": "LEFT",
+  "textColor": "#2E3D4E",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tm_modaledit_title_001",
+  "widgetName": "EditTeamTitle"
+}

@@ -1,0 +1,47 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "backgroundColor": "#ffffff",
+  "borderRadius": "0px",
+  "bottomRow": 8,
+  "boxShadow": "0 2px 4px rgba(0,0,0,0.1)",
+  "children": [
+    {
+      "bottomRow": 8,
+      "leftColumn": 0,
+      "parentId": "tp_header_001",
+      "rightColumn": 64,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "tp_header_canvas_001",
+      "widgetName": "Canvas1"
+    }
+  ],
+  "containerStyle": "none",
+  "displayName": "Container",
+  "gitSyncId": "69c8f9130b20713d33eec660_tp_header_001",
+  "hideCard": false,
+  "iconSVG": "/static/media/icon.9f71e650b24d7e96239a40e67c4e37ee.svg",
+  "id": "TeamPlayers_Header",
+  "isCanvas": true,
+  "isDeprecated": false,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 0,
+  "minHeight": 80,
+  "parentColumnSpace": 76.5,
+  "parentId": "0",
+  "parentRowSpace": 10,
+  "rightColumn": 64,
+  "searchTags": [
+    "div",
+    "parent",
+    "group"
+  ],
+  "shouldScrollContents": false,
+  "topRow": 0,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "widgetId": "tp_header_001",
+  "widgetName": "Header"
+}

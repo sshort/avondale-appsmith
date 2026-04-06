@@ -1,0 +1,31 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "left",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultSwitchState": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Team Captain",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "parentId": "tp_modaladd_canvas_001",
+  "rightColumn": 32,
+  "topRow": 13,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "tp_modaladd_captain_001",
+  "widgetName": "InputIsCaptain"
+}

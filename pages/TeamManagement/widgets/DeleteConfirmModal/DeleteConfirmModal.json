@@ -1,0 +1,36 @@
+{
+  "animateLoading": true,
+  "children": [
+    {
+      "bottomRow": 200,
+      "leftColumn": 0,
+      "parentId": "tm_modaldel_001",
+      "rightColumn": 456,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "tm_modaldel_canvas_001",
+      "widgetName": "Canvas4"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_modaldel_001",
+  "height": 200,
+  "id": "TeamManagement_DeleteConfirmModal",
+  "isCanvas": true,
+  "isLoading": false,
+  "parentId": "0",
+  "shouldScrollContents": true,
+  "showCloseButton": true,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "tm_modaldel_001",
+  "widgetName": "DeleteConfirmModal",
+  "width": 456
+}

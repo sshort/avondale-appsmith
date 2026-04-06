@@ -1,0 +1,31 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "left",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultSwitchState": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Test Mode",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 43,
+  "parentId": "tmo_config_canvas_001",
+  "rightColumn": 63,
+  "topRow": 6,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "tmo_config_test_001",
+  "widgetName": "ToggleTestMode"
+}

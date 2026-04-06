@@ -1,0 +1,25 @@
+{
+  "bottomRow": 10,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "fontSize": "0.875rem",
+  "leftColumn": 1,
+  "parentId": "tp_modaldel_canvas_001",
+  "rightColumn": 63,
+  "text": "Are you sure you want to remove '{{TablePlayers.selectedRow.source_name}}' from this team?",
+  "textAlign": "LEFT",
+  "textColor": "#2E3D4E",
+  "topRow": 5,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tp_modaldel_msg_001",
+  "widgetName": "DeleteMessage"
+}

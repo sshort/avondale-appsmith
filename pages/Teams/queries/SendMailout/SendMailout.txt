@@ -1,7 +1,0 @@
-{{JSON.stringify({
-  jobs: (() => {
-    const job = appsmith.store.selectedMailoutJob;
-    return job ? [job] : [];
-  })(),
-  delivery_mode: SelectDeliveryMode.selectedOptionValue || 'test'
-})}}

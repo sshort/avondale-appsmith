@@ -1,0 +1,36 @@
+{
+  "animateLoading": true,
+  "children": [
+    {
+      "bottomRow": 340,
+      "leftColumn": 0,
+      "parentId": "tm_modaledit_001",
+      "rightColumn": 456,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "tm_modaledit_canvas_001",
+      "widgetName": "Canvas3"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_modaledit_001",
+  "height": 340,
+  "id": "TeamManagement_EditTeamModal",
+  "isCanvas": true,
+  "isLoading": false,
+  "parentId": "0",
+  "shouldScrollContents": true,
+  "showCloseButton": true,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "tm_modaledit_001",
+  "widgetName": "EditTeamModal",
+  "width": 456
+}

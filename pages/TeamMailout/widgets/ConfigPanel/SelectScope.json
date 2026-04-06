@@ -1,0 +1,47 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "own_next_reserves",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Send Scope",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 22,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentId": "tmo_config_canvas_001",
+  "placeholderText": "Select scope",
+  "rightColumn": 43,
+  "serverSideFiltering": false,
+  "sourceData": "[{\"label\":\"Own team + reserves\",\"value\":\"own_reserves\"},{\"label\":\"Own team + next team + reserves\",\"value\":\"own_next_reserves\"},{\"label\":\"All teams in category\",\"value\":\"all_category\"}]",
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "tmo_config_scope_001",
+  "widgetName": "SelectScope"
+}

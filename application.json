@@ -9,10 +9,6 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Teams",
-      "isDefault": true
-    },
-    {
       "id": "Overrides",
       "isDefault": false
     },
@@ -22,7 +18,7 @@
     },
     {
       "id": "TeamManagement",
-      "isDefault": false
+      "isDefault": true
     },
     {
       "id": "TeamPlayers",

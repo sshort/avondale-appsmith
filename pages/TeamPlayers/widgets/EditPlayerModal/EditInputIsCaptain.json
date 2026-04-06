@@ -1,0 +1,34 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "alignWidget": "left",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultSwitchState": "{{TablePlayers.selectedRow.is_captain}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultSwitchState"
+    }
+  ],
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "label": "Team Captain",
+  "labelPosition": "Top",
+  "labelTextSize": "0.875rem",
+  "leftColumn": 1,
+  "parentId": "tp_modaledit_canvas_001",
+  "rightColumn": 32,
+  "topRow": 13,
+  "type": "SWITCH_WIDGET",
+  "version": 1,
+  "widgetId": "tp_modaledit_captain_001",
+  "widgetName": "EditInputIsCaptain"
+}

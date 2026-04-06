@@ -1,1 +1,0 @@
-SELECT public.fn_get_team_mailout_job({{TableTeams.selectedRow.team_id || -1}}) AS job;

@@ -1,0 +1,17 @@
+{
+  "bottomRow": 5,
+  "dynamicBindingPathList": [],
+  "fontSize": "1.5rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "tm_header_canvas_001",
+  "rightColumn": 30,
+  "text": "Team Management",
+  "textAlign": "LEFT",
+  "textColor": "#2E3D4E",
+  "topRow": 1,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tm_header_text_001",
+  "widgetName": "HeaderText"
+}

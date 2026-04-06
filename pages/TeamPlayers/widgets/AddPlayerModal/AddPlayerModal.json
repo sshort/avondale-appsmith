@@ -1,0 +1,36 @@
+{
+  "animateLoading": true,
+  "children": [
+    {
+      "bottomRow": 280,
+      "leftColumn": 0,
+      "parentId": "tp_modaladd_001",
+      "rightColumn": 456,
+      "topRow": 0,
+      "type": "CANVAS_WIDGET",
+      "version": 1,
+      "widgetId": "tp_modaladd_canvas_001",
+      "widgetName": "Canvas2"
+    }
+  ],
+  "detachFromLayout": true,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "gitSyncId": "69c8f9130b20713d33eec660_tp_modaladd_001",
+  "height": 280,
+  "id": "TeamPlayers_AddPlayerModal",
+  "isCanvas": true,
+  "isLoading": false,
+  "parentId": "0",
+  "shouldScrollContents": true,
+  "showCloseButton": true,
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "widgetId": "tp_modaladd_001",
+  "widgetName": "AddPlayerModal",
+  "width": 456
+}

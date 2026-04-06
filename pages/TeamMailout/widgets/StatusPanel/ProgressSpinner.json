@@ -1,0 +1,28 @@
+{
+  "bottomRow": 8,
+  "color": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "color"
+    },
+    {
+      "key": "isVisible"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "iconName": "loading",
+  "iconSize": 24,
+  "isVisible": "{{MailoutJS.isRunning}}",
+  "leftColumn": 60,
+  "parentId": "tmo_status_canvas_001",
+  "rightColumn": 63,
+  "topRow": 4,
+  "type": "ICON_WIDGET",
+  "version": 1,
+  "widgetId": "tmo_status_spinner_001",
+  "widgetName": "ProgressSpinner"
+}

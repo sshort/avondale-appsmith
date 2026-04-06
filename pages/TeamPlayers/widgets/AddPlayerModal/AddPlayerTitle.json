@@ -1,0 +1,17 @@
+{
+  "bottomRow": 4,
+  "dynamicBindingPathList": [],
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "tp_modaladd_canvas_001",
+  "rightColumn": 63,
+  "text": "Add Player",
+  "textAlign": "LEFT",
+  "textColor": "#2E3D4E",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tp_modaladd_title_001",
+  "widgetName": "AddPlayerTitle"
+}

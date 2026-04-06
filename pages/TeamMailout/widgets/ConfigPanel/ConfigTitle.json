@@ -1,0 +1,17 @@
+{
+  "bottomRow": 4,
+  "dynamicBindingPathList": [],
+  "fontSize": "1.125rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "tmo_config_canvas_001",
+  "rightColumn": 63,
+  "text": "Mailout Options",
+  "textAlign": "LEFT",
+  "textColor": "#2E3D4E",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "tmo_config_title_001",
+  "widgetName": "ConfigTitle"
+}

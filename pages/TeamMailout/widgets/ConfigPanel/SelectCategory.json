@@ -1,0 +1,47 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 11,
+  "boxShadow": "none",
+  "defaultOptionValue": "ALL",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    }
+  ],
+  "isDisabled": false,
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Category",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentId": "tmo_config_canvas_001",
+  "placeholderText": "Select category",
+  "rightColumn": 22,
+  "serverSideFiltering": false,
+  "sourceData": "[{\"label\":\"All Categories\",\"value\":\"ALL\"},{\"label\":\"Mens\",\"value\":\"Mens\"},{\"label\":\"Ladies\",\"value\":\"Ladies\"},{\"label\":\"Mixed\",\"value\":\"Mixed\"},{\"label\":\"Vets\",\"value\":\"Vets\"}]",
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "tmo_config_category_001",
+  "widgetName": "SelectCategory"
+}

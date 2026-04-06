@@ -1,0 +1,1 @@
+INSERT INTO public.teams (section, team_name, season, sort_order) VALUES ('{{InputSection.text}}', '{{InputTeamName.text}}', '{{InputSeason.text}}', {{InputSortOrder.text || 0}}) RETURNING id;
