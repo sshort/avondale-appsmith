@@ -20,7 +20,7 @@
       ],
       "queryParameters": [],
       "timeoutInMillisecond": 300000,
-      "body": "{\n  \"delivery_mode\": \"{{ToggleTestMode.isSelected ? 'test' : 'production'}}\",\n  \"category\": \"{{SelectCategory.selectedOptionValue}}\",\n  \"scope\": \"{{SelectScope.selectedOptionValue}}\",\n  \"base_dir\": \"/var/lib/n8n/teams-mailout/current\"\n}"
+      "body": "{\n  \"delivery_mode\": \"{{ToggleTestMode.isSelected ? 'test' : 'production'}}\",\n  \"base_dir\": \"/home/node/.n8n-files/teams-mailout/current\"\n}"
     },
     "confirmBeforeExecute": false,
     "datasource": {
