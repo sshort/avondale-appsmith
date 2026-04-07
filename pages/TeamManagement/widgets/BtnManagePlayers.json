@@ -28,7 +28,7 @@
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 24,
-  "onClick": "{{navigatePage('TeamPlayers', { teamId: TableTeams.selectedRow.id })}}",
+  "onClick": "{{navigateTo('/app/avondale-appsmith/team-players-69d393247ac64a5d529c946a?branch=main&teamId=' + TableTeams.selectedRow.id, {}, 'SAME_WINDOW')}}",
   "parentId": "0",
   "placement": "CENTER",
   "recaptchaType": "V3",
