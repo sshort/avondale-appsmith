@@ -5,11 +5,13 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, section, team_name, season, sort_order, created_at, updated_at FROM public.teams ORDER BY sort_order ASC, team_name ASC;",
+      "body": "SELECT id, section, team_name, season, sort_order, created_at, updated_at FROM public.team ORDER BY sort_order ASC, team_name ASC;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
-        { "value": true }
+        {
+          "value": true
+        }
       ],
       "timeoutInMillisecond": 30000
     },

@@ -5,11 +5,13 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.team_players SET source_name = '{{EditInputSourceName.text}}', is_captain = {{EditInputIsCaptain.isChecked}}, sort_order = {{EditInputSortOrder.text || 0}} WHERE id = {{TablePlayers.selectedRow.id}} RETURNING id;",
+      "body": "UPDATE public.team_player SET source_name = '{{EditInputSourceName.text}}', is_captain = {{EditInputIsCaptain.isChecked}}, sort_order = {{EditInputSortOrder.text || 0}} WHERE id = {{TablePlayers.selectedRow.id}} RETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
-        { "value": true }
+        {
+          "value": true
+        }
       ],
       "timeoutInMillisecond": 30000
     },
@@ -21,7 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [
-      { "key": "body" }
+      {
+        "key": "body"
+      }
     ],
     "name": "UpdatePlayer",
     "pageId": "TeamPlayers",

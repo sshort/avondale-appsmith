@@ -5,11 +5,13 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.team_players WHERE id = {{TablePlayers.selectedRow.id}};",
+      "body": "DELETE FROM public.team_player WHERE id = {{TablePlayers.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
-        { "value": true }
+        {
+          "value": true
+        }
       ],
       "timeoutInMillisecond": 30000
     },
@@ -21,7 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [
-      { "key": "body" }
+      {
+        "key": "body"
+      }
     ],
     "name": "DeletePlayer",
     "pageId": "TeamPlayers",

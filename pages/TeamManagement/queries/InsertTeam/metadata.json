@@ -5,11 +5,13 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.teams (section, team_name, season, sort_order) VALUES ('{{InputSection.text}}', '{{InputTeamName.text}}', '{{InputSeason.text}}', {{InputSortOrder.text || 0}}) RETURNING id;",
+      "body": "INSERT INTO public.team (section, team_name, season, sort_order) VALUES ('{{InputSection.text}}', '{{InputTeamName.text}}', '{{InputSeason.text}}', {{InputSortOrder.text || 0}}) RETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
-        { "value": true }
+        {
+          "value": true
+        }
       ],
       "timeoutInMillisecond": 30000
     },
@@ -21,7 +23,9 @@
       "pluginId": "postgres-plugin"
     },
     "dynamicBindingPathList": [
-      { "key": "body" }
+      {
+        "key": "body"
+      }
     ],
     "name": "InsertTeam",
     "pageId": "TeamManagement",

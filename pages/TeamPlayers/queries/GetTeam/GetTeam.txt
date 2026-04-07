@@ -1,1 +1,1 @@
-SELECT id, team_name, section, season FROM public.teams WHERE id = {{appsmith.URL.queryParams.teamId}};
+SELECT id, team_name, section, season FROM public.team WHERE id = {{appsmith.URL.queryParams.teamId}};
