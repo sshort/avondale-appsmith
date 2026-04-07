@@ -54,7 +54,7 @@
   "parentColumnSpace": 21.875,
   "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,
-  "placeholderText": "{{(['Email', 'Header', 'Signature'][appsmith.store.emailTemplateDraft?.template_type ?? 0]) || 'Select template type'}}",
+  "placeholderText": "Select template type",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 49,
