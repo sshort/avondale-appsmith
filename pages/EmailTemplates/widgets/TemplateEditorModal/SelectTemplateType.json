@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "{{appsmith.store.selectedEmailTemplateId ? ((((GetTemplateById.data || [])[0] || {}).template_type) || 'Email') : 'Email'}}",
+  "defaultOptionValue": "{{String(appsmith.store.selectedEmailTemplateId ? ((((GetTemplateById.data || [])[0] || {}).template_type) ?? 0) : 0)}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -40,15 +40,15 @@
   "options": [
     {
       "label": "Email",
-      "value": "Email"
+      "value": "0"
     },
     {
       "label": "Header",
-      "value": "Header"
+      "value": "1"
     },
     {
       "label": "Signature",
-      "value": "Signature"
+      "value": "2"
     }
   ],
   "parentColumnSpace": 21.875,
