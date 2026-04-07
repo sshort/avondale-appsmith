@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{closeModal('TemplateEditorModal'); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true);}}",
+  "onClick": "{{storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); closeModal('TemplateEditorModal');}}",
   "parentColumnSpace": 21.875,
   "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,

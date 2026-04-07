@@ -15,7 +15,7 @@ VALUES (
   {{(() => { const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : 0; })()}},
   {{InputSubject.text || null}},
   {{TextareaTextTemplate.text || null}},
-  {{(typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || null))}},
+  {{appsmith.store.emailTemplateLiveHtml || (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || null))}},
   {{CheckboxIsActive.isChecked}},
   now(),
   now()

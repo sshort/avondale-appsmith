@@ -34,7 +34,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{copyToClipboard((typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || '')) || ''); showAlert('HTML copied', 'success');}}",
+  "onClick": "{{copyToClipboard((appsmith.store.emailTemplateLiveHtml || (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : ((appsmith.store.emailTemplateDraft || {}).html_template || ''))) || ''); showAlert('HTML copied', 'success');}}",
   "parentColumnSpace": 21.875,
   "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,

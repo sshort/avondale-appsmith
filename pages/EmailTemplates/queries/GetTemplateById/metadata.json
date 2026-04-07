@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "GetTemplateById",
     "pageId": "EmailTemplates",
-    "runBehaviour": "AUTOMATIC",
+    "runBehaviour": "MANUAL",
     "userSetOnLoad": false
   }
 }

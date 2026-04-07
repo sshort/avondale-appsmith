@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.selectedEmailTemplateId ? (((GetTemplateById.data || [])[0] || {}).template_key || '') : ''}}",
+  "defaultText": "{{appsmith.store.emailTemplateDraft?.template_key || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

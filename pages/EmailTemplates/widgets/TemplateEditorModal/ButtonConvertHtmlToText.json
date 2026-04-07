@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{(() => { const html = (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || '')); const temp = document.createElement('div'); temp.innerHTML = html; const text = (temp.innerText || temp.textContent || '').replace(/\r\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim(); TextareaHtmlTemplate.setValue(html); TextareaTextTemplate.setValue(text); showAlert('Plain text output updated', 'success'); })()}}",
+  "onClick": "{{(() => { const html = (appsmith.store.emailTemplateLiveHtml || (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : ((appsmith.store.emailTemplateDraft || {}).html_template || ''))); const temp = document.createElement('div'); temp.innerHTML = html; const text = (temp.innerText || temp.textContent || '').replace(/\\r\\n/g, '\\n').replace(/\\n{3,}/g, '\\n\\n').trim(); storeValue('emailTemplateDraft', { ...(appsmith.store.emailTemplateDraft || {}), text_template: text, html_template: html }); storeValue('emailTemplateLiveHtml', html); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); resetWidget('RichTextPreview', true); showAlert('Plain text output updated', 'success'); })()}}",
   "parentColumnSpace": 21.875,
   "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,

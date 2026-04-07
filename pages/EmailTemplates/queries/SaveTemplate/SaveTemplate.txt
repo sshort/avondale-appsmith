@@ -4,7 +4,7 @@ SET template_key = {{InputTemplateKey.text || ''}},
     template_type = {{(() => { const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : ((((GetTemplateById.data || [])[0] || {}).template_type) ?? 0); })()}},
     subject_template = {{InputSubject.text || null}},
     text_template = {{TextareaTextTemplate.text || null}},
-    html_template = {{(typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || null))}},
+    html_template = {{appsmith.store.emailTemplateLiveHtml || (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || null))}},
     is_active = {{CheckboxIsActive.isChecked}},
     updated_at = now()
 WHERE id = {{appsmith.store.selectedEmailTemplateId}};
