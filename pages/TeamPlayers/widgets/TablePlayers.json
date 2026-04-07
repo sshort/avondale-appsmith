@@ -37,9 +37,7 @@
     "sort_order1",
     "team_name1",
     "season1",
-    "section1",
-    "delete_player",
-    "edit_player"
+    "section1"
   ],
   "columnUpdatedAt": 1775565211327,
   "defaultPageSize": 20,
@@ -125,7 +123,7 @@
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Delete",
       "menuColor": "#F22B2B",
       "onClick": "{{showModal('DeletePlayerModal')}}",
@@ -146,7 +144,7 @@
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Edit",
       "menuColor": "#03B365",
       "onClick": "{{showModal('EditPlayerModal')}}",
