@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.team WHERE id = {{TableTeams.selectedRow.id}};",
+      "body": "DELETE FROM public.teams WHERE id = {{TableTeams.selectedRow.id}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

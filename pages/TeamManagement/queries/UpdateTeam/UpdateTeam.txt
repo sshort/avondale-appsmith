@@ -1,1 +1,1 @@
-UPDATE public.team SET section = '{{InputSection.text}}', team_name = '{{InputTeamName.text}}', season = '{{InputSeason.text}}', sort_order = {{InputSortOrder.text || 0}}, updated_at = now() WHERE id = {{TableTeams.selectedRow.id}} RETURNING id;
+UPDATE public.teams SET section = '{{InputSection.text}}', team_name = '{{InputTeamName.text}}', season = '{{InputSeason.text}}', sort_order = {{InputSortOrder.text || 0}}, updated_at = now() WHERE id = {{TableTeams.selectedRow.id}} RETURNING id;
