@@ -2,7 +2,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
-      "bottomRow": 720,
+      "bottomRow": 730,
       "leftColumn": 0,
       "parentId": "emailtemplatesModal01",
       "rightColumn": 1080,
