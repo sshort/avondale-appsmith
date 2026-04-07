@@ -1,5 +1,5 @@
 {
-  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
       "bottomRow": 280,
@@ -19,10 +19,7 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [],
-  "gitSyncId": "69c8f9130b20713d33eec660_tp_modaledit_001",
   "height": 280,
-  "id": "TeamPlayers_EditPlayerModal",
   "isCanvas": true,
   "isLoading": false,
   "parentId": "0",

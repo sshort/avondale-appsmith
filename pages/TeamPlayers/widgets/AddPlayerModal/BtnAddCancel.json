@@ -1,12 +1,10 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 26,
   "boxShadow": "none",
   "buttonColor": "#999",
   "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,13 +18,12 @@
       "key": "onClick"
     }
   ],
-  "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 1,
   "onClick": "{{closeModal('AddPlayerModal')}}",
-  "parentId": "0",
+  "parentId": "tp_modaladd_canvas_001",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "rightColumn": 32,

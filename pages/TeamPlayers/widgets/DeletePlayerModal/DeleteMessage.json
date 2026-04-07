@@ -5,11 +5,6 @@
       "key": "text"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "text"
-    }
-  ],
   "fontSize": "0.875rem",
   "leftColumn": 1,
   "parentId": "tp_modaldel_canvas_001",

@@ -1,28 +1,27 @@
 {
-  "gitSyncId": "69c8f9130b20713d33eec660_tp_btnadd_001",
-  "id": "TeamPlayers_BtnAddPlayer",
-  "parentId": "0",
-  "type": "BUTTON_WIDGET",
-  "widgetName": "BtnAddPlayer",
-  "widgetId": "tp_btnadd_001",
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    { "key": "accentColor" },
-    { "key": "borderRadius" },
-    { "key": "buttonColor" }
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    }
   ],
   "dynamicTriggerPathList": [
-    { "key": "onClick" }
+    {
+      "key": "onClick"
+    }
   ],
   "iconName": "plus",
-  "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
@@ -36,5 +35,7 @@
   "textSize": "0.875rem",
   "topRow": 3,
   "type": "BUTTON_WIDGET",
-  "version": 1
+  "version": 1,
+  "widgetId": "tp_btnadd_001",
+  "widgetName": "BtnAddPlayer"
 }
