@@ -13,6 +13,9 @@
     },
     {
       "key": "isDisabled"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -24,7 +27,7 @@
   "iconAlign": "left",
   "isDisabled": "{{!TableTemplates.selectedRow?.id}}",
   "isLoading": false,
-  "isVisible": true,
+  "isVisible": "{{!!TableTemplates.selectedRow?.id}}",
   "key": "buttonDelete01",
   "labelAlignment": "left",
   "labelPosition": "Top",

@@ -10,6 +10,9 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "text"
     }
   ],
   "dynamicPropertyPathList": [],
@@ -41,7 +44,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
-  "text": "CreateSave",
+  "text": "{{TableTemplates.selectedRow?.id ? 'Save Template' : 'Create Template'}}",
   "topRow": 68,
   "type": "BUTTON_WIDGET",
   "version": 1,
