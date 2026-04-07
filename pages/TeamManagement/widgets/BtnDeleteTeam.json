@@ -1,0 +1,46 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 7,
+  "boxShadow": "none",
+  "buttonColor": "{{'#F22B2B'}}",
+  "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    }
+  ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_btndelete_001",
+  "iconName": "plus",
+  "id": "TeamManagement_BtnDeleteTeam",
+  "isDefaultClickDisabled": true,
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "leftColumn": 12,
+  "onClick": "{{showModal('DeleteConfirmModal')}}",
+  "parentId": "0",
+  "placement": "CENTER",
+  "recaptchaType": "V3",
+  "rightColumn": 24,
+  "text": "Delete Team",
+  "textSize": "0.875rem",
+  "topRow": 3,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "tm_btndelete_001",
+  "widgetName": "BtnDeleteTeam"
+}

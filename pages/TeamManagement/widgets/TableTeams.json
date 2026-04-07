@@ -38,10 +38,7 @@
     "season1",
     "sort_order1",
     "created_at1",
-    "updated_at1",
-    "delete_team",
-    "edit_team",
-    "manage_players"
+    "updated_at1"
   ],
   "columnUpdatedAt": 1775560865275,
   "defaultPageSize": 20,
@@ -90,17 +87,7 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.manage_players.onClick"
-    },
-    {
-      "key": "primaryColumns.edit_team.onClick"
-    },
-    {
-      "key": "primaryColumns.delete_team.onClick"
-    }
-  ],
+  "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "gitSyncId": "69c8f9130b20713d33eec660_tm_table_001",
@@ -165,7 +152,7 @@
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Delete",
       "labelColor": "#FFFFFF",
       "menuColor": "#F22B2B",
@@ -186,7 +173,7 @@
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Edit",
       "labelColor": "#FFFFFF",
       "menuColor": "#03B365",
@@ -241,7 +228,7 @@
       "isCellVisible": true,
       "isDerived": true,
       "isDisabled": false,
-      "isVisible": true,
+      "isVisible": false,
       "label": "Manage Players",
       "labelColor": "#FFFFFF",
       "menuColor": "#03B365",
