@@ -1,0 +1,53 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 18,
+  "boxShadow": "none",
+  "defaultOptionValue": "",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "dynamicPropertyPathList": [
+    {
+      "key": "sourceData"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "isDisabled": "{{(InputPlayerLookup.text || '').trim().length < 2}}",
+  "isFilterable": true,
+  "isLoading": false,
+  "isRequired": false,
+  "isVisible": true,
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Matching Players",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 1,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "parentId": "tp_modaladd_canvas_001",
+  "placeholderText": "Select a player from the lookup results",
+  "rightColumn": 63,
+  "serverSideFiltering": false,
+  "sourceData": "{{LookupPlayers.data || []}}",
+  "topRow": 13,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "tp_modaladd_select_001",
+  "widgetName": "SelectPlayerLookup"
+}

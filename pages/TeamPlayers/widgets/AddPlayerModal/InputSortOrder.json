@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "bottomRow": 32,
   "boxShadow": "none",
   "defaultText": "0",
   "dynamicBindingPathList": [
@@ -28,7 +28,7 @@
   "resetOnSubmit": true,
   "rightColumn": 63,
   "showStepArrows": true,
-  "topRow": 13,
+  "topRow": 27,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
   "widgetId": "tp_modaladd_sort_001",

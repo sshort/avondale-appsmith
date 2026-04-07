@@ -1,0 +1,40 @@
+WITH raw_names AS (
+  SELECT DISTINCT
+    trim(concat_ws(' ', NULLIF(trim("First name"), ''), NULLIF(trim("Last name"), ''))) AS player_name,
+    COALESCE(NULLIF(trim("Email address"), ''), '') AS email_address,
+    'raw_members' AS source_table
+  FROM public.raw_members
+  WHERE is_current IS TRUE
+
+  UNION
+
+  SELECT DISTINCT
+    trim(concat_ws(' ', NULLIF(trim("First name"), ''), NULLIF(trim("Last name"), ''))) AS player_name,
+    COALESCE(NULLIF(trim("Email address"), ''), '') AS email_address,
+    'raw_contacts' AS source_table
+  FROM public.raw_contacts
+  WHERE is_current IS TRUE
+),
+deduped AS (
+  SELECT
+    player_name,
+    MAX(NULLIF(email_address, '')) AS email_address,
+    string_agg(DISTINCT source_table, ', ' ORDER BY source_table) AS source_tables
+  FROM raw_names
+  WHERE player_name IS NOT NULL
+    AND player_name <> ''
+  GROUP BY player_name
+)
+SELECT
+  player_name ||
+    CASE WHEN email_address IS NOT NULL THEN ' (' || email_address || ')' ELSE '' END ||
+    ' [' || source_tables || ']' AS label,
+  player_name AS value,
+  player_name,
+  COALESCE(email_address, '') AS email_address,
+  source_tables
+FROM deduped
+WHERE LENGTH(TRIM(COALESCE({{InputPlayerLookup.text}}, ''))) >= 2
+  AND player_name ILIKE ('%' || TRIM(COALESCE({{InputPlayerLookup.text}}, '')) || '%')
+ORDER BY player_name ASC
+LIMIT 25;

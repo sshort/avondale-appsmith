@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.team_players (team_id, source_name, is_captain, sort_order) VALUES ({{appsmith.URL.queryParams.teamId}}, '{{InputSourceName.text}}', {{InputIsCaptain.isChecked}}, {{InputSortOrder.text || 0}}) RETURNING id;",
+      "body": "INSERT INTO public.team_players (team_id, source_name, is_captain, sort_order)\nVALUES (\n  {{appsmith.URL.queryParams.teamId}},\n  {{(SelectPlayerLookup.selectedOptionValue || InputSourceName.text || '').trim()}},\n  {{InputIsCaptain.isChecked}},\n  {{InputSortOrder.text || 0}}\n)\nRETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

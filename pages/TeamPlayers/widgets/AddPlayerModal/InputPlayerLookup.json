@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 11,
   "boxShadow": "none",
   "defaultText": "",
   "dynamicBindingPathList": [
@@ -12,25 +12,31 @@
       "key": "borderRadius"
     }
   ],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "iconAlign": "left",
   "inputType": "TEXT",
   "isDisabled": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "label": "Manual Player Name",
+  "label": "Search Existing Players",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
   "leftColumn": 1,
+  "onTextChanged": "{{resetWidget('SelectPlayerLookup', true); LookupPlayers.run();}}",
   "parentId": "tp_modaladd_canvas_001",
-  "placeholderText": "Use this if the player is not found in the lookup results",
-  "resetOnSubmit": true,
+  "placeholderText": "Type at least 2 characters to search raw members and raw contacts",
+  "resetOnSubmit": false,
   "rightColumn": 63,
-  "topRow": 20,
+  "topRow": 6,
   "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tp_modaladd_name_001",
-  "widgetName": "InputSourceName"
+  "widgetId": "tp_modaladd_lookup_001",
+  "widgetName": "InputPlayerLookup"
 }

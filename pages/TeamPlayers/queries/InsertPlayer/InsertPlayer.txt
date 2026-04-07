@@ -1,1 +1,8 @@
-INSERT INTO public.team_players (team_id, source_name, is_captain, sort_order) VALUES ({{appsmith.URL.queryParams.teamId}}, '{{InputSourceName.text}}', {{InputIsCaptain.isChecked}}, {{InputSortOrder.text || 0}}) RETURNING id;
+INSERT INTO public.team_players (team_id, source_name, is_captain, sort_order)
+VALUES (
+  {{appsmith.URL.queryParams.teamId}},
+  {{(SelectPlayerLookup.selectedOptionValue || InputSourceName.text || '').trim()}},
+  {{InputIsCaptain.isChecked}},
+  {{InputSortOrder.text || 0}}
+)
+RETURNING id;

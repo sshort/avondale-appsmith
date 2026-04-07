@@ -2,7 +2,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
-      "bottomRow": 280,
+      "bottomRow": 430,
       "leftColumn": 0,
       "parentId": "tp_modaladd_001",
       "rightColumn": 456,
@@ -19,7 +19,7 @@
       "key": "borderRadius"
     }
   ],
-  "height": 280,
+  "height": 430,
   "isCanvas": true,
   "isLoading": false,
   "parentId": "0",
