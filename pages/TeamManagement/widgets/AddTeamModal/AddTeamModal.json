@@ -1,5 +1,6 @@
 {
   "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
       "bottomRow": 340,

@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "GetTeams",
     "pageId": "TeamManagement",
-    "runBehaviour": "ON_PAGE_LOAD",
+    "runBehaviour": "AUTOMATIC",
     "userSetOnLoad": false
   }
 }
