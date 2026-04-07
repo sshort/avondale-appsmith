@@ -16,7 +16,7 @@ VALUES (
   {{InputSubject.text || null}},
   {{TextareaTextTemplate.text || null}},
   {{TextareaHtmlTemplate.text || null}},
-  {{CheckboxIsActive.isSwitchedOn}},
+  {{CheckboxIsActive.isChecked}},
   now(),
   now()
 )
