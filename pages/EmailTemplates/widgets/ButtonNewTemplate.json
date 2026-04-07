@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); InputTemplateKey.setValue(''); InputTemplateName.setValue(''); InputSubject.setValue(''); SelectTemplateType.setSelectedOption(0); CheckboxIsActive.setValue(false); TextareaTextTemplate.setValue(''); TextareaHtmlTemplate.setValue(''); RichTextTemplate.setValue(''); RichTextPreview.setValue(''); showModal('TemplateEditorModal');}}",
+  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); InputTemplateKey.setValue(''); InputTemplateName.setValue(''); InputSubject.setValue(''); SelectTemplateType.setSelectedOption(0); CheckboxIsActive.setValue(false); TextareaTextTemplate.setValue(''); TextareaHtmlTemplate.setValue(''); RichTextTemplate.setText(''); RichTextPreview.setText(''); showModal('TemplateEditorModal');}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,
