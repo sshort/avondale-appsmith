@@ -13,6 +13,9 @@
     },
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -24,11 +27,11 @@
   "iconName": "send-message",
   "id": "TeamManagement_BtnManagePlayers",
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{!appsmith.store.teamManagementSelectedId}}",
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 24,
-  "onClick": "{{navigateTo('TeamPlayers', { teamId: TableTeams.selectedRow.id }, 'SAME_WINDOW')}}",
+  "onClick": "{{navigateTo('TeamPlayers', { teamId: appsmith.store.teamManagementSelectedId }, 'SAME_WINDOW')}}",
   "parentId": "0",
   "placement": "CENTER",
   "recaptchaType": "V3",

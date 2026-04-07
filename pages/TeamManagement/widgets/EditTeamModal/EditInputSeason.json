@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultText": "{{TableTeams.selectedRow.season}}",
+  "defaultText": "{{appsmith.store.teamManagementSelectedSeason || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

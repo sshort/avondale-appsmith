@@ -16,6 +16,9 @@
     },
     {
       "key": "buttonColor"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicTriggerPathList": [
@@ -27,7 +30,7 @@
   "iconName": "plus",
   "id": "TeamManagement_BtnDeleteTeam",
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
+  "isDisabled": "{{!appsmith.store.teamManagementSelectedId}}",
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 12,

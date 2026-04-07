@@ -87,7 +87,11 @@
       "key": "tableData"
     }
   ],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "enableClientSideSearch": true,
   "flexVerticalAlignment": "start",
   "gitSyncId": "69c8f9130b20713d33eec660_tm_table_001",
@@ -102,6 +106,7 @@
   "isVisiblePagination": true,
   "label": "Data",
   "leftColumn": 0,
+  "onRowSelected": "{{storeValue('teamManagementSelectedId', TableTeams.selectedRow.id); storeValue('teamManagementSelectedName', TableTeams.selectedRow.team_name); storeValue('teamManagementSelectedSection', TableTeams.selectedRow.section); storeValue('teamManagementSelectedSeason', TableTeams.selectedRow.season); storeValue('teamManagementSelectedSortOrder', TableTeams.selectedRow.sort_order);}}",
   "parentColumnSpace": 76.5,
   "parentId": "0",
   "parentRowSpace": 10,

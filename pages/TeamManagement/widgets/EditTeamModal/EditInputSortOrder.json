@@ -5,7 +5,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "{{TableTeams.selectedRow.sort_order}}",
+  "defaultText": "{{appsmith.store.teamManagementSelectedSortOrder ?? ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
