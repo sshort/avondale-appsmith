@@ -6,7 +6,7 @@
       {
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 400,
+          "bottomRow": 2900,
           "canExtend": true,
           "containerStyle": "none",
           "detachFromLayout": true,
@@ -28,6 +28,6 @@
       }
     ],
     "name": "EmailTemplates",
-    "slug": "email-templates"
+    "slug": "emailtemplates"
   }
 }

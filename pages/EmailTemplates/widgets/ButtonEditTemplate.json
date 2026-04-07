@@ -1,7 +1,7 @@
 {
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 290,
+  "bottomRow": 257,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonStyle": "PRIMARY",
@@ -10,37 +10,44 @@
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
     }
   ],
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "iconAlign": "left",
-  "isDisabled": false,
+  "isDisabled": "{{!TableTemplates.selectedRow?.id}}",
   "isLoading": false,
   "isVisible": true,
-  "key": "buttonSave01",
+  "key": "buttonNew01",
   "labelAlignment": "left",
   "labelPosition": "Top",
   "labelText": "",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{((!TableTemplates.selectedRow?.id) ? CreateTemplate.run() : SaveTemplate.run()).then(() => { showAlert('Template saved', 'success'); GetEmailTemplates.run(); }).catch((error) => { showAlert((error?.message || error || 'Failed to save'), 'error'); });}}",
+  "onClick": "{{resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); showModal('TemplateEditorModal')}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,
   "placementWithPortal": false,
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 16,
-  "text": "Save Template",
-  "topRow": 281,
+  "rightColumn": 32,
+  "text": "Edit Template",
+  "topRow": 252,
   "type": "BUTTON_WIDGET",
   "version": 1,
-  "widgetId": "buttonSave01",
-  "widgetName": "ButtonSave"
+  "widgetId": "emailtemplatesEdit01",
+  "widgetName": "ButtonEditTemplate"
 }

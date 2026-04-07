@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 120,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultOptionValue": "{{TableTemplates.selectedRow?.template_type ?? 0}}",
+  "defaultText": "{{TableTemplates.selectedRow?.template_name || ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,55 +13,44 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultOptionValue"
+      "key": "defaultText"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
+  "iconAlign": "left",
+  "inputType": "TEXT",
   "isDisabled": false,
-  "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "selectTemplateType01",
+  "key": "inputTemplateName01",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelText": "Template Type",
+  "labelStyle": "REGULAR",
+  "labelText": "Template Name",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 43,
+  "leftColumn": 17,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "optionLabel": "label",
-  "optionValue": "value",
-  "options": [
-    {
-      "label": "Email",
-      "value": 0
-    },
-    {
-      "label": "Header",
-      "value": 1
-    },
-    {
-      "label": "Signature",
-      "value": 2
-    }
-  ],
   "parentColumnSpace": 21.875,
-  "parentId": "0",
+  "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,
-  "placeholderText": "Select template type",
+  "placeholderText": "e.g., Treasury Refund Request",
+  "readOnly": false,
+  "regex": "",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
-  "serverSideFiltering": false,
-  "topRow": 65,
-  "type": "SELECT_WIDGET",
-  "version": 1,
-  "widgetId": "selectTemplateType01",
-  "widgetName": "SelectTemplateType"
+  "rightColumn": 36,
+  "textAlign": "LEFT",
+  "topRow": 6,
+  "type": "INPUT_WIDGET_V2",
+  "validation": {},
+  "version": 2,
+  "widgetId": "inputTemplateName01",
+  "widgetName": "InputTemplateName"
 }

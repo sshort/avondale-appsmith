@@ -2,9 +2,9 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 145,
+  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "{{TableTemplates.selectedRow?.subject_template || ''}}",
+  "defaultOptionValue": "{{TableTemplates.selectedRow?.template_type ?? 0}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,44 +13,55 @@
       "key": "borderRadius"
     },
     {
-      "key": "defaultText"
+      "key": "defaultOptionValue"
     }
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
   "dynamicTriggerPathList": [],
-  "iconAlign": "left",
-  "inputType": "TEXT",
   "isDisabled": false,
+  "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
   "isVisible": true,
-  "key": "inputSubject01",
+  "key": "selectTemplateType01",
   "labelAlignment": "left",
   "labelPosition": "Top",
-  "labelStyle": "REGULAR",
-  "labelText": "Subject Template",
+  "labelText": "Template Type",
   "labelTextSize": "0.875rem",
   "labelWidth": 5,
-  "leftColumn": 1,
+  "leftColumn": 37,
   "maxDynamicHeight": 9000,
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
+  "optionLabel": "label",
+  "optionValue": "value",
+  "options": [
+    {
+      "label": "Email",
+      "value": 0
+    },
+    {
+      "label": "Header",
+      "value": 1
+    },
+    {
+      "label": "Signature",
+      "value": 2
+    }
+  ],
   "parentColumnSpace": 21.875,
-  "parentId": "0",
+  "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,
-  "placeholderText": "Email subject (supports {{token}} substitution)",
-  "readOnly": false,
-  "regex": "",
+  "placeholderText": "Select template type",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
-  "textAlign": "LEFT",
-  "topRow": 121,
-  "type": "INPUT_WIDGET_V2",
-  "validation": {},
-  "version": 2,
-  "widgetId": "inputSubject01",
-  "widgetName": "InputSubject"
+  "rightColumn": 49,
+  "serverSideFiltering": false,
+  "topRow": 6,
+  "type": "SELECT_WIDGET",
+  "version": 1,
+  "widgetId": "selectTemplateType01",
+  "widgetName": "SelectTemplateType"
 }

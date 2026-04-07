@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.email_templates (template_key, template_name, template_type, subject_template, text_template, html_template, is_active, created_at, updated_at) VALUES ('{{InputTemplateKey.text}}', '{{InputTemplateName.text}}', {{SelectTemplateType.selectedOptionValue}}, '{{InputSubject.text}}', '{{TextareaTextTemplate.text}}', '{{TextareaHtmlTemplate.text}}', {{CheckboxIsActive.isSwitchedOn}}, now(), now()) RETURNING id;",
+      "body": "INSERT INTO public.email_templates (template_key, template_name, template_type, subject_template, text_template, html_template, is_active, created_at, updated_at)\nVALUES ({{\"'\" + ((InputTemplateKey.text) || '').replace(/'/g, \"''\") + \"'\"}}, {{\"'\" + ((InputTemplateName.text) || '').replace(/'/g, \"''\") + \"'\"}}, {{SelectTemplateType.selectedOptionValue}}, {{\"'\" + ((InputSubject.text) || '').replace(/'/g, \"''\") + \"'\"}}, {{\"'\" + ((TextareaTextTemplate.text) || '').replace(/'/g, \"''\") + \"'\"}}, {{\"'\" + ((TextareaHtmlTemplate.text) || '').replace(/'/g, \"''\") + \"'\"}}, {{CheckboxIsActive.isSwitchedOn}}, now(), now())\nRETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "homedb",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "CreateTemplate",
     "pageId": "EmailTemplates",
     "runBehaviour": "MANUAL",

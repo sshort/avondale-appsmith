@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.email_templates WHERE id = {{TableTemplates.selectedRow.id}};",
+      "body": "DELETE FROM public.email_templates WHERE id = {{appsmith.store.selectedEmailTemplateId}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

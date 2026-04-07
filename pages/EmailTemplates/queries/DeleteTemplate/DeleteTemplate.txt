@@ -1,1 +1,1 @@
-DELETE FROM public.email_templates WHERE id = {{TableTemplates.selectedRow.id}};
+DELETE FROM public.email_templates WHERE id = {{appsmith.store.selectedEmailTemplateId}};

@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.email_templates SET template_key = '{{InputTemplateKey.text}}', template_name = '{{InputTemplateName.text}}', template_type = {{SelectTemplateType.selectedOptionValue}}, subject_template = '{{InputSubject.text}}', text_template = '{{TextareaTextTemplate.text}}', html_template = '{{TextareaHtmlTemplate.text}}', is_active = {{CheckboxIsActive.isSwitchedOn}}, updated_at = now() WHERE id = {{TableTemplates.selectedRow.id}};",
+      "body": "UPDATE public.email_templates\nSET template_key = {{\"'\" + ((InputTemplateKey.text) || '').replace(/'/g, \"''\") + \"'\"}},\n    template_name = {{\"'\" + ((InputTemplateName.text) || '').replace(/'/g, \"''\") + \"'\"}},\n    template_type = {{SelectTemplateType.selectedOptionValue}},\n    subject_template = {{\"'\" + ((InputSubject.text) || '').replace(/'/g, \"''\") + \"'\"}},\n    text_template = {{\"'\" + ((TextareaTextTemplate.text) || '').replace(/'/g, \"''\") + \"'\"}},\n    html_template = {{\"'\" + ((TextareaHtmlTemplate.text) || '').replace(/'/g, \"''\") + \"'\"}},\n    is_active = {{CheckboxIsActive.isSwitchedOn}},\n    updated_at = now()\nWHERE id = {{appsmith.store.selectedEmailTemplateId}};",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [
@@ -22,7 +22,11 @@
       "name": "homedb",
       "pluginId": "postgres-plugin"
     },
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "body"
+      }
+    ],
     "name": "SaveTemplate",
     "pageId": "EmailTemplates",
     "runBehaviour": "MANUAL",

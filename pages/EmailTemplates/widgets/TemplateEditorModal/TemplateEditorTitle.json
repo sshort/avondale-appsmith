@@ -1,0 +1,21 @@
+{
+  "bottomRow": 4,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "fontSize": "1.25rem",
+  "fontStyle": "BOLD",
+  "leftColumn": 1,
+  "parentId": "emailtemplatesModalCanvas01",
+  "rightColumn": 40,
+  "text": "{{TableTemplates.selectedRow?.id ? 'Edit Template' : 'New Template'}}",
+  "textAlign": "LEFT",
+  "textColor": "#2E3D4E",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "emailtemplatesModalTitle01",
+  "widgetName": "TemplateEditorTitle"
+}

@@ -1,0 +1,50 @@
+{
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 48,
+  "boxShadow": "none",
+  "columns": 24,
+  "defaultText": "{{typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TableTemplates.selectedRow?.html_template || '')}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "defaultText"
+    },
+    {
+      "key": "isDisabled"
+    },
+    {
+      "key": "isToolbarHidden"
+    }
+  ],
+  "dynamicTriggerPathList": [],
+  "flexVerticalAlignment": "top",
+  "inputType": "html",
+  "isDefaultClickDisabled": true,
+  "isDisabled": true,
+  "isRequired": false,
+  "isToolbarHidden": true,
+  "isVisible": true,
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "Preview",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 33,
+  "minWidth": 450,
+  "parentId": "emailtemplatesModalCanvas01",
+  "responsiveBehavior": "fill",
+  "rightColumn": 63,
+  "rows": 20,
+  "topRow": 18,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "version": 1,
+  "widgetId": "richTextPreview01",
+  "widgetName": "RichTextPreview"
+}
