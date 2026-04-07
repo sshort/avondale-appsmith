@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.email_templates (\n  template_key,\n  template_name,\n  template_type,\n  subject_template,\n  text_template,\n  html_template,\n  is_active,\n  created_at,\n  updated_at\n)\nVALUES (\n  {{InputTemplateKey.text || ''}},\n  {{InputTemplateName.text || ''}},\n  {{(() => { const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : 0; })()}},\n  {{InputSubject.text || null}},\n  {{TextareaTextTemplate.text || null}},\n  {{TextareaHtmlTemplate.text || null}},\n  {{CheckboxIsActive.isChecked}},\n  now(),\n  now()\n)\nRETURNING id;",
+      "body": "INSERT INTO public.email_templates (\n  template_key,\n  template_name,\n  template_type,\n  subject_template,\n  text_template,\n  html_template,\n  is_active,\n  created_at,\n  updated_at\n)\nVALUES (\n  {{InputTemplateKey.text || ''}},\n  {{InputTemplateName.text || ''}},\n  {{(() => { const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : 0; })()}},\n  {{InputSubject.text || null}},\n  {{TextareaTextTemplate.text || null}},\n  {{(typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || null))}},\n  {{CheckboxIsActive.isChecked}},\n  now(),\n  now()\n)\nRETURNING id;",
       "encodeParamsToggle": true,
       "paginationType": "NONE",
       "pluginSpecifiedTemplates": [

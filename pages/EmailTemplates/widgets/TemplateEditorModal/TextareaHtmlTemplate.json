@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 66,
   "boxShadow": "none",
-  "defaultText": "{{(typeof RichTextTemplate.text === 'string' && RichTextTemplate.text !== '') ? RichTextTemplate.text : (appsmith.store.selectedEmailTemplateId ? ((((GetTemplateById.data || [])[0] || {}).html_template) || '') : '')}}",
+  "defaultText": "{{appsmith.store.selectedEmailTemplateId ? (() => { const template = (((GetTemplateById.data || [])[0] || {})); const sourceHtml = template.html_template || ''; const sourceText = template.text_template || ''; const escapedText = String(sourceText || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); return sourceHtml || (escapedText ? ('<p>' + escapedText.replace(/\\r\\n/g, '\\n').replace(/\\n{2,}/g, '</p><p>').replace(/\\n/g, '<br/>') + '</p>') : ''); })() : ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

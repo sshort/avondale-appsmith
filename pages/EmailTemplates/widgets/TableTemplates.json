@@ -119,7 +119,7 @@
   "leftColumn": 1,
   "minWidth": 450,
   "needsErrorInfo": false,
-  "onRowSelected": "{{storeValue('selectedEmailTemplateId', TableTemplates.selectedRow?.id); GetTemplateById.run();}}",
+  "onRowSelected": "{{storeValue('selectedEmailTemplateId', TableTemplates.selectedRow?.id); storeValue('selectedEmailTemplateRow', TableTemplates.selectedRow || null);}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,

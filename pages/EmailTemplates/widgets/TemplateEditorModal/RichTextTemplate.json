@@ -5,7 +5,7 @@
   "bottomRow": 48,
   "boxShadow": "none",
   "columns": 24,
-  "defaultText": "{{appsmith.store.selectedEmailTemplateId ? (((GetTemplateById.data || [])[0] || {}).html_template || '') : ''}}",
+  "defaultText": "{{appsmith.store.selectedEmailTemplateId ? (() => { const template = (((GetTemplateById.data || [])[0] || {})); const sourceHtml = template.html_template || ''; const sourceText = template.text_template || ''; const escapedText = String(sourceText || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); return sourceHtml || (escapedText ? ('<p>' + escapedText.replace(/\\r\\n/g, '\\n').replace(/\\n{2,}/g, '</p><p>').replace(/\\n/g, '<br/>') + '</p>') : ''); })() : ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -39,7 +39,7 @@
   "labelWidth": 5,
   "leftColumn": 1,
   "minWidth": 450,
-  "onTextChange": "{{TextareaHtmlTemplate.setText(RichTextTemplate.text || '')}}",
+  "onTextChange": "{{TextareaHtmlTemplate.setText(RichTextTemplate.text || ''); RichTextPreview.setText(RichTextTemplate.text || '');}}",
   "parentId": "emailtemplatesModalCanvas01",
   "responsiveBehavior": "fill",
   "rightColumn": 32,

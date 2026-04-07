@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('selectedEmailTemplateId', null); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); showModal('TemplateEditorModal');}}",
+  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); InputTemplateKey.setText(''); InputTemplateName.setText(''); InputSubject.setText(''); SelectTemplateType.setSelectedOption(0); CheckboxIsActive.setValue(false); TextareaTextTemplate.setText(''); TextareaHtmlTemplate.setText(''); RichTextTemplate.setText(''); RichTextPreview.setText(''); showModal('TemplateEditorModal');}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,
