@@ -39,7 +39,7 @@
   "labelWidth": 5,
   "leftColumn": 1,
   "minWidth": 450,
-  "onTextChange": "{{TextareaHtmlTemplate.setText(RichTextTemplate.text || ''); RichTextPreview.setText(RichTextTemplate.text || '');}}",
+  "onTextChange": "{{TextareaHtmlTemplate.setValue(RichTextTemplate.text || ''); RichTextPreview.setValue(RichTextTemplate.text || '');}}",
   "parentId": "emailtemplatesModalCanvas01",
   "responsiveBehavior": "fill",
   "rightColumn": 32,

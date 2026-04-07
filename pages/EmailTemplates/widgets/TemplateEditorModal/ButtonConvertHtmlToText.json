@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{(() => { const html = (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || '')); const temp = document.createElement('div'); temp.innerHTML = html; const text = (temp.innerText || temp.textContent || '').replace(/\r\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim(); TextareaHtmlTemplate.setText(html); TextareaTextTemplate.setText(text); showAlert('Plain text output updated', 'success'); })()}}",
+  "onClick": "{{(() => { const html = (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || '')); const temp = document.createElement('div'); temp.innerHTML = html; const text = (temp.innerText || temp.textContent || '').replace(/\r\n/g, '\n').replace(/\n{3,}/g, '\n\n').trim(); TextareaHtmlTemplate.setValue(html); TextareaTextTemplate.setValue(text); showAlert('Plain text output updated', 'success'); })()}}",
   "parentColumnSpace": 21.875,
   "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,
