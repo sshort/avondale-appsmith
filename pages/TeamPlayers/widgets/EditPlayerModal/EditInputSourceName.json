@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "{{TablePlayers.selectedRow.source_name}}",
+  "defaultText": "{{appsmith.store.teamPlayersSelectedSourceName || TablePlayers.selectedRow.source_name}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"

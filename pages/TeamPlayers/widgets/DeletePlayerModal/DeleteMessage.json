@@ -9,7 +9,7 @@
   "leftColumn": 1,
   "parentId": "tp_modaldel_canvas_001",
   "rightColumn": 63,
-  "text": "Are you sure you want to remove '{{TablePlayers.selectedRow.source_name}}' from this team?",
+  "text": "Are you sure you want to remove '{{appsmith.store.teamPlayersSelectedSourceName || TablePlayers.selectedRow.source_name}}' from this team?",
   "textAlign": "LEFT",
   "textColor": "#2E3D4E",
   "topRow": 5,

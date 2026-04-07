@@ -1,1 +1,1 @@
-DELETE FROM public.team_players WHERE id = {{TablePlayers.selectedRow.id}};
+DELETE FROM public.team_players WHERE id = {{appsmith.store.teamPlayersSelectedId || TablePlayers.selectedRow.id}};

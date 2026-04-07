@@ -4,7 +4,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 18,
   "boxShadow": "none",
-  "defaultSwitchState": "{{TablePlayers.selectedRow.is_captain}}",
+  "defaultSwitchState": "{{typeof appsmith.store.teamPlayersSelectedIsCaptain === 'boolean' ? appsmith.store.teamPlayersSelectedIsCaptain : TablePlayers.selectedRow.is_captain}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
