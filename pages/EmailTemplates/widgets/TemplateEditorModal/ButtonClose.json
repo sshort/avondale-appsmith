@@ -1,0 +1,50 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 73,
+  "boxShadow": "none",
+  "buttonColor": "#6B7280",
+  "buttonStyle": "SECONDARY",
+  "buttonType": "TERTIARY",
+  "ctaColor": "#6B7280",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "buttonClose01",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.875rem",
+  "labelWidth": 5,
+  "leftColumn": 42,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "needsErrorInfo": false,
+  "onClick": "{{closeModal('TemplateEditorModal'); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true);}}",
+  "parentColumnSpace": 21.875,
+  "parentId": "emailtemplatesModalCanvas01",
+  "parentRowSpace": 10,
+  "placementWithPortal": false,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 48,
+  "text": "Close",
+  "topRow": 68,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "buttonClose01",
+  "widgetName": "ButtonClose"
+}

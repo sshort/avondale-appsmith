@@ -1,7 +1,7 @@
 UPDATE public.email_templates
 SET template_key = {{"'" + ((InputTemplateKey.text) || '').replace(/'/g, "''") + "'"}},
     template_name = {{"'" + ((InputTemplateName.text) || '').replace(/'/g, "''") + "'"}},
-    template_type = {{SelectTemplateType.selectedOptionValue}},
+    template_type = {{"'" + ((SelectTemplateType.selectedOptionValue) || '').replace(/'/g, "''") + "'"}},
     subject_template = {{"'" + ((InputSubject.text) || '').replace(/'/g, "''") + "'"}},
     text_template = {{"'" + ((TextareaTextTemplate.text) || '').replace(/'/g, "''") + "'"}},
     html_template = {{"'" + ((TextareaHtmlTemplate.text) || '').replace(/'/g, "''") + "'"}},
