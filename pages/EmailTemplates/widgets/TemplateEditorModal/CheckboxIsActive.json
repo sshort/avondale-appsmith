@@ -3,7 +3,7 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 11,
   "boxShadow": "none",
-  "defaultCheckedState": "{{TableTemplates.selectedRow?.is_active ?? false}}",
+  "defaultCheckedState": "{{appsmith.store.selectedEmailTemplateId ? (GetTemplateById.data?.[0]?.is_active ?? false) : false}}",
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"

@@ -22,7 +22,7 @@
     }
   ],
   "iconAlign": "left",
-  "isDisabled": "{{!TableTemplates.selectedRow?.id}}",
+  "isDisabled": "{{!appsmith.store.selectedEmailTemplateId}}",
   "isLoading": false,
   "isVisible": true,
   "key": "buttonNew01",
@@ -36,7 +36,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); showModal('TemplateEditorModal')}}",
+  "onClick": "{{GetTemplateById.run(() => { resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); showModal('TemplateEditorModal'); }, (error) => { showAlert((error?.message || error || 'Failed to load template'), 'error'); });}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,

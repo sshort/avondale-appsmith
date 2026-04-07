@@ -5,7 +5,7 @@
   "bottomRow": 48,
   "boxShadow": "none",
   "columns": 24,
-  "defaultText": "{{TableTemplates.selectedRow?.html_template || \"\"}}",
+  "defaultText": "{{appsmith.store.selectedEmailTemplateId ? (GetTemplateById.data?.[0]?.html_template || '') : ''}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
