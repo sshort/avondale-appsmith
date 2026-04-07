@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 7,
+  "bottomRow": 12,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "PRIMARY",
@@ -33,7 +33,7 @@
   "rightColumn": 64,
   "text": "Add Player",
   "textSize": "0.875rem",
-  "topRow": 3,
+  "topRow": 8,
   "type": "BUTTON_WIDGET",
   "version": 1,
   "widgetId": "tp_btnadd_001",
