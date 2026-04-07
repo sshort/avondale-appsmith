@@ -1,10 +1,12 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "bottomRow": 7,
   "boxShadow": "none",
   "buttonColor": "{{'#F22B2B'}}",
   "buttonVariant": "PRIMARY",
+  "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -24,6 +26,7 @@
   "gitSyncId": "69c8f9130b20713d33eec660_tp_btndelete_001",
   "iconName": "delete",
   "id": "TeamPlayers_BtnDeletePlayer",
+  "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
