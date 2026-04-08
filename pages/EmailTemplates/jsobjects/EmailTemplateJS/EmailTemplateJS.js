@@ -1,5 +1,5 @@
 export default {
-  generatePlainText() {
+  async generatePlainText() {
     const html = appsmith.store.emailTemplateLiveHtml ||
       (typeof RichTextTemplate.text === "string"
         ? RichTextTemplate.text
@@ -49,15 +49,18 @@ export default {
     }
 
     const text = output.join(nl).trim();
-    storeValue("emailTemplateDraft", {
+    await storeValue("emailTemplateDraft", {
       ...(appsmith.store.emailTemplateDraft || {}),
       text_template: text,
       html_template: html,
     });
-    storeValue("emailTemplateLiveHtml", html);
-    resetWidget("TextareaTextTemplate", true);
-    resetWidget("TextareaHtmlTemplate", true);
-    resetWidget("RichTextPreview", true);
+    await storeValue("emailTemplateLiveHtml", html);
+    if (typeof TextareaTextTemplate.setValue === "function") {
+      await TextareaTextTemplate.setValue(text);
+    }
+    if (typeof TextareaHtmlTemplate.setValue === "function") {
+      await TextareaHtmlTemplate.setValue(html);
+    }
     showAlert("Plain text output updated", "success");
     return text;
   }
