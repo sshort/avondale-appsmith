@@ -12,7 +12,7 @@ INSERT INTO public.email_templates (
 VALUES (
   {{InputTemplateKey.text || ''}},
   {{InputTemplateName.text || ''}},
-  {{(() => { const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : 0; })()}},
+  {{(() => { const stored = appsmith.store.emailTemplateDraft?.template_type; const storedNum = Number(stored); if (Number.isFinite(storedNum)) return storedNum; const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : 0; })()}},
   {{InputSubject.text || null}},
   {{TextareaTextTemplate.text || null}},
   {{appsmith.store.emailTemplateLiveHtml || (typeof RichTextTemplate.text === 'string' ? RichTextTemplate.text : (TextareaHtmlTemplate.text || null))}},

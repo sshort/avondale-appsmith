@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); storeValue('emailTemplateDraft', { template_key: '', template_name: '', template_type: 0, subject_template: '', text_template: '', html_template: '', is_active: false }); storeValue('emailTemplateLiveHtml', ''); SelectTemplateType.setSelectedOption('Email'); showModal('TemplateEditorModal');}}",
+  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); storeValue('emailTemplateDraft', { template_key: '', template_name: '', template_type: 0, subject_template: '', text_template: '', html_template: '', is_active: false }); storeValue('emailTemplateLiveHtml', ''); resetWidget('SelectTemplateType', true); showModal('TemplateEditorModal');}}",
   "parentColumnSpace": 21.875,
   "parentId": "0",
   "parentRowSpace": 10,

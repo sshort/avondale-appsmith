@@ -18,7 +18,11 @@
   ],
   "dynamicHeight": "FIXED",
   "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onOptionChange"
+    }
+  ],
   "isDisabled": false,
   "isFilterable": false,
   "isLoading": false,
@@ -35,6 +39,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
+  "onOptionChange": "{{storeValue('emailTemplateDraft', { ...(appsmith.store.emailTemplateDraft || {}), template_type: (() => { const v = SelectTemplateType.selectedOptionValue; if (v === 'Email') return 0; if (v === 'Header') return 1; if (v === 'Signature') return 2; const n = Number(v); return Number.isFinite(n) ? n : 0; })() });}}",
   "optionLabel": "label",
   "optionValue": "value",
   "options": [

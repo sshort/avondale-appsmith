@@ -10,7 +10,7 @@
   "leftColumn": 1,
   "parentId": "emailtemplatesModalCanvas01",
   "rightColumn": 40,
-  "text": "{{(() => { const typeLabel = (['Email', 'Header', 'Signature'][appsmith.store.emailTemplateDraft?.template_type ?? 0]) || 'Email'; return appsmith.store.selectedEmailTemplateId ? ('Edit Template - ' + typeLabel) : 'New Template'; })()}}",
+  "text": "{{(() => { const typeLabel = (['Email', 'Header', 'Signature'][appsmith.store.emailTemplateDraft?.template_type ?? 0]) || 'Email'; return appsmith.store.selectedEmailTemplateId ? ('Edit Template - ' + typeLabel) : ('New Template - ' + typeLabel); })()}}",
   "textAlign": "LEFT",
   "textColor": "#2E3D4E",
   "topRow": 0,
