@@ -33,7 +33,7 @@
   "minDynamicHeight": 4,
   "minWidth": 120,
   "needsErrorInfo": false,
-  "onClick": "{{EmailTemplateJS.generatePlainText()}}",
+  "onClick": "{{(() => { const NL = String.fromCharCode(10); const html = ((TextareaHtmlTemplate.text || RichTextTemplate.text || '') + ''); const marked = html.split('<br />').join('<br/>').split('<br>').join('<br/>').split('<br/>').join(NL).split('</p><p>').join('</p>' + NL + NL + '<p>').split('</p> <p>').join('</p>' + NL + NL + '<p>').split('</p>').join('</p>' + NL + NL).split('</div>').join('</div>' + NL).split('</li>').join('</li>' + NL); const tmp = document.createElement('div'); tmp.innerHTML = marked; let text = (tmp.textContent || '').split(String.fromCharCode(13) + NL).join(NL).split(String.fromCharCode(13)).join(NL).trim(); while (text.indexOf(NL + NL + NL) !== -1) { text = text.split(NL + NL + NL).join(NL + NL); } storeValue('emailTemplateLiveHtml', html); storeValue('emailTemplateDraft', Object.assign({}, appsmith.store.emailTemplateDraft || {}, { html_template: html, text_template: text })); TextareaHtmlTemplate.setValue(html); TextareaTextTemplate.setValue(text); showAlert('Plain text output updated', 'success'); })()}}",
   "parentColumnSpace": 21.875,
   "parentId": "emailtemplatesModalCanvas01",
   "parentRowSpace": 10,
