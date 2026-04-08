@@ -1,0 +1,11 @@
+{
+  "gitSyncId": "69d393237ac64a5d529c945c_198c8797-94b3-481e-b15f-26f1b5c75ac0",
+  "id": "EmailTemplates_EmailTemplateJS",
+  "unpublishedCollection": {
+    "name": "EmailTemplateJS",
+    "pageId": "EmailTemplates",
+    "pluginId": "js-plugin",
+    "pluginType": "JS",
+    "variables": []
+  }
+}
