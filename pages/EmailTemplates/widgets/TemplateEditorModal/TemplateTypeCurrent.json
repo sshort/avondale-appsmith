@@ -1,0 +1,21 @@
+{
+  "bottomRow": 4,
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "fontSize": "1rem",
+  "fontStyle": "ITALIC",
+  "leftColumn": 41,
+  "parentId": "emailtemplatesModalCanvas01",
+  "rightColumn": 63,
+  "text": "{{'Template Type: ' + ((['Email', 'Header', 'Signature'][appsmith.store.emailTemplateDraft?.template_type ?? 0]) || 'Email')}}",
+  "textAlign": "RIGHT",
+  "textColor": "#4B5563",
+  "topRow": 0,
+  "type": "TEXT_WIDGET",
+  "version": 1,
+  "widgetId": "emailtemplatesTypeCurrent01",
+  "widgetName": "TemplateTypeCurrent"
+}
