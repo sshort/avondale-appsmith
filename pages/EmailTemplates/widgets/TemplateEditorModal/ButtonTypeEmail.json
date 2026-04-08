@@ -1,0 +1,56 @@
+{
+  "animateLoading": true,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "bottomRow": 5,
+  "boxShadow": "none",
+  "buttonColor": "{{(appsmith.store.emailTemplateDraft?.template_type ?? 0) === 0 ? '#2563EB' : '#9CA3AF'}}",
+  "buttonStyle": "PRIMARY",
+  "buttonType": "SECONDARY",
+  "ctaColor": "{{(appsmith.store.emailTemplateDraft?.template_type ?? 0) === 0 ? '#2563EB' : '#9CA3AF'}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "buttonColor"
+    },
+    {
+      "key": "ctaColor"
+    }
+  ],
+  "dynamicPropertyPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "iconAlign": "left",
+  "isDisabled": false,
+  "isLoading": false,
+  "isVisible": true,
+  "key": "emailtemplatesTypeEmail01",
+  "labelAlignment": "left",
+  "labelPosition": "Top",
+  "labelText": "",
+  "labelTextSize": "0.75rem",
+  "labelWidth": 5,
+  "leftColumn": 41,
+  "maxDynamicHeight": 9000,
+  "minDynamicHeight": 4,
+  "minWidth": 120,
+  "needsErrorInfo": false,
+  "onClick": "{{storeValue('emailTemplateDraft', { ...(appsmith.store.emailTemplateDraft || {}), template_type: 0 });}}",
+  "parentColumnSpace": 21.875,
+  "parentId": "emailtemplatesModalCanvas01",
+  "parentRowSpace": 10,
+  "placementWithPortal": false,
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "rightColumn": 48,
+  "text": "Email",
+  "topRow": 2,
+  "type": "BUTTON_WIDGET",
+  "version": 1,
+  "widgetId": "emailtemplatesTypeEmail01",
+  "widgetName": "ButtonTypeEmail"
+}

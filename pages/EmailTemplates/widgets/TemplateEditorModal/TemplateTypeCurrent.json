@@ -1,12 +1,12 @@
 {
-  "bottomRow": 4,
+  "bottomRow": 2,
   "dynamicBindingPathList": [
     {
       "key": "text"
     }
   ],
-  "fontSize": "1rem",
-  "fontStyle": "ITALIC",
+  "fontSize": "0.875rem",
+  "fontStyle": "BOLD",
   "leftColumn": 41,
   "parentId": "emailtemplatesModalCanvas01",
   "rightColumn": 63,

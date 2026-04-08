@@ -27,7 +27,7 @@
   "isFilterable": false,
   "isLoading": false,
   "isRequired": false,
-  "isVisible": true,
+  "isVisible": false,
   "key": "selectTemplateType01",
   "labelAlignment": "left",
   "labelPosition": "Top",
