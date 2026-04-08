@@ -5,59 +5,28 @@ export default {
         ? RichTextTemplate.text
         : ((appsmith.store.emailTemplateDraft || {}).html_template || ""));
 
+    const nl = String.fromCharCode(10);
+    const dbl = nl + nl;
     let prepared = html;
-    prepared = prepared.split("<br />").join("
-");
-    prepared = prepared.split("<br/>").join("
-");
-    prepared = prepared.split("<br>").join("
-");
-    prepared = prepared.split("<hr />").join("
----
-");
-    prepared = prepared.split("<hr/>").join("
----
-");
-    prepared = prepared.split("<hr>").join("
----
-");
-    prepared = prepared.split("</p>").join("</p>
-
-");
-    prepared = prepared.split("</div>").join("</div>
-
-");
-    prepared = prepared.split("</section>").join("</section>
-
-");
-    prepared = prepared.split("</article>").join("</article>
-
-");
-    prepared = prepared.split("</blockquote>").join("</blockquote>
-
-");
-    prepared = prepared.split("</h1>").join("</h1>
-
-");
-    prepared = prepared.split("</h2>").join("</h2>
-
-");
-    prepared = prepared.split("</h3>").join("</h3>
-
-");
-    prepared = prepared.split("</h4>").join("</h4>
-
-");
-    prepared = prepared.split("</h5>").join("</h5>
-
-");
-    prepared = prepared.split("</h6>").join("</h6>
-
-");
-    prepared = prepared.split("</li>").join("</li>
-");
-    prepared = prepared.split("</tr>").join("</tr>
-");
+    prepared = prepared.split("<br />").join(nl);
+    prepared = prepared.split("<br/>").join(nl);
+    prepared = prepared.split("<br>").join(nl);
+    prepared = prepared.split("<hr />").join(nl + "---" + nl);
+    prepared = prepared.split("<hr/>").join(nl + "---" + nl);
+    prepared = prepared.split("<hr>").join(nl + "---" + nl);
+    prepared = prepared.split("</p>").join("</p>" + dbl);
+    prepared = prepared.split("</div>").join("</div>" + dbl);
+    prepared = prepared.split("</section>").join("</section>" + dbl);
+    prepared = prepared.split("</article>").join("</article>" + dbl);
+    prepared = prepared.split("</blockquote>").join("</blockquote>" + dbl);
+    prepared = prepared.split("</h1>").join("</h1>" + dbl);
+    prepared = prepared.split("</h2>").join("</h2>" + dbl);
+    prepared = prepared.split("</h3>").join("</h3>" + dbl);
+    prepared = prepared.split("</h4>").join("</h4>" + dbl);
+    prepared = prepared.split("</h5>").join("</h5>" + dbl);
+    prepared = prepared.split("</h6>").join("</h6>" + dbl);
+    prepared = prepared.split("</li>").join("</li>" + nl);
+    prepared = prepared.split("</tr>").join("</tr>" + nl);
     prepared = prepared.split("</td>").join("</td>	");
     prepared = prepared.split("</th>").join("</th>	");
 
@@ -65,11 +34,9 @@ export default {
     temp.innerHTML = prepared;
     Array.from(temp.querySelectorAll("li")).forEach((node) => node.insertAdjacentText("afterbegin", "- "));
 
-    const lines = (temp.textContent || "").split("
-");
+    const lines = (temp.textContent || "").split(nl);
     const output = [];
     let blankRun = 0;
-
     for (let index = 0; index < lines.length; index += 1) {
       const line = lines[index].trim();
       if (!line) {
@@ -81,8 +48,7 @@ export default {
       }
     }
 
-    const text = output.join("
-").trim();
+    const text = output.join(nl).trim();
     storeValue("emailTemplateDraft", {
       ...(appsmith.store.emailTemplateDraft || {}),
       text_template: text,
