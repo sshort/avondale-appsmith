@@ -1,4 +1,3 @@
-SELECT *
-FROM public.team_name_overrides
-WHERE position(' ' in trim(source)) = 0
-ORDER BY source ASC;
+SELECT id, source, target, notes, created_at
+FROM public.team_nicknames
+ORDER BY lower(source) ASC, lower(target) ASC;
