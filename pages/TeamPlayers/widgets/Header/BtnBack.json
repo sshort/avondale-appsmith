@@ -1,7 +1,7 @@
 {
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 6,
+  "bottomRow": 5,
   "boxShadow": "none",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "buttonVariant": "SECONDARY",
@@ -32,7 +32,7 @@
   "recaptchaType": "V3",
   "rightColumn": 63,
   "text": "Back to Teams",
-  "textSize": "0.875rem",
+  "textSize": "0.8125rem",
   "topRow": 2,
   "type": "BUTTON_WIDGET",
   "version": 1,
