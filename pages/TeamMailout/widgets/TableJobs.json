@@ -230,7 +230,7 @@
       "width": 200
     }
   },
-  "rightColumn": 64,
+  "rightColumn": 56,
   "searchKey": "",
   "tableData": "{{TriggerMailout.data?.sent_jobs || []}}",
   "textSize": "0.875rem",

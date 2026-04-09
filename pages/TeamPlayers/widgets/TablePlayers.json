@@ -429,7 +429,7 @@
       "width": 150
     }
   },
-  "rightColumn": 64,
+  "rightColumn": 56,
   "searchKey": "",
   "tableData": "{{GetPlayers.data}}",
   "textSize": "0.875rem",
