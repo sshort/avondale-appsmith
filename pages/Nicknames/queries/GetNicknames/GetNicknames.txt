@@ -1,0 +1,4 @@
+SELECT *
+FROM public.team_name_overrides
+WHERE position(' ' in trim(source)) = 0
+ORDER BY source ASC;

@@ -1,0 +1,29 @@
+WITH latest_season AS (
+  SELECT MAX(season) AS season
+  FROM public.teams
+  WHERE season ~ '^[0-9]+$'
+),
+job_rows AS (
+  SELECT public.fn_get_team_mailout_job(t.id) AS job
+  FROM public.teams t
+  JOIN latest_season ls
+    ON t.season = ls.season
+)
+SELECT
+  job->>'section' AS section,
+  job->>'team_name' AS team_name,
+  job->>'captain_name' AS captain_name,
+  job->>'captain_email' AS captain_email,
+  job->>'own_pdf' AS own_pdf,
+  job->>'next_pdf' AS next_pdf,
+  job->>'reserves_pdf' AS reserves_pdf,
+  COALESCE((job->>'can_send')::boolean, false) AS can_send,
+  CASE
+    WHEN COALESCE((job->>'can_send')::boolean, false) THEN ''
+    ELSE 'Missing captain email'
+  END AS blocked_reason,
+  job
+FROM job_rows
+WHERE {{SelectCategory.selectedOptionValue || 'ALL'}} = 'ALL'
+   OR lower(job->>'section') = lower({{SelectCategory.selectedOptionValue || 'ALL'}})
+ORDER BY job->>'section', job->>'team_name';

@@ -40,7 +40,7 @@
     "section1"
   ],
   "columnUpdatedAt": 1775565211327,
-  "defaultPageSize": 20,
+  "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
     0
@@ -101,6 +101,7 @@
     }
   ],
   "enableClientSideSearch": true,
+  "infiniteScrollEnabled": true,
   "horizontalAlignment": "LEFT",
   "inlineEditingSaveOption": "ROW_LEVEL",
   "isLoading": false,
@@ -108,9 +109,9 @@
   "isVisible": true,
   "isVisibleDownload": true,
   "isVisibleFilters": false,
-  "isVisiblePagination": true,
+  "isVisiblePagination": false,
   "label": "Data",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "onRowSelected": "{{storeValue('teamPlayersSelectedId', TablePlayers.selectedRow.id); storeValue('teamPlayersSelectedSourceName', TablePlayers.selectedRow.source_name); storeValue('teamPlayersSelectedIsCaptain', TablePlayers.selectedRow.is_captain); storeValue('teamPlayersSelectedSortOrder', TablePlayers.selectedRow.sort_order);}}",
   "parentId": "0",
   "primaryColumns": {
@@ -178,7 +179,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id",
       "notation": "standard",
       "originalId": "id",
@@ -191,7 +192,7 @@
       "width": 150
     },
     "is_captain1": {
-      "alias": "is_captain",
+      "alias": "Captain",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -213,7 +214,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "is_captain",
+      "label": "Captain",
       "notation": "standard",
       "originalId": "is_captain",
       "sticky": "",
@@ -222,7 +223,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 90
     },
     "season1": {
       "alias": "season",
@@ -246,7 +247,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "season",
       "notation": "standard",
       "originalId": "season",
@@ -280,7 +281,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "section",
       "notation": "standard",
       "originalId": "section",
@@ -293,7 +294,7 @@
       "width": 150
     },
     "sort_order1": {
-      "alias": "sort_order",
+      "alias": "Order",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -315,7 +316,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "sort_order",
+      "label": "Order",
       "notation": "standard",
       "originalId": "sort_order",
       "sticky": "",
@@ -324,10 +325,10 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 90
     },
     "source_name1": {
-      "alias": "source_name",
+      "alias": "Player",
       "allowCellWrapping": false,
       "allowSameOptionsInNewRow": true,
       "cellBackground": "",
@@ -349,7 +350,7 @@
       "isEditable": false,
       "isSaveVisible": true,
       "isVisible": true,
-      "label": "source_name",
+      "label": "Player",
       "notation": "standard",
       "originalId": "source_name",
       "sticky": "",
@@ -358,7 +359,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 220
     },
     "team_id": {
       "alias": "team_id",
@@ -382,7 +383,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "team_id",
       "notation": "standard",
       "originalId": "team_id",
@@ -416,7 +417,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "team_name",
       "notation": "standard",
       "originalId": "team_name",
@@ -429,7 +430,7 @@
       "width": 150
     }
   },
-  "rightColumn": 56,
+  "rightColumn": 30,
   "searchKey": "",
   "tableData": "{{GetPlayers.data}}",
   "textSize": "0.875rem",

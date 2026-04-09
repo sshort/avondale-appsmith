@@ -41,7 +41,7 @@
     "updated_at1"
   ],
   "columnUpdatedAt": 1775560865275,
-  "defaultPageSize": 20,
+  "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
   "defaultSelectedRowIndices": [
     0
@@ -93,6 +93,7 @@
     }
   ],
   "enableClientSideSearch": true,
+  "infiniteScrollEnabled": true,
   "flexVerticalAlignment": "start",
   "gitSyncId": "69c8f9130b20713d33eec660_tm_table_001",
   "horizontalAlignment": "LEFT",
@@ -103,9 +104,9 @@
   "isVisible": true,
   "isVisibleDownload": true,
   "isVisibleFilters": false,
-  "isVisiblePagination": true,
+  "isVisiblePagination": false,
   "label": "Data",
-  "leftColumn": 0,
+  "leftColumn": 1,
   "onRowSelected": "{{storeValue('teamManagementSelectedId', TableTeams.selectedRow.id); storeValue('teamManagementSelectedName', TableTeams.selectedRow.team_name); storeValue('teamManagementSelectedSection', TableTeams.selectedRow.section); storeValue('teamManagementSelectedSeason', TableTeams.selectedRow.season); storeValue('teamManagementSelectedSortOrder', TableTeams.selectedRow.sort_order);}}",
   "parentColumnSpace": 76.5,
   "parentId": "0",
@@ -133,7 +134,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "created_at",
       "notation": "standard",
       "originalId": "created_at",
@@ -209,7 +210,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "id",
       "notation": "standard",
       "originalId": "id",
@@ -219,7 +220,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 150
+      "width": 120
     },
     "manage_players": {
       "alias": "Players",
@@ -240,7 +241,7 @@
       "onClick": "{{navigateTo('TeamPlayers', { teamId: currentRow.id }, 'SAME_WINDOW')}}",
       "sticky": "",
       "textSize": "0.875rem",
-      "width": 150
+      "width": 90
     },
     "season1": {
       "alias": "season",
@@ -376,7 +377,7 @@
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 200
+      "width": 220
     },
     "updated_at1": {
       "alias": "updated_at",
@@ -400,7 +401,7 @@
       "isDiscardVisible": true,
       "isEditable": false,
       "isSaveVisible": true,
-      "isVisible": true,
+      "isVisible": false,
       "label": "updated_at",
       "notation": "standard",
       "originalId": "updated_at",
@@ -413,7 +414,7 @@
       "width": 150
     }
   },
-  "rightColumn": 64,
+  "rightColumn": 34,
   "searchKey": "",
   "tableData": "{{GetTeams.data}}",
   "textSize": "0.875rem",

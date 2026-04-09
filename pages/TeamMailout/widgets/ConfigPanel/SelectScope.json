@@ -34,6 +34,7 @@
   "leftColumn": 22,
   "optionLabel": "label",
   "optionValue": "value",
+  "onOptionChange": "{{GetMailoutJobs.run()}}",
   "parentId": "tmo_config_canvas_001",
   "placeholderText": "Select scope",
   "rightColumn": 43,

@@ -13,6 +13,10 @@
       "isDefault": false
     },
     {
+      "id": "Nicknames",
+      "isDefault": false
+    },
+    {
       "id": "EmailTemplates",
       "isDefault": false
     },

@@ -1,4 +1,7 @@
 {
+  "category": "{{SelectCategory.selectedOptionValue || 'ALL'}}",
+  "scope": "{{SelectScope.selectedOptionValue || 'own_next_reserves'}}",
   "delivery_mode": "{{ToggleTestMode.isSelected ? 'test' : 'production'}}",
-  "base_dir": "/home/node/.n8n-files/teams-mailout/current"
+  "base_dir": "/var/lib/n8n/teams-mailout/current",
+  "jobs": {{JSON.stringify((GetMailoutJobs.data || []).map((row) => row.job))}}
 }
