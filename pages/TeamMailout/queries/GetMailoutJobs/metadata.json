@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "WITH latest_season AS (\n  SELECT MAX(season) AS season\n  FROM public.teams\n  WHERE season ~ '^[0-9]+$'\n),\njob_rows AS (\n  SELECT public.fn_get_team_mailout_job(t.id) AS job\n  FROM public.teams t\n  JOIN latest_season ls\n    ON t.season = ls.season\n)\nSELECT\n  job->>'section' AS section,\n  job->>'team_name' AS team_name,\n  job->>'captain_name' AS captain_name,\n  job->>'captain_email' AS captain_email,\n  job->>'own_pdf' AS own_pdf,\n  job->>'next_pdf' AS next_pdf,\n  job->>'reserves_pdf' AS reserves_pdf,\n  COALESCE((job->>'can_send')::boolean, false) AS can_send,\n  CASE\n    WHEN COALESCE((job->>'can_send')::boolean, false) THEN ''\n    ELSE 'Missing captain email'\n  END AS blocked_reason,\n  job\nFROM job_rows\nWHERE {{SelectCategory.selectedOptionValue || 'ALL'}} = 'ALL'\n   OR lower(job->>'section') = lower({{SelectCategory.selectedOptionValue || 'ALL'}})\nORDER BY job->>'section', job->>'team_name';",
+      "body": "WITH latest_season AS (\n  SELECT MAX(season) AS season\n  FROM public.teams\n  WHERE season ~ '^[0-9]+$'\n),\njob_rows AS (\n  SELECT public.fn_get_team_mailout_job(t.id) AS job\n  FROM public.teams t\n  JOIN latest_season ls\n    ON t.season = ls.season\n)\nSELECT\n  job->>'section' AS section,\n  job->>'team_name' AS team_name,\n  job->>'captain_name' AS captain_name,\n  job->>'captain_email' AS captain_email,\n  job->>'own_pdf' AS own_pdf,\n  job->>'next_pdf' AS next_pdf,\n  job->>'reserves_pdf' AS reserves_pdf,\n  COALESCE((job->>'can_send')::boolean, false) AS can_send,\n  CASE\n    WHEN COALESCE((job->>'can_send')::boolean, false) THEN ''\n    ELSE 'Missing captain email'\n  END AS blocked_reason,\n  job\nFROM job_rows\nWHERE {{SelectCategory.selectedOptionValue || 'ALL'}} = 'ALL'\n   OR lower(job->>'section') = lower({{SelectCategory.selectedOptionValue || 'ALL'}})\nORDER BY job->>'section', job->>'team_name';\n",
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "none"
@@ -15,7 +15,8 @@
         {
           "value": true
         }
-      ]
+      ],
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {

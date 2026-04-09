@@ -5,7 +5,7 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT *\nFROM public.team_name_overrides\nWHERE position(' ' in trim(source)) = 0\nORDER BY source ASC;",
+      "body": "SELECT id, source, target, notes, created_at\nFROM public.team_nicknames\nORDER BY lower(source) ASC, lower(target) ASC;\n",
       "encodeParamsToggle": true,
       "formData": {
         "apiContentType": "none"
@@ -15,7 +15,8 @@
         {
           "value": true
         }
-      ]
+      ],
+      "timeoutInMillisecond": 10000
     },
     "confirmBeforeExecute": false,
     "datasource": {
