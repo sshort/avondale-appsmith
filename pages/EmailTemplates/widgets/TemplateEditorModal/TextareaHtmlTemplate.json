@@ -2,7 +2,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 66,
+  "bottomRow": 57,
   "boxShadow": "none",
   "defaultText": "{{appsmith.store.emailTemplateDraft?.html_template || ''}}",
   "dynamicBindingPathList": [
@@ -47,7 +47,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 32,
   "textAlign": "LEFT",
-  "topRow": 50,
+  "topRow": 43,
   "type": "INPUT_WIDGET_V2",
   "validation": {},
   "version": 2,

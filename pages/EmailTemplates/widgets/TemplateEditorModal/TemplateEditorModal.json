@@ -2,10 +2,10 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
-      "bottomRow": 730,
+      "bottomRow": 651,
       "leftColumn": 0,
       "parentId": "emailtemplatesModal01",
-      "rightColumn": 1080,
+      "rightColumn": 960,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
@@ -19,7 +19,7 @@
       "key": "borderRadius"
     }
   ],
-  "height": 720,
+  "height": 640,
   "isCanvas": true,
   "isLoading": false,
   "parentId": "0",
@@ -29,5 +29,5 @@
   "version": 2,
   "widgetId": "emailtemplatesModal01",
   "widgetName": "TemplateEditorModal",
-  "width": 1080
+  "width": 960
 }
