@@ -30,7 +30,7 @@
   ],
   "iconName": "document",
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{GenerateAndSendMailout.isFetching}}",
+  "isDisabled": "{{GenerateOnly.isFetching || TriggerMailout.isFetching}}",
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 22,
