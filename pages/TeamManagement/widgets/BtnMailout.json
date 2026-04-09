@@ -26,7 +26,7 @@
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 41,
-  "onClick": "{{navigatePage('TeamMailout')}}",
+  "onClick": "{{navigateTo('TeamMailout', {}, 'SAME_WINDOW')}}",
   "parentId": "0",
   "placement": "CENTER",
   "recaptchaType": "V3",

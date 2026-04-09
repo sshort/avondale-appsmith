@@ -29,7 +29,7 @@
   "isLoading": false,
   "isVisible": true,
   "leftColumn": 50,
-  "onClick": "{{navigatePage('TeamManagement')}}",
+  "onClick": "{{navigateTo('TeamManagement', {}, 'SAME_WINDOW')}}",
   "parentId": "0",
   "placement": "CENTER",
   "recaptchaType": "V3",

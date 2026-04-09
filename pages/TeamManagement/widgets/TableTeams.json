@@ -237,7 +237,7 @@
       "label": "Manage Players",
       "labelColor": "#FFFFFF",
       "menuColor": "#03B365",
-      "onClick": "{{navigatePage('TeamPlayers', { teamId: currentRow.id })}}",
+      "onClick": "{{navigateTo('TeamPlayers', { teamId: currentRow.id }, 'SAME_WINDOW')}}",
       "sticky": "",
       "textSize": "0.875rem",
       "width": 150
