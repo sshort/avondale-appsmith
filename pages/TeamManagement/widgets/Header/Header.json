@@ -6,15 +6,15 @@
   "boxShadow": "0 2px 4px rgba(0,0,0,0.1)",
   "children": [
     {
-      "bottomRow": 80,
-      "leftColumn": 0,
-      "parentId": "tm_header_001",
       "rightColumn": 64,
+      "widgetName": "Canvas1",
+      "leftColumn": 0,
+      "widgetId": "tm_header_canvas_001",
+      "bottomRow": 80,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "tm_header_canvas_001",
-      "widgetName": "Canvas1"
+      "parentId": "tm_header_001"
     }
   ],
   "containerStyle": "none",

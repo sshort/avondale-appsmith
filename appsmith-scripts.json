@@ -1,0 +1,9 @@
+{
+  "scripts": [
+    "https://widget.intercom.io/widget/y10e7138",
+    "https://cdn.betterbugs.io/scripts/latest/logs-capture.js",
+    "https://cdn.betterbugs.io/scripts/latest/recorder.js",
+    "http://192.168.1.209/static/js/main.291f280c.js"
+  ],
+  "main": "http://192.168.1.209/static/js/main.291f280c.js"
+}

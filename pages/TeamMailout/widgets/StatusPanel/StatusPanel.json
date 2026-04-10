@@ -7,15 +7,15 @@
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
-      "bottomRow": 12,
-      "leftColumn": 0,
-      "parentId": "tmo_status_001",
       "rightColumn": 64,
+      "widgetName": "Canvas3",
+      "leftColumn": 0,
+      "widgetId": "tmo_status_canvas_001",
+      "bottomRow": 140,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "tmo_status_canvas_001",
-      "widgetName": "Canvas3"
+      "parentId": "tmo_status_001"
     }
   ],
   "containerStyle": "card",

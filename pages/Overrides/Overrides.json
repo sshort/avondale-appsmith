@@ -7,8 +7,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "",
-              "name": "GetOverrides",
+              "id": "69d7c8d37ac64a5d529c95ad",
+              "name": "GetNicknames",
+              "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
@@ -17,27 +18,27 @@
         ],
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 810,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "leftColumn": 0,
-          "minHeight": 820,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 1224,
+          "widgetName": "MainContainer",
           "snapColumns": 64,
-          "snapRows": 80,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "bottomRow": 580,
+          "containerStyle": "none",
           "topRow": 0,
+          "snapRows": 80,
+          "parentRowSpace": 1,
+          "canExtend": true,
           "type": "CANVAS_WIDGET",
           "version": 94,
-          "widgetId": "0",
-          "widgetName": "MainContainer"
+          "minHeight": 820,
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
         }
       }
     ],
-    "name": "Overrides",
-    "slug": "overrides"
+    "name": "Nicknames",
+    "slug": "nicknames"
   }
 }

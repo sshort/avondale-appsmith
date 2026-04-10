@@ -2,15 +2,15 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
-      "bottomRow": 200,
-      "leftColumn": 0,
-      "parentId": "tp_modaldel_001",
       "rightColumn": 456,
+      "widgetName": "Canvas4",
+      "leftColumn": 0,
+      "widgetId": "tp_modaldel_canvas_001",
+      "bottomRow": 200,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "tp_modaldel_canvas_001",
-      "widgetName": "Canvas4"
+      "parentId": "tp_modaldel_001"
     }
   ],
   "detachFromLayout": true,

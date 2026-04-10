@@ -1,0 +1,33 @@
+{
+  "responseMeta": {
+    "status": 200,
+    "success": true
+  },
+  "data": {
+    "branchName": "main",
+    "refType": "branch",
+    "refName": "main",
+    "defaultBranchName": "main",
+    "remoteUrl": "git@github.com:sshort/avondale-appsmith.git",
+    "browserSupportedRemoteUrl": "https://github.com/sshort/avondale-appsmith",
+    "isRepoPrivate": false,
+    "repoName": "avondale-appsmith",
+    "defaultApplicationId": "69d393237ac64a5d529c945c",
+    "defaultArtifactId": "69d393237ac64a5d529c945c",
+    "gitProfiles": {
+      "default": {
+        "authorName": "Steve Short",
+        "authorEmail": "steve.short@gmail.com"
+      }
+    },
+    "publicKey": "ecdsa-sha2-nistp256 AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLoSzAQtL2maahq00AFG/2YW73kjxFUEqQG/a8mwDWiNSOx4U9lb970cKWzTcCO99xxbFrPXTjmgYyCKgLADOMI= appsmith",
+    "docUrl": "https://docs.appsmith.com/core-concepts/version-control-with-git/connecting-to-git-repository#generating-a-deploy-key",
+    "lastCommittedAt": "2026-04-10T10:35:39Z",
+    "autoCommitConfig": {
+      "enabled": false
+    },
+    "isAutoDeploymentEnabled": false,
+    "autoDeploymentEnabled": false
+  },
+  "errorDisplay": ""
+}

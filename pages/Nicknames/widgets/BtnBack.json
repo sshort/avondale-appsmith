@@ -1,10 +1,10 @@
 {
-  "gitSyncId": "69c8f9130b20713d33eec660_nicknames_back_001",
-  "id": "Nicknames_BtnBack",
+  "gitSyncId": "69c8f9130b20713d33eec660_overrides_back_001",
+  "id": "Overrides_BtnBack",
   "parentId": "0",
   "type": "BUTTON_WIDGET",
   "widgetName": "BtnBack",
-  "widgetId": "nicknames_back_001",
+  "widgetId": "overrides_back_001",
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",

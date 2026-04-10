@@ -2,15 +2,15 @@
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "children": [
     {
-      "bottomRow": 651,
-      "leftColumn": 0,
-      "parentId": "emailtemplatesModal01",
       "rightColumn": 960,
+      "widgetName": "TemplateEditorCanvas",
+      "leftColumn": 0,
+      "widgetId": "emailtemplatesModalCanvas01",
+      "bottomRow": 720,
       "topRow": 0,
       "type": "CANVAS_WIDGET",
       "version": 1,
-      "widgetId": "emailtemplatesModalCanvas01",
-      "widgetName": "TemplateEditorCanvas"
+      "parentId": "emailtemplatesModal01"
     }
   ],
   "detachFromLayout": true,

@@ -7,8 +7,9 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "",
+              "id": "69d393247ac64a5d529c9476",
               "name": "GetEmailTemplates",
+              "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
@@ -17,24 +18,24 @@
         ],
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 2570,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
-          "leftColumn": 0,
-          "minHeight": 400,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 1224,
+          "widgetName": "MainContainer",
           "snapColumns": 64,
-          "snapRows": 124,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "bottomRow": 460,
+          "containerStyle": "none",
           "topRow": 0,
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "canExtend": true,
           "type": "CANVAS_WIDGET",
           "version": 94,
-          "widgetId": "0",
-          "widgetName": "MainContainer"
+          "minHeight": 400,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
         }
       }
     ],

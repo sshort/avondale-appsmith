@@ -7,20 +7,34 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "TeamPlayers_GetTeam",
+              "id": "69d393247ac64a5d529c9478",
               "name": "GetTeam",
+              "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.URL.queryParams.teamId"
+                "Number(appsmith.URL.queryParams.teamId || 0)"
               ],
               "timeoutInMillisecond": 30000
             },
             {
-              "id": "TeamPlayers_GetPlayers",
+              "id": "69d393247ac64a5d529c946e",
               "name": "GetPlayers",
+              "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
-                "appsmith.URL.queryParams.teamId"
+                "Number(appsmith.URL.queryParams.teamId || 0)"
+              ],
+              "timeoutInMillisecond": 30000
+            }
+          ],
+          [
+            {
+              "id": "69d5046f7ac64a5d529c94f8",
+              "name": "LookupPlayers",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "InputPlayerLookup.text"
               ],
               "timeoutInMillisecond": 30000
             }
@@ -28,24 +42,24 @@
         ],
         "dsl": {
           "backgroundColor": "none",
-          "bottomRow": 500,
-          "canExtend": true,
-          "containerStyle": "none",
-          "detachFromLayout": true,
-          "dynamicBindingPathList": [],
-          "dynamicTriggerPathList": [],
-          "leftColumn": 0,
-          "minHeight": 900,
-          "parentColumnSpace": 1,
-          "parentRowSpace": 1,
           "rightColumn": 4896,
+          "widgetName": "MainContainer",
           "snapColumns": 64,
-          "snapRows": 124,
+          "detachFromLayout": true,
+          "widgetId": "0",
+          "bottomRow": 540,
+          "containerStyle": "none",
           "topRow": 0,
+          "snapRows": 124,
+          "parentRowSpace": 1,
+          "canExtend": true,
           "type": "CANVAS_WIDGET",
           "version": 94,
-          "widgetId": "0",
-          "widgetName": "MainContainer"
+          "minHeight": 900,
+          "dynamicTriggerPathList": [],
+          "parentColumnSpace": 1,
+          "dynamicBindingPathList": [],
+          "leftColumn": 0
         }
       }
     ],

@@ -14,7 +14,7 @@
   "leftColumn": 1,
   "parentId": "tmo_status_canvas_001",
   "rightColumn": 63,
-  "text": "{{appsmith.store.teamMailoutStatus || 'Use Generate to rebuild the captain mailout bundle, or Gen + Send to rebuild and send it.'}}",
+  "text": "{{MailoutJS.statusMessage}}",
   "textAlign": "LEFT",
   "textColor": "#6B7280",
   "topRow": 4,
