@@ -19,7 +19,7 @@
       "key": "borderRadius"
     }
   ],
-  "height": 540,
+  "height": 720,
   "isCanvas": true,
   "isLoading": false,
   "parentId": "0",
@@ -29,5 +29,5 @@
   "version": 2,
   "widgetId": "emailtemplatesModal01",
   "widgetName": "TemplateEditorModal",
-  "width": 820
+  "width": 1020
 }
