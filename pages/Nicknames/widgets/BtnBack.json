@@ -14,25 +14,30 @@
   "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    { "key": "accentColor" },
-    { "key": "borderRadius" }
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
   ],
   "dynamicTriggerPathList": [
-    { "key": "onClick" }
+    {
+      "key": "onClick"
+    }
   ],
   "iconName": "arrow-left",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "leftColumn": 50,
+  "leftColumn": 53,
   "onClick": "{{navigateTo('TeamManagement', {}, 'SAME_WINDOW')}}",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "rightColumn": 63,
   "text": "Back",
-  "textSize": "0.8125rem",
+  "textSize": "0.75rem",
   "topRow": 4,
-  "type": "BUTTON_WIDGET",
   "version": 1
 }

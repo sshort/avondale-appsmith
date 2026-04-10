@@ -37,29 +37,69 @@
       "menuColor": "{{appsmith.theme.colors.primaryColor}}"
     }
   },
-  "columnOrder": ["section", "team_name", "captain_name", "captain_email", "own_pdf", "next_pdf", "reserves_pdf", "can_send", "blocked_reason"],
+  "columnOrder": [
+    "section",
+    "team_name",
+    "captain_name",
+    "captain_email",
+    "own_pdf",
+    "next_pdf",
+    "reserves_pdf",
+    "can_send",
+    "blocked_reason"
+  ],
   "columnUpdatedAt": 1775132600364,
   "defaultPageSize": 0,
   "defaultSelectedRowIndex": 0,
-  "defaultSelectedRowIndices": [0],
+  "defaultSelectedRowIndices": [
+    0
+  ],
   "delimiter": ",",
   "dynamicBindingPathList": [
-    { "key": "accentColor" },
-    { "key": "borderRadius" },
-    { "key": "boxShadow" },
-    { "key": "tableData" },
-    { "key": "primaryColumns.section.computedValue" },
-    { "key": "primaryColumns.team_name.computedValue" },
-    { "key": "primaryColumns.captain_name.computedValue" },
-    { "key": "primaryColumns.captain_email.computedValue" },
-    { "key": "primaryColumns.own_pdf.computedValue" },
-    { "key": "primaryColumns.next_pdf.computedValue" },
-    { "key": "primaryColumns.reserves_pdf.computedValue" },
-    { "key": "primaryColumns.can_send.computedValue" },
-    { "key": "primaryColumns.blocked_reason.computedValue" }
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.section.computedValue"
+    },
+    {
+      "key": "primaryColumns.team_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.captain_name.computedValue"
+    },
+    {
+      "key": "primaryColumns.captain_email.computedValue"
+    },
+    {
+      "key": "primaryColumns.own_pdf.computedValue"
+    },
+    {
+      "key": "primaryColumns.next_pdf.computedValue"
+    },
+    {
+      "key": "primaryColumns.reserves_pdf.computedValue"
+    },
+    {
+      "key": "primaryColumns.can_send.computedValue"
+    },
+    {
+      "key": "primaryColumns.blocked_reason.computedValue"
+    }
   ],
   "dynamicPropertyPathList": [
-    { "key": "tableData" }
+    {
+      "key": "tableData"
+    }
   ],
   "enableClientSideSearch": true,
   "infiniteScrollEnabled": true,
@@ -91,7 +131,7 @@
       "isVisible": true,
       "label": "Category",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 110
     },
     "team_name": {
@@ -108,7 +148,7 @@
       "isVisible": true,
       "label": "Team",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 160
     },
     "captain_name": {
@@ -125,7 +165,7 @@
       "isVisible": true,
       "label": "Captain",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 150
     },
     "captain_email": {
@@ -142,7 +182,7 @@
       "isVisible": true,
       "label": "Email",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 220
     },
     "own_pdf": {
@@ -159,7 +199,7 @@
       "isVisible": false,
       "label": "Own Team PDF",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 200
     },
     "next_pdf": {
@@ -176,7 +216,7 @@
       "isVisible": false,
       "label": "Next Team PDF",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 200
     },
     "reserves_pdf": {
@@ -193,7 +233,7 @@
       "isVisible": false,
       "label": "Reserves PDF",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 200
     },
     "can_send": {
@@ -210,7 +250,7 @@
       "isVisible": true,
       "label": "Can Send",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 80
     },
     "blocked_reason": {
@@ -227,17 +267,16 @@
       "isVisible": true,
       "label": "Blocked Reason",
       "sticky": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "width": 200
     }
   },
-  "rightColumn": 39,
+  "rightColumn": 52,
   "searchKey": "",
-  "tableData": "{{Array.isArray(GetMailoutJobs.data) ? GetMailoutJobs.data : []}}",
-  "textSize": "0.875rem",
+  "tableData": "{{(() => { const category = String(SelectCategory.selectedOptionValue || 'ALL'); const loadedKey = `mailout:${category}`; if (!Array.isArray(GetMailoutJobs.data) && appsmith.store.teamMailoutLoadedKey !== loadedKey) { storeValue('teamMailoutLoadedKey', loadedKey); GetMailoutJobs.run(); } return Array.isArray(GetMailoutJobs.data) ? GetMailoutJobs.data : []; })()}}",
+  "textSize": "0.75rem",
   "topRow": 10,
   "totalRecordsCount": 0,
-  "type": "TABLE_WIDGET_V2",
   "version": 2,
   "verticalAlignment": "CENTER"
 }

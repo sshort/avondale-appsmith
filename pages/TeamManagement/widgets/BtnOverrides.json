@@ -14,24 +14,30 @@
   "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    { "key": "accentColor" },
-    { "key": "borderRadius" }
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
   ],
   "dynamicTriggerPathList": [
-    { "key": "onClick" }
+    {
+      "key": "onClick"
+    }
   ],
   "iconName": "settings",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "leftColumn": 37,
+  "leftColumn": 53,
   "onClick": "{{navigateTo('Overrides', {}, 'SAME_WINDOW')}}",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "rightColumn": 63,
   "text": "Overrides",
-  "textSize": "0.8125rem",
+  "textSize": "0.75rem",
   "topRow": 26,
   "version": 1
 }

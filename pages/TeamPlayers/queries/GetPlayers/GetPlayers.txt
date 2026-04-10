@@ -1,1 +1,1 @@
-SELECT tp.id, tp.team_id, tp.source_name, tp.is_captain, tp.sort_order, t.team_name, t.season, t.section FROM public.team_players tp JOIN public.teams t ON t.id = tp.team_id WHERE tp.team_id = {{appsmith.URL.queryParams.teamId}} ORDER BY tp.sort_order ASC, tp.source_name ASC;
+SELECT tp.id, tp.team_id, tp.source_name, tp.is_captain, tp.sort_order, t.team_name, t.season, t.section FROM public.team_players tp JOIN public.teams t ON t.id = tp.team_id WHERE tp.team_id = {{Number(appsmith.URL.queryParams.teamId || 0)}} ORDER BY tp.sort_order ASC, tp.source_name ASC;

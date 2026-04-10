@@ -7,7 +7,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "",
+              "id": "TeamMailout_GetMailoutJobs",
               "name": "GetMailoutJobs",
               "pluginType": "DB",
               "jsonPathKeys": [

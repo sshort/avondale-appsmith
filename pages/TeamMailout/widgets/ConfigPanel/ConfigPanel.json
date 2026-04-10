@@ -3,7 +3,7 @@
   "backgroundColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 34,
+  "bottomRow": 38,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -28,12 +28,12 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "leftColumn": 40,
+  "leftColumn": 53,
   "minHeight": 200,
   "parentColumnSpace": 76.5,
   "parentId": "0",
   "parentRowSpace": 10,
-  "rightColumn": 64,
+  "rightColumn": 63,
   "searchTags": [
     "div",
     "parent",

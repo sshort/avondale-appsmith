@@ -7,7 +7,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "",
+              "id": "TeamPlayers_GetTeam",
               "name": "GetTeam",
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -16,7 +16,7 @@
               "timeoutInMillisecond": 30000
             },
             {
-              "id": "",
+              "id": "TeamPlayers_GetPlayers",
               "name": "GetPlayers",
               "pluginType": "DB",
               "jsonPathKeys": [

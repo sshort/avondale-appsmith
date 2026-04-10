@@ -14,27 +14,30 @@
   "buttonVariant": "SECONDARY",
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
-    { "key": "accentColor" },
-    { "key": "borderRadius" },
-    { "key": "buttonColor" }
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    }
   ],
   "dynamicTriggerPathList": [
-    { "key": "onClick" }
+    {
+      "key": "onClick"
+    }
   ],
   "iconName": "plus",
   "isDefaultClickDisabled": true,
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "leftColumn": 37,
+  "leftColumn": 53,
   "onClick": "{{showModal('AddTeamModal')}}",
-  "parentId": "0",
   "placement": "CENTER",
   "recaptchaType": "V3",
   "rightColumn": 63,
-  "text": "Add Team",
-  "textSize": "0.8125rem",
+  "text": "Add",
+  "textSize": "0.75rem",
   "topRow": 14,
-  "type": "BUTTON_WIDGET",
   "version": 1
 }

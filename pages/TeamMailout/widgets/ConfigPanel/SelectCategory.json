@@ -37,7 +37,7 @@
   "onOptionChange": "{{GetMailoutJobs.run()}}",
   "parentId": "tmo_config_canvas_001",
   "placeholderText": "Select category",
-  "rightColumn": 22,
+  "rightColumn": 63,
   "serverSideFiltering": false,
   "sourceData": "[{\"label\":\"All Categories\",\"value\":\"ALL\"},{\"label\":\"Mens\",\"value\":\"Mens\"},{\"label\":\"Ladies\",\"value\":\"Ladies\"},{\"label\":\"Mixed\",\"value\":\"Mixed\"},{\"label\":\"Vets\",\"value\":\"Vets\"}]",
   "topRow": 6,

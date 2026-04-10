@@ -1,7 +1,8 @@
 {
   "category": "{{SelectCategory.selectedOptionValue || 'ALL'}}",
-  "scope": "{{SelectScope.selectedOptionValue || 'own_next_reserves'}}",
+  "attachment_mode": "{{SelectScope.selectedOptionValue || 'all-in-section'}}",
   "delivery_mode": "{{ToggleTestMode.isSelected ? 'test' : 'production'}}",
+  "test_recipient": "steve.short@gmail.com",
   "base_dir": "/var/lib/n8n/teams-mailout/current",
   "jobs": {{JSON.stringify((GetMailoutJobs.data || []).map((row) => row.job))}}
 }

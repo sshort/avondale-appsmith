@@ -49,18 +49,38 @@
   ],
   "delimiter": ",",
   "dynamicBindingPathList": [
-    { "key": "accentColor" },
-    { "key": "borderRadius" },
-    { "key": "boxShadow" },
-    { "key": "tableData" },
-    { "key": "primaryColumns.id.computedValue" },
-    { "key": "primaryColumns.source.computedValue" },
-    { "key": "primaryColumns.target.computedValue" },
-    { "key": "primaryColumns.notes.computedValue" },
-    { "key": "primaryColumns.created_at.computedValue" }
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "boxShadow"
+    },
+    {
+      "key": "tableData"
+    },
+    {
+      "key": "primaryColumns.id.computedValue"
+    },
+    {
+      "key": "primaryColumns.source.computedValue"
+    },
+    {
+      "key": "primaryColumns.target.computedValue"
+    },
+    {
+      "key": "primaryColumns.notes.computedValue"
+    },
+    {
+      "key": "primaryColumns.created_at.computedValue"
+    }
   ],
   "dynamicPropertyPathList": [
-    { "key": "tableData" }
+    {
+      "key": "tableData"
+    }
   ],
   "dynamicTriggerPathList": [],
   "enableClientSideSearch": true,
@@ -117,7 +137,7 @@
       "originalId": "created_at",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -151,7 +171,7 @@
       "originalId": "id",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -185,7 +205,7 @@
       "originalId": "source",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -219,7 +239,7 @@
       "originalId": "target",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -253,17 +273,17 @@
       "originalId": "notes",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.875rem",
+      "textSize": "0.75rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
       "width": 320
     }
   },
-  "rightColumn": 48,
+  "rightColumn": 34,
   "searchKey": "",
   "tableData": "{{(() => { if (!Array.isArray(GetNicknames.data) && !appsmith.store.nicknamesBootstrapStarted) { storeValue('nicknamesBootstrapStarted', true); GetNicknames.run(); } return Array.isArray(GetNicknames.data) ? GetNicknames.data : []; })()}}",
-  "textSize": "0.875rem",
+  "textSize": "0.75rem",
   "topRow": 4,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
