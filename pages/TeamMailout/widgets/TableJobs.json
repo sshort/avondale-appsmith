@@ -231,11 +231,11 @@
       "width": 200
     }
   },
-  "rightColumn": 38,
+  "rightColumn": 39,
   "searchKey": "",
   "tableData": "{{Array.isArray(GetMailoutJobs.data) ? GetMailoutJobs.data : []}}",
   "textSize": "0.875rem",
-  "topRow": 40,
+  "topRow": 10,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",
   "version": 2,

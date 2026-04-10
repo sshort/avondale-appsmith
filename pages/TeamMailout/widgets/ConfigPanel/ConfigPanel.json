@@ -3,7 +3,7 @@
   "backgroundColor": "#ffffff",
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "borderWidth": "1",
-  "bottomRow": 28,
+  "bottomRow": 34,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
   "children": [
     {
@@ -28,7 +28,7 @@
   "isDeprecated": false,
   "isLoading": false,
   "isVisible": true,
-  "leftColumn": 0,
+  "leftColumn": 40,
   "minHeight": 200,
   "parentColumnSpace": 76.5,
   "parentId": "0",
@@ -40,7 +40,7 @@
     "group"
   ],
   "shouldScrollContents": false,
-  "topRow": 8,
+  "topRow": 10,
   "type": "CONTAINER_WIDGET",
   "version": 1,
   "widgetId": "tmo_config_001",
