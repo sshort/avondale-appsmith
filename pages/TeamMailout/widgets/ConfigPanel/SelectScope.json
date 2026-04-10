@@ -34,7 +34,7 @@
   "leftColumn": 1,
   "optionLabel": "label",
   "optionValue": "value",
-  "onOptionChange": "{{MailoutJS.markReady()}}",
+  "onOptionChange": "{{storeValue('teamMailoutStatus', `Ready for ${ToggleTestMode.isSelected ? 'test' : 'production'} mailout in ${SelectScope.selectedOptionValue || 'all-in-section'} mode`);}}",
   "parentId": "tmo_config_canvas_001",
   "placeholderText": "Select scope",
   "rightColumn": 63,
