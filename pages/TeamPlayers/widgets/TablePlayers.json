@@ -432,7 +432,7 @@
   },
   "rightColumn": 30,
   "searchKey": "",
-  "tableData": "{{GetPlayers.data}}",
+  "tableData": "{{(() => { const teamId = String(appsmith.URL.queryParams.teamId || ''); if (teamId && appsmith.store.teamPlayersLoadedTeamId !== teamId) { storeValue('teamPlayersLoadedTeamId', teamId); GetTeam.run(); GetPlayers.run(); } return Array.isArray(GetPlayers.data) ? GetPlayers.data : []; })()}}",
   "textSize": "0.875rem",
   "topRow": 12,
   "totalRecordsCount": 0,

@@ -572,7 +572,7 @@
   "responsiveBehavior": "fill",
   "rightColumn": 34,
   "serverSidePaginationEnabled": false,
-  "tableData": "{{Array.isArray(GetEmailTemplates.data) ? GetEmailTemplates.data : []}}",
+  "tableData": "{{(() => { if (!Array.isArray(GetEmailTemplates.data) && !appsmith.store.emailTemplatesBootstrapStarted) { storeValue('emailTemplatesBootstrapStarted', true); GetEmailTemplates.run(); } return Array.isArray(GetEmailTemplates.data) ? GetEmailTemplates.data : []; })()}}",
   "textSize": "0.875rem",
   "topRow": 6,
   "totalRecordsCount": 0,

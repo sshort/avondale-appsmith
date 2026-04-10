@@ -262,7 +262,7 @@
   },
   "rightColumn": 48,
   "searchKey": "",
-  "tableData": "{{Array.isArray(GetNicknames.data) ? GetNicknames.data : []}}",
+  "tableData": "{{(() => { if (!Array.isArray(GetNicknames.data) && !appsmith.store.nicknamesBootstrapStarted) { storeValue('nicknamesBootstrapStarted', true); GetNicknames.run(); } return Array.isArray(GetNicknames.data) ? GetNicknames.data : []; })()}}",
   "textSize": "0.875rem",
   "topRow": 4,
   "totalRecordsCount": 0,

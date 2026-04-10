@@ -416,7 +416,7 @@
   },
   "rightColumn": 34,
   "searchKey": "",
-  "tableData": "{{GetTeams.data}}",
+  "tableData": "{{(() => { if (!Array.isArray(GetTeams.data) && !appsmith.store.teamManagementBootstrapStarted) { storeValue('teamManagementBootstrapStarted', true); GetTeams.run(); } return Array.isArray(GetTeams.data) ? GetTeams.data : []; })()}}",
   "textSize": "0.875rem",
   "topRow": 14,
   "totalRecordsCount": 0,

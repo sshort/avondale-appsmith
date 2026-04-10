@@ -248,7 +248,7 @@
   "rightColumn": 48,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
-  "tableData": "{{Array.isArray(GetOverrides.data) ? GetOverrides.data : []}}",
+  "tableData": "{{(() => { if (!Array.isArray(GetOverrides.data) && !appsmith.store.overridesBootstrapStarted) { storeValue('overridesBootstrapStarted', true); GetOverrides.run(); } return Array.isArray(GetOverrides.data) ? GetOverrides.data : []; })()}}",
   "textSize": "0.875rem",
   "topRow": 4,
   "totalRecordsCount": 0,
