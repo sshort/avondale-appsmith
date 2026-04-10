@@ -273,7 +273,7 @@
   },
   "rightColumn": 52,
   "searchKey": "",
-  "tableData": "{{Array.isArray(GetMailoutJobs.data) ? GetMailoutJobs.data : []}}",
+  "tableData": "{{Array.isArray(appsmith.store.teamMailoutJobs) ? appsmith.store.teamMailoutJobs : []}}",
   "textSize": "0.625rem",
   "topRow": 10,
   "totalRecordsCount": 0,
