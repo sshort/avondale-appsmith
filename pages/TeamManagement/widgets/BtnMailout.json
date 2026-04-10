@@ -37,7 +37,7 @@
   "recaptchaType": "V3",
   "rightColumn": 63,
   "text": "Mailout",
-  "textSize": "0.75rem",
+  "textSize": "0.625rem",
   "topRow": 34,
   "version": 1
 }

@@ -1,0 +1,9 @@
+{
+  "category": "{{SelectCategory.selectedOptionValue}}",
+  "attachment_mode": "{{SelectScope.selectedOptionValue}}",
+  "delivery_mode": "{{ToggleTestMode.isSelected ? 'test' : 'production'}}",
+  "test_recipient": "steve.short@gmail.com",
+  "trigger": true,
+  "base_dir": "/var/lib/n8n/teams-mailout/current",
+  "webhook_base_url": "http://127.0.0.1:5678"
+}

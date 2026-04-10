@@ -137,7 +137,7 @@
       "originalId": "created_at",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -171,7 +171,7 @@
       "originalId": "id",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
@@ -205,11 +205,11 @@
       "originalId": "source",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 240
+      "width": 180
     },
     "target": {
       "alias": "Canonical Name",
@@ -239,11 +239,11 @@
       "originalId": "target",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 220
+      "width": 180
     },
     "notes": {
       "alias": "Notes",
@@ -273,17 +273,17 @@
       "originalId": "notes",
       "sticky": "",
       "textColor": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "thousandSeparator": true,
       "validation": {},
       "verticalAlignment": "CENTER",
-      "width": 320
+      "width": 220
     }
   },
-  "rightColumn": 34,
+  "rightColumn": 30,
   "searchKey": "",
   "tableData": "{{(() => { if (!Array.isArray(GetNicknames.data) && !appsmith.store.nicknamesBootstrapStarted) { storeValue('nicknamesBootstrapStarted', true); GetNicknames.run(); } return Array.isArray(GetNicknames.data) ? GetNicknames.data : []; })()}}",
-  "textSize": "0.75rem",
+  "textSize": "0.625rem",
   "topRow": 4,
   "totalRecordsCount": 0,
   "type": "TABLE_WIDGET_V2",

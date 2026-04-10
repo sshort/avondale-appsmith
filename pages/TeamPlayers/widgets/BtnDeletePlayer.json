@@ -34,7 +34,7 @@
   "recaptchaType": "V3",
   "rightColumn": 63,
   "text": "Delete",
-  "textSize": "0.75rem",
+  "textSize": "0.625rem",
   "topRow": 20,
   "type": "BUTTON_WIDGET",
   "version": 1,

@@ -41,7 +41,7 @@
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
   "rightColumn": 63,
-  "textSize": "0.75rem",
+  "textSize": "0.625rem",
   "text": "New",
   "topRow": 6,
   "type": "BUTTON_WIDGET",

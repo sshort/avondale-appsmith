@@ -4,19 +4,7 @@
     "isHidden": true,
     "layouts": [
       {
-        "layoutOnLoadActions": [
-          [
-            {
-              "id": "TeamMailout_GetMailoutJobs",
-              "name": "GetMailoutJobs",
-              "pluginType": "DB",
-              "jsonPathKeys": [
-                "SelectCategory.selectedOptionValue"
-              ],
-              "timeoutInMillisecond": 10000
-            }
-          ]
-        ],
+        "layoutOnLoadActions": [],
         "dsl": {
           "backgroundColor": "none",
           "bottomRow": 900,

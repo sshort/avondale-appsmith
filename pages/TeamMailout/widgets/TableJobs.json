@@ -131,7 +131,7 @@
       "isVisible": true,
       "label": "Category",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 110
     },
     "team_name": {
@@ -148,7 +148,7 @@
       "isVisible": true,
       "label": "Team",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 160
     },
     "captain_name": {
@@ -165,7 +165,7 @@
       "isVisible": true,
       "label": "Captain",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 150
     },
     "captain_email": {
@@ -182,7 +182,7 @@
       "isVisible": true,
       "label": "Email",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 220
     },
     "own_pdf": {
@@ -199,7 +199,7 @@
       "isVisible": false,
       "label": "Own Team PDF",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 200
     },
     "next_pdf": {
@@ -216,7 +216,7 @@
       "isVisible": false,
       "label": "Next Team PDF",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 200
     },
     "reserves_pdf": {
@@ -233,7 +233,7 @@
       "isVisible": false,
       "label": "Reserves PDF",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 200
     },
     "can_send": {
@@ -250,7 +250,7 @@
       "isVisible": true,
       "label": "Can Send",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 80
     },
     "blocked_reason": {
@@ -267,14 +267,14 @@
       "isVisible": true,
       "label": "Blocked Reason",
       "sticky": "",
-      "textSize": "0.75rem",
+      "textSize": "0.625rem",
       "width": 200
     }
   },
   "rightColumn": 52,
   "searchKey": "",
-  "tableData": "{{(() => { const category = String(SelectCategory.selectedOptionValue || 'ALL'); const loadedKey = `mailout:${category}`; if (!Array.isArray(GetMailoutJobs.data) && appsmith.store.teamMailoutLoadedKey !== loadedKey) { storeValue('teamMailoutLoadedKey', loadedKey); GetMailoutJobs.run(); } return Array.isArray(GetMailoutJobs.data) ? GetMailoutJobs.data : []; })()}}",
-  "textSize": "0.75rem",
+  "tableData": "{{Array.isArray(GetMailoutJobs.data) ? GetMailoutJobs.data : []}}",
+  "textSize": "0.625rem",
   "topRow": 10,
   "totalRecordsCount": 0,
   "version": 2,

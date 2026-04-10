@@ -24,6 +24,6 @@ SELECT
   END AS blocked_reason,
   job
 FROM job_rows
-WHERE {{SelectCategory.selectedOptionValue || 'ALL'}} = 'ALL'
-   OR lower(job->>'section') = lower({{SelectCategory.selectedOptionValue || 'ALL'}})
+WHERE '{{SelectCategory.selectedOptionValue}}' = 'ALL'
+   OR lower(job->>'section') = lower('{{SelectCategory.selectedOptionValue}}')
 ORDER BY job->>'section', job->>'team_name';

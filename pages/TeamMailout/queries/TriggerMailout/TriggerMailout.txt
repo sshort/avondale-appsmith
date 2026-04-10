@@ -1,6 +1,6 @@
 {
-  "category": "{{SelectCategory.selectedOptionValue || 'ALL'}}",
-  "attachment_mode": "{{SelectScope.selectedOptionValue || 'all-in-section'}}",
+  "category": "{{SelectCategory.selectedOptionValue}}",
+  "attachment_mode": "{{SelectScope.selectedOptionValue}}",
   "delivery_mode": "{{ToggleTestMode.isSelected ? 'test' : 'production'}}",
   "test_recipient": "steve.short@gmail.com",
   "base_dir": "/var/lib/n8n/teams-mailout/current",
