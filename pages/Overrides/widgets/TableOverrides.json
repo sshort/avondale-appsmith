@@ -245,7 +245,7 @@
   },
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
+  "rightColumn": 48,
   "searchKey": "",
   "serverSidePaginationEnabled": true,
   "tableData": "{{Array.isArray(GetOverrides.data) ? GetOverrides.data : []}}",

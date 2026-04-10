@@ -8,7 +8,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
+  "bottomRow": 29,
   "boxShadow": "none",
   "buttonColor": "#64748B",
   "buttonVariant": "SECONDARY",
@@ -29,9 +29,9 @@
   "onClick": "{{navigateTo('Overrides', {}, 'SAME_WINDOW')}}",
   "placement": "CENTER",
   "recaptchaType": "V3",
-  "rightColumn": 49,
+  "rightColumn": 63,
   "text": "Overrides",
   "textSize": "0.8125rem",
-  "topRow": 22,
+  "topRow": 26,
   "version": 1
 }

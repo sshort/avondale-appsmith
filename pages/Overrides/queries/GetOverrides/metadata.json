@@ -25,7 +25,7 @@
     "dynamicBindingPathList": [],
     "name": "GetOverrides",
     "pageId": "Overrides",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }

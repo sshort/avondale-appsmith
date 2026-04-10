@@ -8,7 +8,7 @@
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
+  "bottomRow": 17,
   "boxShadow": "none",
   "buttonColor": "#475569",
   "buttonVariant": "SECONDARY",
@@ -26,7 +26,7 @@
   "isDisabled": false,
   "isLoading": false,
   "isVisible": true,
-  "leftColumn": 50,
+  "leftColumn": 37,
   "onClick": "{{showModal('AddTeamModal')}}",
   "parentId": "0",
   "placement": "CENTER",
@@ -34,7 +34,7 @@
   "rightColumn": 63,
   "text": "Add Team",
   "textSize": "0.8125rem",
-  "topRow": 17,
+  "topRow": 14,
   "type": "BUTTON_WIDGET",
   "version": 1
 }

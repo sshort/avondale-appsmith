@@ -29,7 +29,7 @@
     ],
     "name": "GetPlayers",
     "pageId": "TeamPlayers",
-    "runBehaviour": "AUTOMATIC",
-    "userSetOnLoad": false
+    "runBehaviour": "ON_PAGE_LOAD",
+    "userSetOnLoad": true
   }
 }
