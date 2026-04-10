@@ -15,8 +15,7 @@
   "disabledWhenInvalid": false,
   "dynamicBindingPathList": [
     { "key": "accentColor" },
-    { "key": "borderRadius" },
-    { "key": "buttonColor" }
+    { "key": "borderRadius" }
   ],
   "dynamicTriggerPathList": [
     { "key": "onClick" }
