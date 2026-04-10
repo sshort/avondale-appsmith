@@ -16,7 +16,7 @@
   ],
   "iconName": "loading",
   "iconSize": 24,
-  "isVisible": "{{MailoutJS.isRunning}}",
+  "isVisible": "{{!!appsmith.store.teamMailoutRunning}}",
   "leftColumn": 60,
   "parentId": "tmo_status_canvas_001",
   "rightColumn": 63,

@@ -3,7 +3,7 @@
   "alignWidget": "left",
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 23,
+  "bottomRow": 32,
   "boxShadow": "none",
   "defaultSwitchState": true,
   "dynamicBindingPathList": [
@@ -23,7 +23,7 @@
   "leftColumn": 1,
   "parentId": "tmo_config_canvas_001",
   "rightColumn": 63,
-  "topRow": 18,
+  "topRow": 28,
   "type": "SWITCH_WIDGET",
   "version": 1,
   "widgetId": "tmo_config_test_001",

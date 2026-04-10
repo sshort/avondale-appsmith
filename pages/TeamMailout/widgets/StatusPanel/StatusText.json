@@ -14,7 +14,7 @@
   "leftColumn": 1,
   "parentId": "tmo_status_canvas_001",
   "rightColumn": 63,
-  "text": "{{MailoutJS.statusMessage}}",
+  "text": "{{appsmith.store.teamMailoutStatus || 'Ready to generate or send the current team mailout bundle'}}",
   "textAlign": "LEFT",
   "textColor": "#6B7280",
   "topRow": 4,
