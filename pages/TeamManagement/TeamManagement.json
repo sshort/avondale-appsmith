@@ -4,6 +4,17 @@
     "isHidden": false,
     "layouts": [
       {
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "",
+              "name": "GetTeams",
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 30000
+            }
+          ]
+        ],
         "dsl": {
           "backgroundColor": "none",
           "bottomRow": 500,

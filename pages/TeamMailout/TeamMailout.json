@@ -4,6 +4,19 @@
     "isHidden": true,
     "layouts": [
       {
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "",
+              "name": "GetMailoutJobs",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "SelectCategory.selectedOptionValue"
+              ],
+              "timeoutInMillisecond": 10000
+            }
+          ]
+        ],
         "dsl": {
           "backgroundColor": "none",
           "bottomRow": 900,

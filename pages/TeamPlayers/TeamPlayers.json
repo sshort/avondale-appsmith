@@ -4,6 +4,28 @@
     "isHidden": true,
     "layouts": [
       {
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "",
+              "name": "GetTeam",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.teamId"
+              ],
+              "timeoutInMillisecond": 30000
+            },
+            {
+              "id": "",
+              "name": "GetPlayers",
+              "pluginType": "DB",
+              "jsonPathKeys": [
+                "appsmith.URL.queryParams.teamId"
+              ],
+              "timeoutInMillisecond": 30000
+            }
+          ]
+        ],
         "dsl": {
           "backgroundColor": "none",
           "bottomRow": 500,
