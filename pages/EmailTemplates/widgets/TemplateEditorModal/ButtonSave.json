@@ -1,7 +1,7 @@
 {
   "needsErrorInfo": false,
   "boxShadow": "none",
-  "onClick": "{{((appsmith.store.selectedEmailTemplateId) ? SaveTemplate.run() : CreateTemplate.run()).then(() => { closeModal('TemplateEditorModal'); showAlert(appsmith.store.selectedEmailTemplateId ? 'Template saved' : 'Template created', 'success'); storeValue('selectedEmailTemplateId', null); storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); GetEmailTemplates.run(); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); }).catch((error) => { showAlert((error?.message || error || 'Failed to save'), 'error'); });}}",
+  "onClick": "{{((appsmith.store.selectedEmailTemplateId) ? SaveTemplate.run() : CreateTemplate.run()).then(() => { closeModal('TemplateEditorModal'); showAlert(appsmith.store.selectedEmailTemplateId ? 'Template saved' : 'Template created', 'success'); storeValue('selectedEmailTemplateId', null); storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); storeValue('emailTemplateEditorMode', null); GetEmailTemplates.run(); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); }).catch((error) => { showAlert((error?.message || error || 'Failed to save'), 'error'); });}}",
   "widgetName": "ButtonSave",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
   "dynamicPropertyPathList": [],
@@ -34,7 +34,7 @@
   "key": "buttonSave01",
   "labelTextSize": "0.875rem",
   "ctaColor": "{{appsmith.theme.colors.primaryColor}}",
-  "rightColumn": 41,
+  "rightColumn": 43,
   "widgetId": "buttonSave01",
   "buttonStyle": "PRIMARY",
   "placementWithPortal": false,

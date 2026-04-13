@@ -3,15 +3,19 @@
   "boxShadow": "none",
   "widgetName": "TextareaTextTemplate",
   "dynamicPropertyPathList": [],
-  "bottomRow": 62,
-  "labelText": "Plain Text Output",
-  "topRow": 43,
+  "bottomRow": 60,
+  "labelText": "Plain Text Editor",
+  "topRow": 22,
   "parentRowSpace": 10,
   "labelWidth": 5,
   "isMultiLine": true,
   "type": "INPUT_WIDGET_V2",
   "animateLoading": true,
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "parentColumnSpace": 21.875,
   "dynamicBindingPathList": [
     {
@@ -22,9 +26,12 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
-  "leftColumn": 33,
+  "leftColumn": 1,
   "labelPosition": "Top",
   "labelStyle": "REGULAR",
   "inputType": "MULTI_LINE_TEXT",
@@ -55,5 +62,7 @@
   "multiline": true,
   "iconAlign": "left",
   "defaultText": "{{appsmith.store.emailTemplateDraft?.text_template || ''}}",
-  "minDynamicHeight": 8
+  "minDynamicHeight": 8,
+  "isVisible": "{{(appsmith.store.emailTemplateEditorMode || 'html') === 'text'}}",
+  "onTextChanged": "{{storeValue('emailTemplateDraft', Object.assign({}, appsmith.store.emailTemplateDraft || {}, { text_template: TextareaTextTemplate.text || '' }));}}"
 }

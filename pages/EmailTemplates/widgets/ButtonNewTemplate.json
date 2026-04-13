@@ -1,7 +1,7 @@
 {
   "needsErrorInfo": false,
   "boxShadow": "none",
-  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); storeValue('emailTemplateDraft', { template_key: '', template_name: '', template_type: 0, subject_template: '', text_template: '', html_template: '', is_active: false }); storeValue('emailTemplateLiveHtml', ''); resetWidget('SelectTemplateType', true); showModal('TemplateEditorModal');}}",
+  "onClick": "{{storeValue('selectedEmailTemplateId', null); storeValue('selectedEmailTemplateRow', null); storeValue('emailTemplateDraft', { template_key: '', template_name: '', template_type: 0, subject_template: '', text_template: '', html_template: '', is_active: false }); storeValue('emailTemplateLiveHtml', ''); storeValue('emailTemplateEditorMode', 'html'); resetWidget('SelectTemplateType', true); showModal('TemplateEditorModal');}}",
   "widgetName": "ButtonNewTemplate",
   "buttonColor": "#475569",
   "dynamicPropertyPathList": [],

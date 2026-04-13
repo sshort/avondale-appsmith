@@ -1,7 +1,7 @@
 {
   "needsErrorInfo": false,
   "boxShadow": "none",
-  "onClick": "{{copyToClipboard(TextareaTextTemplate.text || ''); showAlert('Plain text copied', 'success');}}",
+  "onClick": "{{copyToClipboard((appsmith.store.emailTemplateDraft?.text_template || '') + ''); showAlert('Plain text copied', 'success');}}",
   "widgetName": "ButtonCopyText",
   "buttonColor": "#999",
   "dynamicPropertyPathList": [],
@@ -24,14 +24,14 @@
       "key": "borderRadius"
     }
   ],
-  "leftColumn": 14,
+  "leftColumn": 12,
   "labelPosition": "Top",
   "isDisabled": false,
   "text": "Copy Text",
   "key": "buttonNew01",
   "labelTextSize": "0.875rem",
   "ctaColor": "#999",
-  "rightColumn": 26,
+  "rightColumn": 22,
   "widgetId": "emailtemplatesCopyText01",
   "buttonStyle": "PRIMARY",
   "placementWithPortal": false,
@@ -43,10 +43,10 @@
   "labelAlignment": "left",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "originalTopRow": 56,
+  "originalTopRow": 64,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "maxDynamicHeight": 9000,
-  "originalBottomRow": 60,
+  "originalBottomRow": 68,
   "buttonVariant": "SECONDARY",
   "iconAlign": "left",
   "minDynamicHeight": 4

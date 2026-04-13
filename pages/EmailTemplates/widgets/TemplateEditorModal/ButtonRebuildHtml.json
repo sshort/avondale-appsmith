@@ -1,0 +1,50 @@
+{
+  "needsErrorInfo": false,
+  "boxShadow": "none",
+  "onClick": "{{const sourceText = (appsmith.store.emailTemplateDraft?.text_template || TextareaTextTemplate.text || '') + ''; const escapedText = sourceText.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); const rebuiltHtml = escapedText ? ('<p>' + escapedText.replace(/\\r\\n/g, '\\n').replace(/\\n{2,}/g, '</p><p>').replace(/\\n/g, '<br/>') + '</p>') : ''; storeValue('emailTemplateDraft', Object.assign({}, appsmith.store.emailTemplateDraft || {}, { html_template: rebuiltHtml, text_template: sourceText })); storeValue('emailTemplateLiveHtml', rebuiltHtml); TextareaHtmlTemplate.setValue(rebuiltHtml); showAlert('HTML rebuilt from plain text', 'success');}}",
+  "widgetName": "ButtonRebuildHtml",
+  "buttonColor": "#0F766E",
+  "dynamicPropertyPathList": [],
+  "bottomRow": 21,
+  "labelText": "",
+  "topRow": 17,
+  "parentRowSpace": 10,
+  "labelWidth": 5,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "buttonType": "SECONDARY",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "parentColumnSpace": 21.875,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "leftColumn": 47,
+  "labelPosition": "Top",
+  "isDisabled": false,
+  "text": "Rebuild HTML",
+  "key": "buttonRebuildHtml01",
+  "labelTextSize": "0.75rem",
+  "ctaColor": "#0F766E",
+  "rightColumn": 61,
+  "widgetId": "buttonRebuildHtml01",
+  "buttonStyle": "PRIMARY",
+  "placementWithPortal": false,
+  "minWidth": 120,
+  "isVisible": true,
+  "version": 1,
+  "parentId": "emailtemplatesModalCanvas01",
+  "isLoading": false,
+  "labelAlignment": "left",
+  "renderMode": "CANVAS",
+  "responsiveBehavior": "fill",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "maxDynamicHeight": 9000,
+  "iconAlign": "left",
+  "minDynamicHeight": 4
+}

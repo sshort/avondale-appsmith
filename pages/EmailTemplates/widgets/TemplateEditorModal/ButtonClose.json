@@ -1,7 +1,7 @@
 {
   "needsErrorInfo": false,
   "boxShadow": "none",
-  "onClick": "{{storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); closeModal('TemplateEditorModal');}}",
+  "onClick": "{{storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); storeValue('emailTemplateEditorMode', null); closeModal('TemplateEditorModal');}}",
   "widgetName": "ButtonClose",
   "buttonColor": "#6B7280",
   "dynamicPropertyPathList": [],

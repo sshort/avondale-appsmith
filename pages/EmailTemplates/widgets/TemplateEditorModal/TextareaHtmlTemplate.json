@@ -3,14 +3,18 @@
   "boxShadow": "none",
   "widgetName": "TextareaHtmlTemplate",
   "dynamicPropertyPathList": [],
-  "labelText": "HTML Output",
-  "topRow": 43,
-  "bottomRow": 62,
+  "labelText": "HTML Editor",
+  "topRow": 22,
+  "bottomRow": 60,
   "parentRowSpace": 10,
   "labelWidth": 5,
   "type": "INPUT_WIDGET_V2",
   "animateLoading": true,
-  "dynamicTriggerPathList": [],
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChanged"
+    }
+  ],
   "parentColumnSpace": 21.875,
   "dynamicBindingPathList": [
     {
@@ -21,24 +25,27 @@
     },
     {
       "key": "defaultText"
+    },
+    {
+      "key": "isVisible"
     }
   ],
   "leftColumn": 1,
   "labelPosition": "Top",
   "labelStyle": "REGULAR",
   "inputType": "MULTI_LINE_TEXT",
-  "placeholderText": "Generated HTML output from the rich text editor",
+  "placeholderText": "Edit the stored HTML email body",
   "isDisabled": false,
   "validation": {},
   "key": "textareaHtmlTemplate01",
   "labelTextSize": "0.875rem",
   "isRequired": false,
-  "rightColumn": 32,
+  "rightColumn": 63,
   "dynamicHeight": "FIXED",
   "textAlign": "LEFT",
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "textareaHtmlTemplate01",
-  "readOnly": true,
+  "readOnly": false,
   "minWidth": 450,
   "isVisible": true,
   "label": "HTML Content",
@@ -54,5 +61,7 @@
   "shouldAllowAutofill": false,
   "iconAlign": "left",
   "defaultText": "{{appsmith.store.emailTemplateDraft?.html_template || ''}}",
-  "minDynamicHeight": 8
+  "minDynamicHeight": 8,
+  "isVisible": "{{(appsmith.store.emailTemplateEditorMode || 'html') === 'html'}}",
+  "onTextChanged": "{{storeValue('emailTemplateDraft', Object.assign({}, appsmith.store.emailTemplateDraft || {}, { html_template: TextareaHtmlTemplate.text || '' })); storeValue('emailTemplateLiveHtml', TextareaHtmlTemplate.text || '');}}"
 }
