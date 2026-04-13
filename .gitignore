@@ -21,3 +21,6 @@
 /teammanagement.png
 /teamplayers*.txt
 /teamplayers*.png
+
+/scripts/__pycache__/
+*.pyc
