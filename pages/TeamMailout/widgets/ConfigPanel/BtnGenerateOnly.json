@@ -1,12 +1,22 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 22,
   "boxShadow": "none",
+  "onClick": "{{storeValue('teamMailoutRunning', true); storeValue('teamMailoutStatus', 'Generating captain mailout bundle...'); GenerateOnly.run(() => { SyncMailoutData.run(() => { const count = Array.isArray(SyncMailoutData.data && SyncMailoutData.data.jobs) ? SyncMailoutData.data.jobs.length : (Array.isArray(SyncMailoutData.data && SyncMailoutData.data.body && SyncMailoutData.data.body.jobs) ? SyncMailoutData.data.body.jobs.length : 0); storeValue('teamMailoutStatus', (GenerateOnly.data && GenerateOnly.data.message) || (GenerateOnly.data && GenerateOnly.data.body && GenerateOnly.data.body.message) || `Generated ${count} captain mailout job(s).`); storeValue('teamMailoutRunning', false); showAlert('Captain mailout bundle generated', 'success'); }, (error) => { const message = `Generated bundle, but refresh failed: ${error?.message || 'Unknown error occurred'}`; storeValue('teamMailoutStatus', message); storeValue('teamMailoutRunning', false); showAlert(message, 'error'); }); }, (error) => { const message = `Error: ${error?.message || 'Unknown error occurred'}`; storeValue('teamMailoutStatus', message); storeValue('teamMailoutRunning', false); showAlert(message, 'error'); });}}",
+  "widgetName": "BtnGenerateOnly",
   "buttonColor": "#475569",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "bottomRow": 21,
+  "topRow": 18,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,32 +28,22 @@
       "key": "isDisabled"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "isDisabled"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "leftColumn": 1,
+  "isDisabled": "{{!!appsmith.store.teamMailoutRunning}}",
+  "text": "Generate",
+  "rightColumn": 63,
+  "textSize": "0.625rem",
   "iconName": "document",
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{!!appsmith.store.teamMailoutRunning}}",
-  "isLoading": false,
-  "isVisible": true,
-  "leftColumn": 1,
-  "onClick": "{{storeValue('teamMailoutRunning', true); storeValue('teamMailoutStatus', 'Refreshing the current mailout bundle...'); GenerateOnly.run(() => { storeValue('teamMailoutStatus', 'Captain mailout bundle refreshed.'); storeValue('teamMailoutRunning', false); }, (error) => { const message = `Error: ${error?.message || 'Unknown error occurred'}`; storeValue('teamMailoutStatus', message); storeValue('teamMailoutRunning', false); showAlert(message, 'error'); });}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
-  "text": "Generate",
-  "textSize": "0.625rem",
-  "topRow": 19,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tmo_config_gen_001",
-  "widgetName": "BtnGenerateOnly"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER"
 }

@@ -1,26 +1,26 @@
 {
-  "bottomRow": 5,
-  "dynamicBindingPathList": [
-    {
-      "key": "text"
-    }
-  ],
+  "rightColumn": 40,
+  "widgetName": "HeaderTitle",
   "dynamicPropertyPathList": [
     {
       "key": "text"
     }
   ],
-  "fontSize": "1.5rem",
-  "fontStyle": "BOLD",
-  "leftColumn": 1,
-  "parentId": "tp_header_canvas_001",
-  "rightColumn": 40,
-  "text": "Players: {{((GetTeam.data || [])[0] || {}).team_name || ''}} - {{((GetTeam.data || [])[0] || {}).section || ''}} {{((GetTeam.data || [])[0] || {}).season || ''}}",
   "textAlign": "LEFT",
-  "textColor": "#2E3D4E",
-  "topRow": 1,
-  "type": "TEXT_WIDGET",
-  "version": 1,
   "widgetId": "tp_header_text_001",
-  "widgetName": "HeaderTitle"
+  "bottomRow": 5,
+  "topRow": 1,
+  "fontStyle": "BOLD",
+  "type": "TEXT_WIDGET",
+  "textColor": "#2E3D4E",
+  "version": 1,
+  "parentId": "tp_header_canvas_001",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "leftColumn": 1,
+  "fontSize": "1.5rem",
+  "text": "Players: {{((GetTeam.data || [])[0] || {}).team_name || ''}} - {{((GetTeam.data || [])[0] || {}).section || ''}} {{((GetTeam.data || [])[0] || {}).season || ''}}"
 }

@@ -1,10 +1,16 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
   "boxShadow": "none",
+  "onClick": "{{DeletePlayer.run(() => { closeModal('DeletePlayerModal'); GetPlayers.run(); }, () => {})}}",
+  "widgetName": "BtnDeleteConfirm",
   "buttonColor": "#F22B2B",
-  "buttonVariant": "PRIMARY",
+  "bottomRow": 18,
+  "topRow": 13,
+  "type": "BUTTON_WIDGET",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,25 +19,19 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 32,
-  "onClick": "{{DeletePlayer.run(() => { closeModal('DeletePlayerModal'); GetPlayers.run(); }, () => {})}}",
-  "parentId": "tp_modaldel_canvas_001",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "isDisabled": false,
   "text": "Delete",
+  "rightColumn": 63,
   "textSize": "0.875rem",
-  "topRow": 13,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tp_modaldel_confirm_001",
-  "widgetName": "BtnDeleteConfirm"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "tp_modaldel_canvas_001",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "buttonVariant": "PRIMARY",
+  "placement": "CENTER"
 }

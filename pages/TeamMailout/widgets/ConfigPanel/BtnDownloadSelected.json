@@ -1,0 +1,49 @@
+{
+  "boxShadow": "none",
+  "onClick": "{{navigateTo(TableJobs.selectedRow && TableJobs.selectedRow.download_url ? TableJobs.selectedRow.download_url : '', {}, 'NEW_WINDOW')}}",
+  "widgetName": "BtnDownloadSelected",
+  "buttonColor": "#475569",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "bottomRow": 29,
+  "topRow": 26,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "dynamicBindingPathList": [
+    {
+      "key": "accentColor"
+    },
+    {
+      "key": "borderRadius"
+    },
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "leftColumn": 1,
+  "isDisabled": "{{!!appsmith.store.teamMailoutRunning || !(TableJobs.selectedRow && TableJobs.selectedRow.job_key)}}",
+  "text": "Download Selected",
+  "rightColumn": 63,
+  "textSize": "0.625rem",
+  "iconName": "download",
+  "isDefaultClickDisabled": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tmo_config_download_001",
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER"
+}

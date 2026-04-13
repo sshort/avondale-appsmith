@@ -1,11 +1,22 @@
 {
+  "labelTextSize": "0.875rem",
+  "boxShadow": "none",
+  "rightColumn": 63,
+  "widgetName": "ToggleTestMode",
   "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tmo_config_test_001",
+  "bottomRow": 35,
+  "topRow": 31,
+  "isVisible": true,
+  "label": "Test Mode",
+  "type": "SWITCH_WIDGET",
+  "defaultSwitchState": true,
+  "version": 1,
   "alignWidget": "left",
+  "parentId": "tmo_config_canvas_001",
+  "isLoading": false,
   "animateLoading": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 32,
-  "boxShadow": "none",
-  "defaultSwitchState": true,
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -14,18 +25,7 @@
       "key": "borderRadius"
     }
   ],
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
-  "label": "Test Mode",
-  "labelPosition": "Top",
-  "labelTextSize": "0.875rem",
   "leftColumn": 1,
-  "parentId": "tmo_config_canvas_001",
-  "rightColumn": 63,
-  "topRow": 28,
-  "type": "SWITCH_WIDGET",
-  "version": 1,
-  "widgetId": "tmo_config_test_001",
-  "widgetName": "ToggleTestMode"
+  "labelPosition": "Top",
+  "isDisabled": false
 }

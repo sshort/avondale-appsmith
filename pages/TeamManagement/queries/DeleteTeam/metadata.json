@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.teams WHERE id = {{(appsmith.store.teamManagementSelectedId || TableTeams.selectedRow.id)}};",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "DELETE FROM public.teams WHERE id = {{(appsmith.store.teamManagementSelectedId || TableTeams.selectedRow.id)}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

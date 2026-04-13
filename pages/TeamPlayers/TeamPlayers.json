@@ -7,8 +7,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "69d393247ac64a5d529c9478",
-              "name": "GetTeam",
+              "id": "TeamPlayers_GetPlayers",
+              "name": "GetPlayers",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -17,8 +17,8 @@
               "timeoutInMillisecond": 30000
             },
             {
-              "id": "69d393247ac64a5d529c946e",
-              "name": "GetPlayers",
+              "id": "TeamPlayers_GetTeam",
+              "name": "GetTeam",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [
@@ -29,7 +29,7 @@
           ],
           [
             {
-              "id": "69d5046f7ac64a5d529c94f8",
+              "id": "TeamPlayers_LookupPlayers",
               "name": "LookupPlayers",
               "confirmBeforeExecute": false,
               "pluginType": "DB",

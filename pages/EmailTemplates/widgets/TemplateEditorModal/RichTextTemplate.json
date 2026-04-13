@@ -1,11 +1,19 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
   "boxShadow": "none",
+  "widgetName": "RichTextTemplate",
   "columns": 24,
-  "defaultText": "{{appsmith.store.emailTemplateDraft?.html_template || ''}}",
+  "bottomRow": 41,
+  "labelText": "Rich Text HTML Editor",
+  "topRow": 17,
+  "labelWidth": 5,
+  "type": "RICH_TEXT_EDITOR_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onTextChange"
+    }
+  ],
+  "isToolbarHidden": false,
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -20,33 +28,25 @@
       "key": "onTextChange"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onTextChange"
-    }
-  ],
-  "flexVerticalAlignment": "top",
-  "inputType": "html",
-  "isDefaultClickDisabled": true,
-  "isDisabled": false,
-  "isRequired": false,
-  "isToolbarHidden": false,
-  "isVisible": true,
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelText": "Rich Text HTML Editor",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
   "leftColumn": 1,
-  "minWidth": 450,
-  "onTextChange": "{{storeValue('emailTemplateLiveHtml', RichTextTemplate.text || '')}}",
-  "parentId": "emailtemplatesModalCanvas01",
-  "responsiveBehavior": "fill",
+  "labelPosition": "Top",
+  "inputType": "html",
+  "isDisabled": false,
+  "flexVerticalAlignment": "top",
+  "labelTextSize": "0.875rem",
+  "isRequired": false,
   "rightColumn": 32,
-  "rows": 16,
-  "topRow": 17,
-  "type": "RICH_TEXT_EDITOR_WIDGET",
-  "version": 1,
+  "isDefaultClickDisabled": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "richTextTemplate01",
-  "widgetName": "RichTextTemplate"
+  "minWidth": 450,
+  "isVisible": true,
+  "rows": 16,
+  "version": 1,
+  "parentId": "emailtemplatesModalCanvas01",
+  "labelAlignment": "left",
+  "responsiveBehavior": "fill",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "defaultText": "{{appsmith.store.emailTemplateDraft?.html_template || ''}}",
+  "onTextChange": "{{storeValue('emailTemplateLiveHtml', RichTextTemplate.text || '')}}"
 }

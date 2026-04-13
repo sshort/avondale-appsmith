@@ -1,9 +1,10 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 25,
   "boxShadow": "none",
-  "defaultText": "",
+  "widgetName": "InputSourceName",
+  "bottomRow": 25,
+  "topRow": 20,
+  "labelWidth": 5,
+  "type": "INPUT_WIDGET_V2",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -12,25 +13,24 @@
       "key": "borderRadius"
     }
   ],
-  "iconAlign": "left",
+  "leftColumn": 1,
+  "resetOnSubmit": true,
+  "labelPosition": "Top",
   "inputType": "TEXT",
+  "placeholderText": "Use this if the player is not found in the lookup results",
   "isDisabled": false,
-  "isLoading": false,
+  "labelTextSize": "0.875rem",
   "isRequired": false,
+  "rightColumn": 63,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tp_modaladd_name_001",
   "isVisible": true,
   "label": "Manual Player Name",
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
-  "leftColumn": 1,
-  "parentId": "tp_modaladd_canvas_001",
-  "placeholderText": "Use this if the player is not found in the lookup results",
-  "resetOnSubmit": true,
-  "rightColumn": 63,
-  "topRow": 20,
-  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tp_modaladd_name_001",
-  "widgetName": "InputSourceName"
+  "parentId": "tp_modaladd_canvas_001",
+  "isLoading": false,
+  "labelAlignment": "left",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "iconAlign": "left",
+  "defaultText": ""
 }

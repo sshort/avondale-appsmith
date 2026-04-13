@@ -1,11 +1,12 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "autoFocus": false,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
   "boxShadow": "none",
-  "defaultText": "{{(appsmith.store.teamManagementSelectedSection || TableTeams.selectedRow.section || '')}}",
+  "widgetName": "EditInputSection",
+  "bottomRow": 18,
+  "topRow": 13,
+  "labelWidth": 5,
+  "autoFocus": false,
+  "type": "INPUT_WIDGET_V2",
+  "animateLoading": true,
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -17,25 +18,24 @@
       "key": "defaultText"
     }
   ],
-  "iconAlign": "left",
+  "leftColumn": 1,
+  "resetOnSubmit": true,
+  "labelPosition": "Top",
   "inputType": "TEXT",
   "isDisabled": false,
-  "isLoading": false,
+  "labelTextSize": "0.875rem",
   "isRequired": false,
+  "rightColumn": 32,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tm_modaledit_section_001",
+  "showStepArrows": false,
   "isVisible": true,
   "label": "Section",
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
-  "leftColumn": 1,
-  "parentId": "tm_modaledit_canvas_001",
-  "resetOnSubmit": true,
-  "rightColumn": 32,
-  "showStepArrows": false,
-  "topRow": 13,
-  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tm_modaledit_section_001",
-  "widgetName": "EditInputSection"
+  "parentId": "tm_modaledit_canvas_001",
+  "isLoading": false,
+  "labelAlignment": "left",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "iconAlign": "left",
+  "defaultText": "{{(appsmith.store.teamManagementSelectedSection || TableTeams.selectedRow.section || '')}}"
 }

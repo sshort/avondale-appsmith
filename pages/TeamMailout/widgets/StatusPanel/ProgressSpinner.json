@@ -1,6 +1,20 @@
 {
-  "bottomRow": 8,
+  "rightColumn": 63,
+  "widgetName": "ProgressSpinner",
   "color": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicPropertyPathList": [
+    {
+      "key": "isVisible"
+    }
+  ],
+  "iconName": "loading",
+  "widgetId": "tmo_status_spinner_001",
+  "bottomRow": 8,
+  "topRow": 4,
+  "isVisible": "{{!!appsmith.store.teamMailoutRunning}}",
+  "type": "ICON_WIDGET",
+  "version": 1,
+  "parentId": "tmo_status_canvas_001",
   "dynamicBindingPathList": [
     {
       "key": "color"
@@ -9,20 +23,6 @@
       "key": "isVisible"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "isVisible"
-    }
-  ],
-  "iconName": "loading",
-  "iconSize": 24,
-  "isVisible": "{{!!appsmith.store.teamMailoutRunning}}",
   "leftColumn": 60,
-  "parentId": "tmo_status_canvas_001",
-  "rightColumn": 63,
-  "topRow": 4,
-  "type": "ICON_WIDGET",
-  "version": 1,
-  "widgetId": "tmo_status_spinner_001",
-  "widgetName": "ProgressSpinner"
+  "iconSize": 24
 }

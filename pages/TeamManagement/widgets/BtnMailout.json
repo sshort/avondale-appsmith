@@ -1,18 +1,17 @@
 {
-  "gitSyncId": "69c8f9130b20713d33eec660_tm_btnmailout_001",
-  "id": "TeamManagement_BtnMailout",
-  "parentId": "0",
-  "type": "BUTTON_WIDGET",
-  "widgetName": "BtnMailout",
-  "widgetId": "tm_btnmailout_001",
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 37,
   "boxShadow": "none",
+  "widgetName": "BtnMailout",
+  "onClick": "{{navigateTo('TeamMailout', {}, 'SAME_WINDOW')}}",
   "buttonColor": "#64748B",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
+  "bottomRow": 37,
+  "topRow": 34,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -21,23 +20,24 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "leftColumn": 53,
+  "id": "TeamManagement_BtnMailout",
+  "isDisabled": false,
+  "text": "Mailout",
+  "rightColumn": 63,
+  "textSize": "0.625rem",
   "iconName": "send-message",
   "isDefaultClickDisabled": true,
-  "isDisabled": false,
-  "isLoading": false,
+  "widgetId": "tm_btnmailout_001",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "isVisible": true,
-  "leftColumn": 53,
-  "onClick": "{{navigateTo('TeamMailout', {}, 'SAME_WINDOW')}}",
-  "placement": "CENTER",
   "recaptchaType": "V3",
-  "rightColumn": 63,
-  "text": "Mailout",
-  "textSize": "0.625rem",
-  "topRow": 34,
-  "version": 1
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER",
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_btnmailout_001"
 }

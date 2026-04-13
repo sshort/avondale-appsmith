@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "DELETE FROM public.email_templates WHERE id = {{appsmith.store.selectedEmailTemplateId}};",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "DELETE FROM public.email_templates WHERE id = {{appsmith.store.selectedEmailTemplateId}};",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 10000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

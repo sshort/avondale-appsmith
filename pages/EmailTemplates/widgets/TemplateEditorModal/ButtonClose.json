@@ -1,50 +1,50 @@
 {
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 64,
+  "needsErrorInfo": false,
   "boxShadow": "none",
+  "onClick": "{{storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); closeModal('TemplateEditorModal');}}",
+  "widgetName": "ButtonClose",
   "buttonColor": "#6B7280",
-  "buttonStyle": "SECONDARY",
-  "buttonType": "TERTIARY",
-  "ctaColor": "#6B7280",
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
   "dynamicPropertyPathList": [],
+  "bottomRow": 68,
+  "labelText": "",
+  "topRow": 64,
+  "parentRowSpace": 10,
+  "labelWidth": 5,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "buttonType": "TERTIARY",
   "dynamicTriggerPathList": [
     {
       "key": "onClick"
     }
   ],
-  "iconAlign": "left",
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
-  "key": "buttonClose01",
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelText": "",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
-  "leftColumn": 45,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 4,
-  "minWidth": 120,
-  "needsErrorInfo": false,
-  "onClick": "{{storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); closeModal('TemplateEditorModal');}}",
   "parentColumnSpace": 21.875,
-  "parentId": "emailtemplatesModalCanvas01",
-  "parentRowSpace": 10,
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
+  "leftColumn": 55,
+  "labelPosition": "Top",
+  "isDisabled": false,
+  "text": "Close",
+  "key": "buttonClose01",
+  "labelTextSize": "0.875rem",
+  "ctaColor": "#6B7280",
+  "rightColumn": 63,
+  "widgetId": "buttonClose01",
+  "buttonStyle": "SECONDARY",
   "placementWithPortal": false,
+  "minWidth": 120,
+  "isVisible": true,
+  "version": 1,
+  "parentId": "emailtemplatesModalCanvas01",
+  "isLoading": false,
+  "labelAlignment": "left",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 51,
-  "text": "Close",
-  "topRow": 60,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
-  "widgetId": "buttonClose01",
-  "widgetName": "ButtonClose"
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "maxDynamicHeight": 9000,
+  "iconAlign": "left",
+  "minDynamicHeight": 4
 }

@@ -1,9 +1,22 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "backgroundColor": "#ffffff",
-  "borderRadius": "0px",
-  "bottomRow": 8,
   "boxShadow": "0 2px 4px rgba(0,0,0,0.1)",
+  "backgroundColor": "#ffffff",
+  "rightColumn": 64,
+  "widgetName": "Header",
+  "isCanvas": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tp_header_001",
+  "bottomRow": 8,
+  "containerStyle": "none",
+  "topRow": 0,
+  "isVisible": true,
+  "type": "CONTAINER_WIDGET",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "shouldScrollContents": false,
+  "borderRadius": "0px",
+  "leftColumn": 0,
   "children": [
     {
       "rightColumn": 64,
@@ -16,18 +29,5 @@
       "version": 1,
       "parentId": "tp_header_001"
     }
-  ],
-  "containerStyle": "none",
-  "isCanvas": true,
-  "isLoading": false,
-  "isVisible": true,
-  "leftColumn": 0,
-  "parentId": "0",
-  "rightColumn": 64,
-  "shouldScrollContents": false,
-  "topRow": 0,
-  "type": "CONTAINER_WIDGET",
-  "version": 1,
-  "widgetId": "tp_header_001",
-  "widgetName": "Header"
+  ]
 }

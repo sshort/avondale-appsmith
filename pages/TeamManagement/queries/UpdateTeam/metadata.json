@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.teams SET section = '{{EditInputSection.text}}', team_name = '{{EditInputTeamName.text}}', season = '{{EditInputSeason.text}}', sort_order = {{EditInputSortOrder.text || 0}}, updated_at = now() WHERE id = {{(appsmith.store.teamManagementSelectedId || TableTeams.selectedRow.id)}} RETURNING id;",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.teams SET section = '{{EditInputSection.text}}', team_name = '{{EditInputTeamName.text}}', season = '{{EditInputSeason.text}}', sort_order = {{EditInputSortOrder.text || 0}}, updated_at = now() WHERE id = {{(appsmith.store.teamManagementSelectedId || TableTeams.selectedRow.id)}} RETURNING id;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

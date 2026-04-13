@@ -7,8 +7,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "69d7c8d37ac64a5d529c95ad",
-              "name": "GetNicknames",
+              "id": "Overrides_GetOverrides",
+              "name": "GetOverrides",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
@@ -38,7 +38,7 @@
         }
       }
     ],
-    "name": "Nicknames",
-    "slug": "nicknames"
+    "name": "Overrides",
+    "slug": "overrides"
   }
 }

@@ -1,12 +1,22 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
   "boxShadow": "none",
+  "onClick": "{{storeValue('teamMailoutRunning', true); storeValue('teamMailoutStatus', `Sending ${TableJobs.selectedRow && TableJobs.selectedRow.captain_name ? TableJobs.selectedRow.captain_name : 'selected captain'}...`); TriggerMailout.run(() => { SyncMailoutData.run(() => { storeValue('teamMailoutStatus', 'Captain mailout sent.'); storeValue('teamMailoutRunning', false); showAlert('Captain mailout sent', 'success'); }, (error) => { const message = `Mailout sent, but refresh failed: ${error?.message || 'Unknown error occurred'}`; storeValue('teamMailoutStatus', message); storeValue('teamMailoutRunning', false); showAlert(message, 'error'); }); }, (error) => { const message = `Error: ${error?.message || 'Unknown error occurred'}`; storeValue('teamMailoutStatus', message); storeValue('teamMailoutRunning', false); showAlert(message, 'error'); });}}",
+  "widgetName": "BtnGenerateAndSend",
   "buttonColor": "#475569",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
+  "dynamicPropertyPathList": [
+    {
+      "key": "isDisabled"
+    }
+  ],
+  "bottomRow": 25,
+  "topRow": 22,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,32 +28,22 @@
       "key": "isDisabled"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "isDisabled"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
+  "leftColumn": 1,
+  "isDisabled": "{{!!appsmith.store.teamMailoutRunning || !(TableJobs.selectedRow && TableJobs.selectedRow.job_key)}}",
+  "text": "Send Selected",
+  "rightColumn": 63,
+  "textSize": "0.625rem",
   "iconName": "send-message",
   "isDefaultClickDisabled": true,
-  "isDisabled": "{{!!appsmith.store.teamMailoutRunning}}",
-  "isLoading": false,
-  "isVisible": true,
-  "leftColumn": 1,
-  "onClick": "{{storeValue('teamMailoutRunning', true); storeValue('teamMailoutStatus', `Preparing ${ToggleTestMode.isSelected ? 'test' : 'production'} captain mailout...`); GenerateContactSheets.run(() => { storeValue('teamMailoutStatus', 'Captain mailout sent successfully.'); storeValue('teamMailoutRunning', false); }, (error) => { const message = `Error: ${error?.message || 'Unknown error occurred'}`; storeValue('teamMailoutStatus', message); storeValue('teamMailoutRunning', false); showAlert(message, 'error'); });}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
-  "text": "Gen + Send",
-  "textSize": "0.625rem",
-  "topRow": 23,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tmo_config_send_001",
-  "widgetName": "BtnGenerateAndSend"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER"
 }

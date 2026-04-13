@@ -1,10 +1,16 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 15,
   "boxShadow": "none",
+  "onClick": "{{showModal('AddPlayerModal')}}",
+  "widgetName": "BtnAddPlayer",
   "buttonColor": "#475569",
-  "buttonVariant": "SECONDARY",
+  "bottomRow": 15,
+  "topRow": 12,
+  "type": "BUTTON_WIDGET",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,26 +19,20 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "iconName": "plus",
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 53,
-  "onClick": "{{showModal('AddPlayerModal')}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "isDisabled": false,
   "text": "Add",
+  "rightColumn": 63,
   "textSize": "0.625rem",
-  "topRow": 12,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "iconName": "plus",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tp_btnadd_001",
-  "widgetName": "BtnAddPlayer"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER"
 }

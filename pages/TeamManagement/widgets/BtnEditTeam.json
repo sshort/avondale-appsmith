@@ -1,12 +1,17 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 21,
   "boxShadow": "none",
+  "onClick": "{{showModal('EditTeamModal')}}",
+  "widgetName": "BtnEditTeam",
   "buttonColor": "#475569",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
+  "bottomRow": 21,
+  "topRow": 18,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,29 +20,24 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "gitSyncId": "69c8f9130b20713d33eec660_tm_btnedit_001",
-  "iconName": "edit",
-  "id": "TeamManagement_BtnEditTeam",
-  "isDefaultClickDisabled": true,
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 53,
-  "onClick": "{{showModal('EditTeamModal')}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "id": "TeamManagement_BtnEditTeam",
+  "isDisabled": false,
   "text": "Edit",
+  "rightColumn": 63,
   "textSize": "0.625rem",
-  "topRow": 18,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "iconName": "edit",
+  "isDefaultClickDisabled": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tm_btnedit_001",
-  "widgetName": "BtnEditTeam"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER",
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_btnedit_001"
 }

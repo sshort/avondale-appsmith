@@ -1,12 +1,24 @@
 {
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 64,
+  "needsErrorInfo": false,
   "boxShadow": "none",
+  "onClick": "{{((appsmith.store.selectedEmailTemplateId) ? SaveTemplate.run() : CreateTemplate.run()).then(() => { closeModal('TemplateEditorModal'); showAlert(appsmith.store.selectedEmailTemplateId ? 'Template saved' : 'Template created', 'success'); storeValue('selectedEmailTemplateId', null); storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); GetEmailTemplates.run(); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); }).catch((error) => { showAlert((error?.message || error || 'Failed to save'), 'error'); });}}",
+  "widgetName": "ButtonSave",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonStyle": "PRIMARY",
+  "dynamicPropertyPathList": [],
+  "bottomRow": 68,
+  "labelText": "",
+  "topRow": 64,
+  "parentRowSpace": 10,
+  "labelWidth": 5,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
   "buttonType": "SECONDARY",
-  "ctaColor": "{{appsmith.theme.colors.primaryColor}}",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
+  "parentColumnSpace": 21.875,
   "dynamicBindingPathList": [
     {
       "key": "borderRadius"
@@ -15,39 +27,27 @@
       "key": "text"
     }
   ],
-  "dynamicPropertyPathList": [],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "iconAlign": "left",
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
-  "key": "buttonSave01",
-  "labelAlignment": "left",
+  "leftColumn": 33,
   "labelPosition": "Top",
-  "labelText": "",
+  "isDisabled": false,
+  "text": "{{appsmith.store.selectedEmailTemplateId ? 'Save Template' : 'Create Template'}}",
+  "key": "buttonSave01",
   "labelTextSize": "0.875rem",
-  "labelWidth": 5,
-  "leftColumn": 59,
-  "maxDynamicHeight": 9000,
-  "minDynamicHeight": 4,
-  "minWidth": 120,
-  "needsErrorInfo": false,
-  "onClick": "{{((appsmith.store.selectedEmailTemplateId) ? SaveTemplate.run() : CreateTemplate.run()).then(() => { closeModal('TemplateEditorModal'); showAlert(appsmith.store.selectedEmailTemplateId ? 'Template saved' : 'Template created', 'success'); storeValue('selectedEmailTemplateId', null); storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); GetEmailTemplates.run(); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextTemplate', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); }).catch((error) => { showAlert((error?.message || error || 'Failed to save'), 'error'); });}}",
-  "parentColumnSpace": 21.875,
-  "parentId": "emailtemplatesModalCanvas01",
-  "parentRowSpace": 10,
+  "ctaColor": "{{appsmith.theme.colors.primaryColor}}",
+  "rightColumn": 41,
+  "widgetId": "buttonSave01",
+  "buttonStyle": "PRIMARY",
   "placementWithPortal": false,
+  "minWidth": 120,
+  "isVisible": true,
+  "version": 1,
+  "parentId": "emailtemplatesModalCanvas01",
+  "isLoading": false,
+  "labelAlignment": "left",
   "renderMode": "CANVAS",
   "responsiveBehavior": "fill",
-  "rightColumn": 63,
-  "text": "{{appsmith.store.selectedEmailTemplateId ? 'Save Template' : 'Create Template'}}",
-  "topRow": 60,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
-  "widgetId": "buttonSave01",
-  "widgetName": "ButtonSave"
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "maxDynamicHeight": 9000,
+  "iconAlign": "left",
+  "minDynamicHeight": 4
 }

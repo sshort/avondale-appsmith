@@ -1,12 +1,17 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 41,
   "boxShadow": "none",
+  "onClick": "{{showModal('DeleteConfirmModal')}}",
+  "widgetName": "BtnDeleteTeam",
   "buttonColor": "#7F1D1D",
-  "buttonVariant": "SECONDARY",
-  "disabledWhenInvalid": false,
+  "bottomRow": 41,
+  "topRow": 38,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,29 +20,24 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "gitSyncId": "69c8f9130b20713d33eec660_tm_btndelete_001",
-  "iconName": "delete",
-  "id": "TeamManagement_BtnDeleteTeam",
-  "isDefaultClickDisabled": true,
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 53,
-  "onClick": "{{showModal('DeleteConfirmModal')}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "id": "TeamManagement_BtnDeleteTeam",
+  "isDisabled": false,
   "text": "Delete",
+  "rightColumn": 63,
   "textSize": "0.625rem",
-  "topRow": 38,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "iconName": "delete",
+  "isDefaultClickDisabled": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tm_btndelete_001",
-  "widgetName": "BtnDeleteTeam"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER",
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_btndelete_001"
 }

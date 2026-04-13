@@ -7,7 +7,7 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "69d393247ac64a5d529c9476",
+              "id": "EmailTemplates_GetEmailTemplates",
               "name": "GetEmailTemplates",
               "confirmBeforeExecute": false,
               "pluginType": "DB",

@@ -5,18 +5,18 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, source, target, notes, created_at\nFROM public.team_nicknames\nORDER BY lower(source) ASC, lower(target) ASC;\n",
-      "encodeParamsToggle": true,
-      "formData": {
-        "apiContentType": "none"
-      },
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT id, source, target, notes, created_at\nFROM public.team_nicknames\nORDER BY lower(source) ASC, lower(target) ASC;\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
       ],
-      "timeoutInMillisecond": 10000
+      "formData": {
+        "apiContentType": "none"
+      }
     },
     "confirmBeforeExecute": false,
     "datasource": {

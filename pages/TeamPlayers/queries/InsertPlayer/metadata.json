@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.team_players (team_id, source_name, is_captain, sort_order)\nVALUES (\n  {{appsmith.URL.queryParams.teamId}},\n  {{(SelectPlayerLookup.selectedOptionValue || InputSourceName.text || '').trim()}},\n  {{InputIsCaptain.isChecked}},\n  {{InputSortOrder.text || 0}}\n)\nRETURNING id;",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "INSERT INTO public.team_players (team_id, source_name, is_captain, sort_order)\nVALUES (\n  {{appsmith.URL.queryParams.teamId}},\n  {{(SelectPlayerLookup.selectedOptionValue || InputSourceName.text || '').trim()}},\n  {{InputIsCaptain.isChecked}},\n  {{InputSortOrder.text || 0}}\n)\nRETURNING id;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT tp.id, tp.team_id, tp.source_name, tp.is_captain, tp.sort_order, t.team_name, t.season, t.section FROM public.team_players tp JOIN public.teams t ON t.id = tp.team_id WHERE tp.team_id = {{Number(appsmith.URL.queryParams.teamId || 0)}} ORDER BY tp.sort_order ASC, tp.source_name ASC;",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT tp.id, tp.team_id, tp.source_name, tp.is_captain, tp.sort_order, t.team_name, t.season, t.section FROM public.team_players tp JOIN public.teams t ON t.id = tp.team_id WHERE tp.team_id = {{Number(appsmith.URL.queryParams.teamId || 0)}} ORDER BY tp.sort_order ASC, tp.source_name ASC;\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "INSERT INTO public.teams (section, team_name, season, sort_order) VALUES ('{{InputSection.text}}', '{{InputTeamName.text}}', '{{InputSeason.text}}', {{InputSortOrder.text || 0}}) RETURNING id;",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "INSERT INTO public.teams (section, team_name, season, sort_order) VALUES ('{{InputSection.text}}', '{{InputTeamName.text}}', '{{InputSeason.text}}', {{InputSortOrder.text || 0}}) RETURNING id;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

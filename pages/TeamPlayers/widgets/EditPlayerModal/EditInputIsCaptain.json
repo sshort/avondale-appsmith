@@ -1,10 +1,21 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "alignWidget": "left",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
+  "labelTextSize": "0.875rem",
   "boxShadow": "none",
+  "rightColumn": 32,
+  "widgetName": "EditInputIsCaptain",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tp_modaledit_captain_001",
+  "bottomRow": 18,
+  "topRow": 13,
+  "isVisible": true,
+  "label": "Team Captain",
+  "type": "SWITCH_WIDGET",
   "defaultSwitchState": "{{typeof appsmith.store.teamPlayersSelectedIsCaptain === 'boolean' ? appsmith.store.teamPlayersSelectedIsCaptain : TablePlayers.selectedRow.is_captain}}",
+  "version": 1,
+  "alignWidget": "left",
+  "parentId": "tp_modaledit_canvas_001",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,18 +27,7 @@
       "key": "defaultSwitchState"
     }
   ],
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
-  "label": "Team Captain",
-  "labelPosition": "Top",
-  "labelTextSize": "0.875rem",
   "leftColumn": 1,
-  "parentId": "tp_modaledit_canvas_001",
-  "rightColumn": 32,
-  "topRow": 13,
-  "type": "SWITCH_WIDGET",
-  "version": 1,
-  "widgetId": "tp_modaledit_captain_001",
-  "widgetName": "EditInputIsCaptain"
+  "labelPosition": "Top",
+  "isDisabled": false
 }

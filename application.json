@@ -9,18 +9,6 @@
   "evaluationVersion": 2,
   "pages": [
     {
-      "id": "Overrides",
-      "isDefault": false
-    },
-    {
-      "id": "Nicknames",
-      "isDefault": false
-    },
-    {
-      "id": "EmailTemplates",
-      "isDefault": false
-    },
-    {
       "id": "TeamManagement",
       "isDefault": true
     },
@@ -30,6 +18,18 @@
     },
     {
       "id": "TeamMailout",
+      "isDefault": false
+    },
+    {
+      "id": "Overrides",
+      "isDefault": false
+    },
+    {
+      "id": "Nicknames",
+      "isDefault": false
+    },
+    {
+      "id": "EmailTemplates",
       "isDefault": false
     }
   ],

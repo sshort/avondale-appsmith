@@ -1,34 +1,9 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 54,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "canFreezeColumn": true,
-  "childStylesheet": {
-    "button": {
-      "boxShadow": "none",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
-    "iconButton": {
-      "boxShadow": "none",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
-    "menuButton": {
-      "boxShadow": "none",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
-    "editActions": {
-      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
-    }
-  },
+  "infiniteScrollEnabled": true,
+  "borderColor": "#E0DEDE",
+  "widgetName": "TablePlayers",
+  "defaultPageSize": 0,
   "columnOrder": [
     "id",
     "team_id",
@@ -39,13 +14,29 @@
     "season1",
     "section1"
   ],
-  "columnUpdatedAt": 1775565211327,
-  "defaultPageSize": 0,
-  "defaultSelectedRowIndex": 0,
-  "defaultSelectedRowIndices": [
-    0
+  "dynamicPropertyPathList": [
+    {
+      "key": "tableData"
+    }
   ],
-  "delimiter": ",",
+  "isVisibleDownload": true,
+  "compactMode": "SHORT",
+  "bottomRow": 54,
+  "topRow": 12,
+  "isSortable": true,
+  "type": "TABLE_WIDGET_V2",
+  "inlineEditingSaveOption": "ROW_LEVEL",
+  "dynamicTriggerPathList": [
+    {
+      "key": "primaryColumns.edit_player.onClick"
+    },
+    {
+      "key": "primaryColumns.delete_player.onClick"
+    },
+    {
+      "key": "onRowSelected"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -84,36 +75,9 @@
       "key": "primaryColumns.section1.computedValue"
     }
   ],
-  "dynamicPropertyPathList": [
-    {
-      "key": "tableData"
-    }
-  ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "primaryColumns.edit_player.onClick"
-    },
-    {
-      "key": "primaryColumns.delete_player.onClick"
-    },
-    {
-      "key": "onRowSelected"
-    }
-  ],
-  "enableClientSideSearch": true,
-  "infiniteScrollEnabled": true,
-  "horizontalAlignment": "LEFT",
-  "inlineEditingSaveOption": "ROW_LEVEL",
-  "isLoading": false,
-  "isSortable": true,
-  "isVisible": true,
-  "isVisibleDownload": true,
-  "isVisibleFilters": false,
-  "isVisiblePagination": false,
-  "label": "Data",
   "leftColumn": 1,
-  "onRowSelected": "{{storeValue('teamPlayersSelectedId', TablePlayers.selectedRow.id); storeValue('teamPlayersSelectedSourceName', TablePlayers.selectedRow.source_name); storeValue('teamPlayersSelectedIsCaptain', TablePlayers.selectedRow.is_captain); storeValue('teamPlayersSelectedSortOrder', TablePlayers.selectedRow.sort_order);}}",
-  "parentId": "0",
+  "borderWidth": "1",
+  "delimiter": ",",
   "primaryColumns": {
     "source_name1": {
       "computedValue": "{{(() => { const tableData = TablePlayers.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow, currentIndex) => (currentRow[\"source_name\"])) : source_name })()}}",
@@ -430,16 +394,52 @@
       "verticalAlignment": "CENTER"
     }
   },
+  "onRowSelected": "{{storeValue('teamPlayersSelectedId', TablePlayers.selectedRow.id); storeValue('teamPlayersSelectedSourceName', TablePlayers.selectedRow.source_name); storeValue('teamPlayersSelectedIsCaptain', TablePlayers.selectedRow.is_captain); storeValue('teamPlayersSelectedSortOrder', TablePlayers.selectedRow.sort_order);}}",
+  "defaultSelectedRowIndex": 0,
+  "canFreezeColumn": true,
   "rightColumn": 52,
-  "searchKey": "",
-  "tableData": "{{Array.isArray(GetPlayers.data) ? GetPlayers.data : []}}",
   "textSize": "0.875rem",
-  "topRow": 12,
-  "totalRecordsCount": 0,
-  "type": "TABLE_WIDGET_V2",
-  "version": 2,
-  "verticalAlignment": "CENTER",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tp_table_001",
-  "widgetName": "TablePlayers",
-  "compactMode": "SHORT"
+  "isVisibleFilters": false,
+  "tableData": "{{Array.isArray(GetPlayers.data) ? GetPlayers.data : []}}",
+  "isVisible": true,
+  "label": "Data",
+  "searchKey": "",
+  "enableClientSideSearch": true,
+  "version": 2,
+  "parentId": "0",
+  "totalRecordsCount": 0,
+  "isLoading": false,
+  "horizontalAlignment": "LEFT",
+  "childStylesheet": {
+    "button": {
+      "boxShadow": "none",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "boxShadow": "none",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "boxShadow": "none",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "isVisiblePagination": false,
+  "columnUpdatedAt": 1775565211327,
+  "defaultSelectedRowIndices": [
+    0
+  ],
+  "verticalAlignment": "CENTER"
 }

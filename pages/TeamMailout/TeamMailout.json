@@ -1,10 +1,21 @@
 {
   "gitSyncId": "69c8f9130b20713d33eec660_tmo_page_00000001",
   "unpublishedPage": {
-    "isHidden": true,
+    "isHidden": false,
     "layouts": [
       {
-        "layoutOnLoadActions": [],
+        "layoutOnLoadActions": [
+          [
+            {
+              "id": "TeamMailout_SyncMailoutData",
+              "name": "SyncMailoutData",
+              "confirmBeforeExecute": false,
+              "pluginType": "API",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 60000
+            }
+          ]
+        ],
         "dsl": {
           "backgroundColor": "none",
           "rightColumn": 4896,

@@ -1,10 +1,16 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
   "boxShadow": "none",
+  "onClick": "{{UpdatePlayer.run(() => { closeModal('EditPlayerModal'); GetPlayers.run(); }, () => {})}}",
+  "widgetName": "BtnEditSubmit",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
+  "bottomRow": 26,
+  "topRow": 21,
+  "type": "BUTTON_WIDGET",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -16,25 +22,19 @@
       "key": "buttonColor"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 32,
-  "onClick": "{{UpdatePlayer.run(() => { closeModal('EditPlayerModal'); GetPlayers.run(); }, () => {})}}",
-  "parentId": "tp_modaledit_canvas_001",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "isDisabled": false,
   "text": "Save Changes",
+  "rightColumn": 63,
   "textSize": "0.875rem",
-  "topRow": 21,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tp_modaledit_submit_001",
-  "widgetName": "BtnEditSubmit"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "tp_modaledit_canvas_001",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "buttonVariant": "PRIMARY",
+  "placement": "CENTER"
 }

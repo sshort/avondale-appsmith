@@ -3,7 +3,5 @@
   "attachment_mode": "{{SelectScope.selectedOptionValue}}",
   "delivery_mode": "{{ToggleTestMode.isSelected ? 'test' : 'production'}}",
   "test_recipient": "steve.short@gmail.com",
-  "generate_only": true,
-  "base_dir": "/var/lib/n8n/teams-mailout/current",
-  "webhook_base_url": "http://127.0.0.1:5678"
+  "generate_only": true
 }

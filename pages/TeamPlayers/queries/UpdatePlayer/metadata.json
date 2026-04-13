@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "UPDATE public.team_players SET source_name = '{{EditInputSourceName.text}}', is_captain = {{EditInputIsCaptain.isChecked}}, sort_order = {{EditInputSortOrder.text || 0}} WHERE id = {{appsmith.store.teamPlayersSelectedId || TablePlayers.selectedRow.id}} RETURNING id;",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "UPDATE public.team_players SET source_name = '{{EditInputSourceName.text}}', is_captain = {{EditInputIsCaptain.isChecked}}, sort_order = {{EditInputSortOrder.text || 0}} WHERE id = {{appsmith.store.teamPlayersSelectedId || TablePlayers.selectedRow.id}} RETURNING id;",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

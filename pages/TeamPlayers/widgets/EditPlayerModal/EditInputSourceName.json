@@ -1,9 +1,10 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 11,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.teamPlayersSelectedSourceName || TablePlayers.selectedRow.source_name}}",
+  "widgetName": "EditInputSourceName",
+  "bottomRow": 11,
+  "topRow": 6,
+  "labelWidth": 5,
+  "type": "INPUT_WIDGET_V2",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,24 +16,23 @@
       "key": "defaultText"
     }
   ],
-  "iconAlign": "left",
+  "leftColumn": 1,
+  "resetOnSubmit": true,
+  "labelPosition": "Top",
   "inputType": "TEXT",
   "isDisabled": false,
-  "isLoading": false,
+  "labelTextSize": "0.875rem",
   "isRequired": true,
+  "rightColumn": 63,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tp_modaledit_name_001",
   "isVisible": true,
   "label": "Player Name",
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
-  "leftColumn": 1,
-  "parentId": "tp_modaledit_canvas_001",
-  "resetOnSubmit": true,
-  "rightColumn": 63,
-  "topRow": 6,
-  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tp_modaledit_name_001",
-  "widgetName": "EditInputSourceName"
+  "parentId": "tp_modaledit_canvas_001",
+  "isLoading": false,
+  "labelAlignment": "left",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "iconAlign": "left",
+  "defaultText": "{{appsmith.store.teamPlayersSelectedSourceName || TablePlayers.selectedRow.source_name}}"
 }

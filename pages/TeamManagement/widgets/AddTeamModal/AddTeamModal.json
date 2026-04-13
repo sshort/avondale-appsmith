@@ -1,6 +1,21 @@
 {
+  "widgetName": "AddTeamModal",
+  "detachFromLayout": true,
+  "isCanvas": true,
+  "widgetId": "tm_modaladd_001",
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "parentId": "0",
+  "isLoading": false,
+  "shouldScrollContents": true,
   "animateLoading": true,
+  "dynamicTriggerPathList": [],
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
   "children": [
     {
       "rightColumn": 456,
@@ -14,24 +29,9 @@
       "parentId": "tm_modaladd_001"
     }
   ],
-  "detachFromLayout": true,
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
-  "dynamicTriggerPathList": [],
-  "gitSyncId": "69c8f9130b20713d33eec660_tm_modaladd_001",
-  "height": 340,
-  "id": "TeamManagement_AddTeamModal",
-  "isCanvas": true,
-  "isLoading": false,
-  "parentId": "0",
-  "shouldScrollContents": true,
+  "width": 456,
   "showCloseButton": true,
-  "type": "MODAL_WIDGET",
-  "version": 2,
-  "widgetId": "tm_modaladd_001",
-  "widgetName": "AddTeamModal",
-  "width": 456
+  "id": "TeamManagement_AddTeamModal",
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_modaladd_001",
+  "height": 340
 }

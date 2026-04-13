@@ -1,46 +1,11 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "allowAddNewRow": false,
-  "animateLoading": true,
-  "borderColor": "#E0DEDE",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 46,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
-  "cachedTableData": {},
-  "canFreezeColumn": true,
-  "childStylesheet": {
-    "button": {
-      "boxShadow": "none",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
-    "iconButton": {
-      "boxShadow": "none",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
-    "menuButton": {
-      "boxShadow": "none",
-      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
-    },
-    "editActions": {
-      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
-    }
-  },
-  "columnOrder": [
-    "template_name",
-    "template_type",
-    "subject_template",
-    "is_active"
-  ],
-  "columnUpdatedAt": 1775570843232,
-  "columnWidthMap": {},
-  "delimiter": ",",
+  "borderColor": "#E0DEDE",
+  "isVisibleDownload": true,
+  "topRow": 6,
+  "isSortable": true,
+  "type": "TABLE_WIDGET_V2",
+  "animateLoading": true,
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -94,36 +59,66 @@
       "key": "primaryColumns.updated_at.computedValue"
     }
   ],
+  "leftColumn": 1,
+  "delimiter": ",",
+  "cachedTableData": {},
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "isVisibleFilters": false,
+  "isVisible": true,
+  "enableClientSideSearch": true,
+  "version": 2,
+  "totalRecordsCount": 0,
+  "isLoading": false,
+  "childStylesheet": {
+    "button": {
+      "boxShadow": "none",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "iconButton": {
+      "boxShadow": "none",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "buttonColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "menuButton": {
+      "boxShadow": "none",
+      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "menuColor": "{{appsmith.theme.colors.primaryColor}}"
+    },
+    "editActions": {
+      "saveBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "saveButtonColor": "{{appsmith.theme.colors.primaryColor}}",
+      "discardBorderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+      "discardButtonColor": "{{appsmith.theme.colors.primaryColor}}"
+    }
+  },
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "columnUpdatedAt": 1775570843232,
+  "needsErrorInfo": false,
+  "infiniteScrollEnabled": true,
+  "widgetName": "TableTemplates",
+  "columnOrder": [
+    "template_name",
+    "template_type",
+    "subject_template",
+    "is_active"
+  ],
   "dynamicPropertyPathList": [
     {
       "key": "tableData"
     }
   ],
+  "compactMode": "SHORT",
+  "bottomRow": 46,
+  "columnWidthMap": {},
+  "parentRowSpace": 10,
   "dynamicTriggerPathList": [
     {
       "key": "onRowSelected"
     }
   ],
-  "enableClientSideSearch": true,
-  "endOfData": false,
-  "horizontalAlignment": "LEFT",
-  "infiniteScrollEnabled": true,
-  "isLoading": false,
-  "isSortable": true,
-  "isVisible": true,
-  "isVisibleDownload": true,
-  "isVisibleFilters": false,
-  "isVisiblePagination": false,
-  "isVisibleSearch": true,
-  "key": "emailtemplates01",
-  "label": "Data",
-  "leftColumn": 1,
-  "minWidth": 450,
-  "needsErrorInfo": false,
-  "onRowSelected": "{{storeValue('selectedEmailTemplateId', TableTemplates.selectedRow?.id); storeValue('selectedEmailTemplateRow', TableTemplates.selectedRow || null);}}",
   "parentColumnSpace": 21.875,
-  "parentId": "0",
-  "parentRowSpace": 10,
+  "borderWidth": "1",
   "primaryColumns": {
     "template_key": {
       "computedValue": "{{(() => { const tableData = TableTemplates.processedTableData || []; return tableData.length > 0 ? tableData.map((currentRow) => (currentRow[\"template_key\"])) : template_key })()}}",
@@ -568,18 +563,23 @@
       "verticalAlignment": "CENTER"
     }
   },
-  "renderMode": "CANVAS",
-  "responsiveBehavior": "fill",
-  "rightColumn": 52,
-  "serverSidePaginationEnabled": false,
-  "tableData": "{{(() => { if (!Array.isArray(GetEmailTemplates.data) && !appsmith.store.emailTemplatesBootstrapStarted) { storeValue('emailTemplatesBootstrapStarted', true); GetEmailTemplates.run(); } return Array.isArray(GetEmailTemplates.data) ? GetEmailTemplates.data : []; })()}}",
+  "onRowSelected": "{{storeValue('selectedEmailTemplateId', TableTemplates.selectedRow?.id); storeValue('selectedEmailTemplateRow', TableTemplates.selectedRow || null);}}",
+  "key": "emailtemplates01",
+  "canFreezeColumn": true,
+  "endOfData": false,
+  "rightColumn": 25,
   "textSize": "0.875rem",
-  "topRow": 6,
-  "totalRecordsCount": 0,
-  "type": "TABLE_WIDGET_V2",
-  "version": 2,
-  "verticalAlignment": "CENTER",
+  "allowAddNewRow": false,
   "widgetId": "emailtemplatesTable01",
-  "widgetName": "TableTemplates",
-  "compactMode": "SHORT"
+  "minWidth": 450,
+  "tableData": "{{(() => { if (!Array.isArray(GetEmailTemplates.data) && !appsmith.store.emailTemplatesBootstrapStarted) { storeValue('emailTemplatesBootstrapStarted', true); GetEmailTemplates.run(); } return Array.isArray(GetEmailTemplates.data) ? GetEmailTemplates.data : []; })()}}",
+  "label": "Data",
+  "parentId": "0",
+  "serverSidePaginationEnabled": false,
+  "renderMode": "CANVAS",
+  "horizontalAlignment": "LEFT",
+  "isVisibleSearch": true,
+  "responsiveBehavior": "fill",
+  "isVisiblePagination": false,
+  "verticalAlignment": "CENTER"
 }

@@ -1,5 +1,19 @@
 {
+  "widgetName": "AddPlayerModal",
+  "detachFromLayout": true,
+  "isCanvas": true,
+  "widgetId": "tp_modaladd_001",
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "parentId": "0",
+  "isLoading": false,
+  "shouldScrollContents": true,
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
   "children": [
     {
       "rightColumn": 456,
@@ -13,21 +27,7 @@
       "parentId": "tp_modaladd_001"
     }
   ],
-  "detachFromLayout": true,
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
-  "height": 430,
-  "isCanvas": true,
-  "isLoading": false,
-  "parentId": "0",
-  "shouldScrollContents": true,
+  "width": 456,
   "showCloseButton": true,
-  "type": "MODAL_WIDGET",
-  "version": 2,
-  "widgetId": "tp_modaladd_001",
-  "widgetName": "AddPlayerModal",
-  "width": 456
+  "height": 430
 }

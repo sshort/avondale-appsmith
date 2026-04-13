@@ -1,6 +1,21 @@
 {
+  "widgetName": "DeleteConfirmModal",
+  "detachFromLayout": true,
+  "isCanvas": true,
+  "widgetId": "tm_modaldel_001",
+  "type": "MODAL_WIDGET",
+  "version": 2,
+  "parentId": "0",
+  "isLoading": false,
+  "shouldScrollContents": true,
   "animateLoading": true,
+  "dynamicTriggerPathList": [],
   "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "dynamicBindingPathList": [
+    {
+      "key": "borderRadius"
+    }
+  ],
   "children": [
     {
       "rightColumn": 456,
@@ -14,24 +29,9 @@
       "parentId": "tm_modaldel_001"
     }
   ],
-  "detachFromLayout": true,
-  "dynamicBindingPathList": [
-    {
-      "key": "borderRadius"
-    }
-  ],
-  "dynamicTriggerPathList": [],
-  "gitSyncId": "69c8f9130b20713d33eec660_tm_modaldel_001",
-  "height": 200,
-  "id": "TeamManagement_DeleteConfirmModal",
-  "isCanvas": true,
-  "isLoading": false,
-  "parentId": "0",
-  "shouldScrollContents": true,
+  "width": 456,
   "showCloseButton": true,
-  "type": "MODAL_WIDGET",
-  "version": 2,
-  "widgetId": "tm_modaldel_001",
-  "widgetName": "DeleteConfirmModal",
-  "width": 456
+  "id": "TeamManagement_DeleteConfirmModal",
+  "gitSyncId": "69c8f9130b20713d33eec660_tm_modaldel_001",
+  "height": 200
 }

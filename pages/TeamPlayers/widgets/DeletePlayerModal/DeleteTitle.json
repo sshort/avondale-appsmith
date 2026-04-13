@@ -1,16 +1,16 @@
 {
-  "bottomRow": 5,
-  "fontSize": "1.25rem",
-  "fontStyle": "BOLD",
-  "leftColumn": 1,
-  "parentId": "tp_modaldel_canvas_001",
   "rightColumn": 63,
-  "text": "Delete Player",
+  "widgetName": "DeleteTitle",
   "textAlign": "LEFT",
-  "textColor": "#F22B2B",
-  "topRow": 1,
-  "type": "TEXT_WIDGET",
-  "version": 1,
   "widgetId": "tp_modaldel_title_001",
-  "widgetName": "DeleteTitle"
+  "bottomRow": 5,
+  "topRow": 1,
+  "fontStyle": "BOLD",
+  "type": "TEXT_WIDGET",
+  "textColor": "#F22B2B",
+  "version": 1,
+  "parentId": "tp_modaldel_canvas_001",
+  "leftColumn": 1,
+  "fontSize": "1.25rem",
+  "text": "Delete Player"
 }

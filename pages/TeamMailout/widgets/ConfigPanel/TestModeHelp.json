@@ -1,16 +1,16 @@
 {
-  "bottomRow": 36,
-  "dynamicBindingPathList": [],
-  "fontSize": "0.75rem",
-  "leftColumn": 1,
-  "parentId": "tmo_config_canvas_001",
   "rightColumn": 63,
-  "text": "Test sends go to steve.short@gmail.com",
+  "widgetName": "TestModeHelp",
   "textAlign": "LEFT",
-  "textColor": "#6B7280",
-  "topRow": 32,
-  "type": "TEXT_WIDGET",
-  "version": 1,
   "widgetId": "tmo_config_test_help_001",
-  "widgetName": "TestModeHelp"
+  "bottomRow": 39,
+  "topRow": 35,
+  "type": "TEXT_WIDGET",
+  "textColor": "#6B7280",
+  "version": 1,
+  "parentId": "tmo_config_canvas_001",
+  "dynamicBindingPathList": [],
+  "leftColumn": 1,
+  "fontSize": "0.75rem",
+  "text": "Select a captain row, then send or download that file set"
 }

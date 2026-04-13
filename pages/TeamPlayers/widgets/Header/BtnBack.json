@@ -1,10 +1,16 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 5,
   "boxShadow": "none",
+  "onClick": "{{navigateTo('TeamManagement', {}, 'SAME_WINDOW')}}",
+  "widgetName": "BtnBack",
   "buttonColor": "#64748B",
-  "buttonVariant": "SECONDARY",
+  "bottomRow": 5,
+  "topRow": 2,
+  "type": "BUTTON_WIDGET",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,26 +19,20 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "iconName": "arrow-left",
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 53,
-  "onClick": "{{navigateTo('TeamManagement', {}, 'SAME_WINDOW')}}",
-  "parentId": "tp_header_canvas_001",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "isDisabled": false,
   "text": "Back",
+  "rightColumn": 63,
   "textSize": "0.625rem",
-  "topRow": 2,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "iconName": "arrow-left",
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tp_header_back_001",
-  "widgetName": "BtnBack"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "tp_header_canvas_001",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER"
 }

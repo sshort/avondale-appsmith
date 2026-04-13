@@ -1,12 +1,17 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
   "boxShadow": "none",
+  "onClick": "{{DeleteTeam.run(() => { closeModal('DeleteConfirmModal'); GetTeams.run(); }, () => {})}}",
+  "widgetName": "BtnDeleteConfirm",
   "buttonColor": "#F22B2B",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
+  "bottomRow": 18,
+  "topRow": 13,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,26 +20,21 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "isDefaultClickDisabled": true,
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 32,
-  "onClick": "{{DeleteTeam.run(() => { closeModal('DeleteConfirmModal'); GetTeams.run(); }, () => {})}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "isDisabled": false,
   "text": "Delete",
+  "rightColumn": 63,
   "textSize": "0.875rem",
-  "topRow": 13,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "isDefaultClickDisabled": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tm_modaldel_confirm_001",
-  "widgetName": "BtnDeleteConfirm"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "PRIMARY",
+  "placement": "CENTER"
 }

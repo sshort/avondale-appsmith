@@ -1,9 +1,10 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 18,
   "boxShadow": "none",
-  "defaultText": "{{appsmith.store.teamPlayersSelectedSortOrder !== undefined ? appsmith.store.teamPlayersSelectedSortOrder : TablePlayers.selectedRow.sort_order}}",
+  "widgetName": "EditInputSortOrder",
+  "bottomRow": 18,
+  "topRow": 13,
+  "labelWidth": 5,
+  "type": "INPUT_WIDGET_V2",
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -15,25 +16,24 @@
       "key": "defaultText"
     }
   ],
-  "iconAlign": "left",
+  "leftColumn": 32,
+  "resetOnSubmit": true,
+  "labelPosition": "Top",
   "inputType": "INTEGER",
   "isDisabled": false,
-  "isLoading": false,
+  "labelTextSize": "0.875rem",
   "isRequired": false,
+  "rightColumn": 63,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+  "widgetId": "tp_modaledit_sort_001",
+  "showStepArrows": true,
   "isVisible": true,
   "label": "Sort Order",
-  "labelAlignment": "left",
-  "labelPosition": "Top",
-  "labelTextSize": "0.875rem",
-  "labelWidth": 5,
-  "leftColumn": 32,
-  "parentId": "tp_modaledit_canvas_001",
-  "resetOnSubmit": true,
-  "rightColumn": 63,
-  "showStepArrows": true,
-  "topRow": 13,
-  "type": "INPUT_WIDGET_V2",
   "version": 2,
-  "widgetId": "tp_modaledit_sort_001",
-  "widgetName": "EditInputSortOrder"
+  "parentId": "tp_modaledit_canvas_001",
+  "isLoading": false,
+  "labelAlignment": "left",
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "iconAlign": "left",
+  "defaultText": "{{appsmith.store.teamPlayersSelectedSortOrder !== undefined ? appsmith.store.teamPlayersSelectedSortOrder : TablePlayers.selectedRow.sort_order}}"
 }

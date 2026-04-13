@@ -1,8 +1,0 @@
-{
-  "discardAndPull": null,
-  "discardChanges": "yType=\").concat(t);return n?Ni.A.get(r):Ni.A.post(r)}static async deleteBranch(e,t){return Ni.A.delete(_g.baseURL+\"/branch/app/\"+e,{branchName:t})}static async discardChanges(e){return Ni.A.put(\"\".concat(_g.baseURL,\"/discard/app/\").concat(e))}static async getProtectedBranches(e){return Ni.A.get(\"\".concat(_g.baseURL,\"/branch/app/\").concat(e,\"/protected\"))}static async updateProtectedBranches(e,t){return Ni.A.post(\"\".c",
-  "discard": "yType=\").concat(t);return n?Ni.A.get(r):Ni.A.post(r)}static async deleteBranch(e,t){return Ni.A.delete(_g.baseURL+\"/branch/app/\"+e,{branchName:t})}static async discardChanges(e){return Ni.A.put(\"\".concat(_g.baseURL,\"/discard/app/\").concat(e))}static async getProtectedBranches(e){return Ni.A.get(\"\".concat(_g.baseURL,\"/branch/app/\").concat(e,\"/protected\"))}static async updateProtectedBranches(e,t){return Ni.A.post(\"\".c",
-  "/pull": "i,\"/\").concat(t),o={refName:n};return Ni.A.get(r,void 0,{params:o})}static async pullPackage(e){const{applicationId:t,pageId:n}=e,r=\"\".concat(ki,\"/\").concat(t,\"/pull\"),o={requestPageId:n};return Ni.A.post(r,null,o,{timeout:6e4})}static async pollPackagePullStatus(e){const{applicationId:t}=e,n=\"\".concat(ki,\"/\").concat(t,\"/poll-pull-status\");return Ni.A.get(n)}static async updatePackage(e){const t=\"\".concat(ki,\"/\").con",
-  "pullChanges": null,
-  "/api/v1/git/applications": null
-}

@@ -1,10 +1,23 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "backgroundColor": "#ffffff",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "borderWidth": "1",
-  "bottomRow": 54,
   "boxShadow": "{{appsmith.theme.boxShadow.appBoxShadow}}",
+  "widgetName": "StatusPanel",
+  "isCanvas": true,
+  "displayName": "Container",
+  "iconSVG": "/static/media/icon.9f71e650b24d7e96239a40e67c4e37ee.svg",
+  "bottomRow": 58,
+  "searchTags": [
+    "div",
+    "parent",
+    "group"
+  ],
+  "topRow": 44,
+  "parentRowSpace": 10,
+  "type": "CONTAINER_WIDGET",
+  "hideCard": false,
+  "minHeight": 120,
+  "shouldScrollContents": false,
+  "parentColumnSpace": 76.5,
+  "leftColumn": 53,
   "children": [
     {
       "rightColumn": 64,
@@ -18,31 +31,18 @@
       "parentId": "tmo_status_001"
     }
   ],
-  "containerStyle": "card",
-  "displayName": "Container",
-  "gitSyncId": "69c8f9130b20713d33eec660_tmo_status_001",
-  "hideCard": false,
-  "iconSVG": "/static/media/icon.9f71e650b24d7e96239a40e67c4e37ee.svg",
+  "borderWidth": "1",
   "id": "TeamMailout_StatusPanel",
-  "isCanvas": true,
+  "backgroundColor": "#ffffff",
   "isDeprecated": false,
-  "isLoading": false,
-  "isVisible": true,
-  "leftColumn": 53,
-  "minHeight": 120,
-  "parentColumnSpace": 76.5,
-  "parentId": "0",
-  "parentRowSpace": 10,
   "rightColumn": 63,
-  "searchTags": [
-    "div",
-    "parent",
-    "group"
-  ],
-  "shouldScrollContents": false,
-  "topRow": 40,
-  "type": "CONTAINER_WIDGET",
-  "version": 1,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tmo_status_001",
-  "widgetName": "StatusPanel"
+  "containerStyle": "card",
+  "isVisible": true,
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "gitSyncId": "69c8f9130b20713d33eec660_tmo_status_001"
 }

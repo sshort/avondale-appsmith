@@ -1,12 +1,17 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "animateLoading": true,
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 32,
   "boxShadow": "none",
+  "onClick": "{{InsertTeam.run(() => { closeModal('AddTeamModal'); GetTeams.run(); }, () => {})}}",
+  "widgetName": "BtnAddSubmit",
   "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
-  "buttonVariant": "PRIMARY",
-  "disabledWhenInvalid": false,
+  "bottomRow": 32,
+  "topRow": 27,
+  "type": "BUTTON_WIDGET",
+  "animateLoading": true,
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -18,26 +23,21 @@
       "key": "buttonColor"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "isDefaultClickDisabled": true,
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 32,
-  "onClick": "{{InsertTeam.run(() => { closeModal('AddTeamModal'); GetTeams.run(); }, () => {})}}",
-  "parentId": "0",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 63,
+  "isDisabled": false,
   "text": "Add Team",
+  "rightColumn": 63,
   "textSize": "0.875rem",
-  "topRow": 27,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "isDefaultClickDisabled": true,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tm_modaladd_submit_001",
-  "widgetName": "BtnAddSubmit"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "0",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "disabledWhenInvalid": false,
+  "buttonVariant": "PRIMARY",
+  "placement": "CENTER"
 }

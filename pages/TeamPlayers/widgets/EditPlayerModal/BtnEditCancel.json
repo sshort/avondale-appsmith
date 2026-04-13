@@ -1,10 +1,16 @@
 {
-  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-  "bottomRow": 26,
   "boxShadow": "none",
+  "onClick": "{{closeModal('EditPlayerModal')}}",
+  "widgetName": "BtnEditCancel",
   "buttonColor": "#999",
-  "buttonVariant": "SECONDARY",
+  "bottomRow": 26,
+  "topRow": 21,
+  "type": "BUTTON_WIDGET",
+  "dynamicTriggerPathList": [
+    {
+      "key": "onClick"
+    }
+  ],
   "dynamicBindingPathList": [
     {
       "key": "accentColor"
@@ -13,25 +19,19 @@
       "key": "borderRadius"
     }
   ],
-  "dynamicTriggerPathList": [
-    {
-      "key": "onClick"
-    }
-  ],
-  "isDisabled": false,
-  "isLoading": false,
-  "isVisible": true,
   "leftColumn": 1,
-  "onClick": "{{closeModal('EditPlayerModal')}}",
-  "parentId": "tp_modaledit_canvas_001",
-  "placement": "CENTER",
-  "recaptchaType": "V3",
-  "rightColumn": 32,
+  "isDisabled": false,
   "text": "Cancel",
+  "rightColumn": 32,
   "textSize": "0.875rem",
-  "topRow": 21,
-  "type": "BUTTON_WIDGET",
-  "version": 1,
+  "accentColor": "{{appsmith.theme.colors.primaryColor}}",
   "widgetId": "tp_modaledit_cancel_001",
-  "widgetName": "BtnEditCancel"
+  "isVisible": true,
+  "recaptchaType": "V3",
+  "version": 1,
+  "parentId": "tp_modaledit_canvas_001",
+  "isLoading": false,
+  "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+  "buttonVariant": "SECONDARY",
+  "placement": "CENTER"
 }

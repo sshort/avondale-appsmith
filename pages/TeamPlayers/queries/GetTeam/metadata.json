@@ -5,15 +5,15 @@
   "pluginType": "DB",
   "unpublishedAction": {
     "actionConfiguration": {
-      "body": "SELECT id, team_name, section, season FROM public.teams WHERE id = {{Number(appsmith.URL.queryParams.teamId || 0)}};",
-      "encodeParamsToggle": true,
+      "timeoutInMillisecond": 30000,
       "paginationType": "NONE",
+      "encodeParamsToggle": true,
+      "body": "SELECT id, team_name, section, season FROM public.teams WHERE id = {{Number(appsmith.URL.queryParams.teamId || 0)}};\n",
       "pluginSpecifiedTemplates": [
         {
           "value": true
         }
-      ],
-      "timeoutInMillisecond": 30000
+      ]
     },
     "confirmBeforeExecute": false,
     "datasource": {

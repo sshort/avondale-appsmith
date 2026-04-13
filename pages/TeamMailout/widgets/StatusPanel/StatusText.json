@@ -1,25 +1,25 @@
 {
-  "bottomRow": 8,
-  "dynamicBindingPathList": [
-    {
-      "key": "text"
-    }
-  ],
+  "rightColumn": 63,
+  "widgetName": "StatusText",
   "dynamicPropertyPathList": [
     {
       "key": "text"
     }
   ],
-  "fontSize": "0.875rem",
-  "leftColumn": 1,
-  "parentId": "tmo_status_canvas_001",
-  "rightColumn": 63,
-  "text": "{{appsmith.store.teamMailoutStatus || 'Ready to generate or send the current team mailout bundle'}}",
   "textAlign": "LEFT",
-  "textColor": "#6B7280",
+  "widgetId": "tmo_status_text_001",
+  "bottomRow": 8,
   "topRow": 4,
   "type": "TEXT_WIDGET",
+  "textColor": "#6B7280",
   "version": 1,
-  "widgetId": "tmo_status_text_001",
-  "widgetName": "StatusText"
+  "parentId": "tmo_status_canvas_001",
+  "dynamicBindingPathList": [
+    {
+      "key": "text"
+    }
+  ],
+  "leftColumn": 1,
+  "fontSize": "0.875rem",
+  "text": "{{appsmith.store.teamMailoutStatus || 'Mailout jobs loaded. Select a captain row to send or download a file set.'}}"
 }
