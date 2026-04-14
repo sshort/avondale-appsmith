@@ -62,6 +62,6 @@
   "iconAlign": "left",
   "defaultText": "{{appsmith.store.emailTemplateDraft?.html_template || ''}}",
   "minDynamicHeight": 8,
-  "isVisible": "{{(appsmith.store.emailTemplateEditorMode || 'html') === 'html'}}",
+  "isVisible": "{{(appsmith.store.emailTemplateEditorMode || 'rich') === 'html'}}",
   "onTextChanged": "{{storeValue('emailTemplateDraft', Object.assign({}, appsmith.store.emailTemplateDraft || {}, { html_template: TextareaHtmlTemplate.text || '' })); storeValue('emailTemplateLiveHtml', TextareaHtmlTemplate.text || '');}}"
 }

@@ -572,7 +572,7 @@
   "allowAddNewRow": false,
   "widgetId": "emailtemplatesTable01",
   "minWidth": 450,
-  "tableData": "{{(() => { if (!Array.isArray(GetEmailTemplates.data) && !appsmith.store.emailTemplatesBootstrapStarted) { storeValue('emailTemplatesBootstrapStarted', true); GetEmailTemplates.run(); } return Array.isArray(GetEmailTemplates.data) ? GetEmailTemplates.data : []; })()}}",
+  "tableData": "{{Array.isArray(GetEmailTemplates.data) ? GetEmailTemplates.data : []}}",
   "label": "Data",
   "parentId": "0",
   "serverSidePaginationEnabled": false,

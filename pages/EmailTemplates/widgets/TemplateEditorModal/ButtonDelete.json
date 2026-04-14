@@ -1,7 +1,7 @@
 {
   "needsErrorInfo": false,
   "boxShadow": "none",
-  "onClick": "{{DeleteTemplate.run().then(() => { closeModal('TemplateEditorModal'); showAlert('Template deleted', 'success'); storeValue('selectedEmailTemplateId', null); storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); storeValue('emailTemplateEditorMode', null); GetEmailTemplates.run(); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('RichTextPreview', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); }).catch((error) => { showAlert((error?.message || error || 'Failed to delete'), 'error'); });}}",
+  "onClick": "{{DeleteTemplate.run().then(() => { closeModal('TemplateEditorModal'); showAlert('Template deleted', 'success'); storeValue('selectedEmailTemplateId', null); storeValue('emailTemplateDraft', null); storeValue('emailTemplateLiveHtml', null); storeValue('emailTemplateEditorMode', null); GetEmailTemplates.run(); resetWidget('InputTemplateKey', true); resetWidget('InputTemplateName', true); resetWidget('InputSubject', true); resetWidget('SelectTemplateType', true); resetWidget('CheckboxIsActive', true); resetWidget('TextareaTextTemplate', true); resetWidget('TextareaHtmlTemplate', true); }).catch((error) => { showAlert((error?.message || error || 'Failed to delete'), 'error'); });}}",
   "widgetName": "ButtonDelete",
   "buttonColor": "#C2415D",
   "dynamicPropertyPathList": [],
